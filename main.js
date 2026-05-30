@@ -189,14 +189,38 @@
 
       if (!validateQuoteForm(this)) return;
 
-      // Simulate submission (replace with real backend/service integration)
       const submitBtn = this.querySelector('[type="submit"]');
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending…';
 
-      setTimeout(function () {
-        showFormSuccess(mainForm);
-      }, 900);
+      var formPayload = {
+        name:    (document.getElementById('q-name')    || {}).value || '',
+        email:   (document.getElementById('q-email')   || {}).value || '',
+        address: (document.getElementById('q-address') || {}).value || '',
+        service: (document.getElementById('q-service') || {}).value || '',
+        message: (document.getElementById('q-message') || {}).value || '',
+      };
+
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formPayload),
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          if (data.success) {
+            showFormSuccess(mainForm);
+          } else {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Get Free Quote';
+            showFieldError(submitBtn.closest('form') || submitBtn, data.error || 'Something went wrong. Please try again.');
+          }
+        })
+        .catch(function () {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Get Free Quote';
+          showFieldError(submitBtn.closest('form') || submitBtn, 'Network error. Please check your connection and try again.');
+        });
     });
 
     // Inline validation on blur
