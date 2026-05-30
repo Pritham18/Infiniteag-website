@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="InfiniteAg provides lawn care, landscaping, seasonal planting, edible garden enhancements, and free in-person assessments for homeowners in the Lowcountry, South Carolina." />
+  <meta property="og:title" content="InfiniteAg | Lawn Care, Landscaping &amp; Edible Garden Enhancements" />
+  <meta property="og:description" content="InfiniteAg — lawn care, landscaping, seasonal planting, and edible garden enhancements built for the Lowcountry." />
+  <meta property="og:type" content="website" />
+  <title>InfiniteAg | Lawn Care, Landscaping &amp; Edible Garden Enhancements</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=6" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════
+       STICKY HEADER
+  ═══════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+
+      <a href="#" class="logo" aria-label="InfiniteAg — Back to top">
+        <!-- Custom palmetto/marsh grass logo mark -->
+        <span class="logo-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Ground line -->
+            <path d="M4 28 Q18 24 32 28" stroke="#A7D46F" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+            <!-- Central tall stem -->
+            <path d="M18 28 Q17 20 18 10" stroke="#3F8F46" stroke-width="2" stroke-linecap="round"/>
+            <!-- Left arch frond -->
+            <path d="M18 15 Q10 10 6 14" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <!-- Right arch frond -->
+            <path d="M18 15 Q26 10 30 14" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <!-- Upper left frond -->
+            <path d="M18 11 Q12 6 9 8" stroke="#174A2A" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            <!-- Upper right frond -->
+            <path d="M18 11 Q24 6 27 8" stroke="#174A2A" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            <!-- Tip bud -->
+            <circle cx="18" cy="10" r="1.5" fill="#A7D46F"/>
+            <!-- Left short grass blades -->
+            <path d="M10 28 Q9 24 10 21" stroke="#3F8F46" stroke-width="1.4" stroke-linecap="round"/>
+            <path d="M12 28 Q12.5 23 13 20" stroke="#3F8F46" stroke-width="1.4" stroke-linecap="round"/>
+            <!-- Right short grass blades -->
+            <path d="M24 28 Q24 23 25 21" stroke="#3F8F46" stroke-width="1.4" stroke-linecap="round"/>
+            <path d="M26 28 Q27 24 27 21" stroke="#3F8F46" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">Infinite<strong>Ag</strong></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#lawn-problems">Lawn Problems</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Phone number will be added later -->
+        <a href="#quote-form" class="btn btn-primary btn-sm">Get Free Quote</a>
+        <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#lawn-problems">Lawn Problems</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="mobile-nav-ctas">
+      <!-- Phone number will be added later -->
+      <a href="#quote-form" class="btn btn-outline btn-full">Schedule Free Assessment</a>
+      <a href="#quote-form" class="btn btn-primary btn-full">Get Free Quote</a>
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════ -->
+  <section class="hero" aria-labelledby="hero-headline">
+    <div class="container hero-inner">
+
+      <div class="hero-content reveal">
+        <span class="eyebrow">Lowcountry Lawn Care &amp; Enhancement</span>
+        <h1 id="hero-headline">Your Best-Looking Lawn.</h1>
+        <p class="hero-headline-tag">Built for South Carolina's heat, humidity, and sandy coastal soil.</p>
+        <p class="hero-sub">Start with a free in-person lawn assessment. We'll look at your grass, soil, weeds, drainage, and goals before recommending a plan.</p>
+
+        <form class="hero-form" id="hero-quote-form" novalidate aria-label="Quick quote request">
+          <div class="form-row">
+            <label for="hero-address" class="sr-only">Your address or ZIP code</label>
+            <input type="text" id="hero-address" name="address" placeholder="Enter your address or ZIP code" autocomplete="street-address" />
+            <button type="submit" class="btn btn-primary">Get Free Quote</button>
+          </div>
+          <p class="form-hint">Free in-person assessment included. No obligation.</p>
+        </form>
+
+        <div class="hero-secondary-cta">
+          <!-- Phone number will be added later -->
+          <a href="#quote-form" class="hero-assessment-link">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            Schedule a Free In-Person Assessment
+          </a>
+        </div>
+      </div>
+
+      <!-- Illustrated Lowcountry Lawn Scene -->
+      <div class="hero-visual reveal reveal-right" aria-hidden="true">
+        <div class="lawn-scene">
+
+          <!-- Sky / backdrop -->
+          <div class="ls-sky">
+            <!-- Sun haze -->
+            <div class="ls-sun-haze"></div>
+            <!-- Distant marsh silhouette -->
+            <svg class="ls-marsh" viewBox="0 0 480 80" preserveAspectRatio="none">
+              <path d="M0 80 Q20 40 40 65 Q55 50 70 68 Q85 42 100 60 Q118 35 135 58 Q150 44 165 62 Q180 38 195 56 Q212 48 230 64 Q248 36 265 60 Q280 44 295 62 Q312 38 330 55 Q345 46 360 62 Q378 34 395 56 Q410 44 425 60 Q440 38 455 58 L480 58 L480 80 Z" fill="#174A2A" opacity="0.18"/>
+              <!-- Marsh grass spikes -->
+              <line x1="42" y1="65" x2="38" y2="45" stroke="#3F8F46" stroke-width="1.2" opacity="0.5"/>
+              <line x1="46" y1="65" x2="44" y2="42" stroke="#3F8F46" stroke-width="1.2" opacity="0.5"/>
+              <line x1="50" y1="65" x2="52" y2="44" stroke="#3F8F46" stroke-width="1.2" opacity="0.5"/>
+              <line x1="200" y1="64" x2="196" y2="44" stroke="#3F8F46" stroke-width="1.2" opacity="0.5"/>
+              <line x1="204" y1="64" x2="202" y2="41" stroke="#3F8F46" stroke-width="1.2" opacity="0.5"/>
+              <line x1="208" y1="64" x2="210" y2="43" stroke="#3F8F46" stroke-width="1.2" opacity="0.5"/>
+              <line x1="358" y1="62" x2="354" y2="42" stroke="#3F8F46" stroke-width="1.2" opacity="0.5"/>
+              <line x1="362" y1="62" x2="360" y2="39" stroke="#3F8F46" stroke-width="1.2" opacity="0.5"/>
+              <line x1="366" y1="62" x2="368" y2="41" stroke="#3F8F46" stroke-width="1.2" opacity="0.5"/>
+            </svg>
+          </div>
+
+          <!-- House with layered depth -->
+          <div class="ls-house-wrap">
+            <svg class="ls-house-svg" viewBox="0 0 380 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Shadow/depth layer -->
+              <ellipse cx="190" cy="212" rx="160" ry="8" fill="rgba(23,74,42,0.18)"/>
+
+              <!-- Garage -->
+              <rect x="12" y="130" width="72" height="82" rx="2" fill="#EDE6D8"/>
+              <rect x="16" y="134" width="64" height="56" rx="2" fill="#E0D8CA" stroke="#CBBFA8" stroke-width="1"/>
+              <line x1="16" y1="162" x2="80" y2="162" stroke="#CBBFA8" stroke-width="1"/>
+              <line x1="48" y1="134" x2="48" y2="190" stroke="#CBBFA8" stroke-width="1"/>
+
+              <!-- Main house body -->
+              <rect x="78" y="88" width="212" height="124" rx="2" fill="#F2EDE0"/>
+              <!-- Siding lines for texture -->
+              <line x1="78" y1="104" x2="290" y2="104" stroke="#E5DDD0" stroke-width="0.8"/>
+              <line x1="78" y1="120" x2="290" y2="120" stroke="#E5DDD0" stroke-width="0.8"/>
+              <line x1="78" y1="136" x2="290" y2="136" stroke="#E5DDD0" stroke-width="0.8"/>
+              <line x1="78" y1="152" x2="290" y2="152" stroke="#E5DDD0" stroke-width="0.8"/>
+              <line x1="78" y1="168" x2="290" y2="168" stroke="#E5DDD0" stroke-width="0.8"/>
+              <line x1="78" y1="184" x2="290" y2="184" stroke="#E5DDD0" stroke-width="0.8"/>
+              <line x1="78" y1="200" x2="290" y2="200" stroke="#E5DDD0" stroke-width="0.8"/>
+
+              <!-- Roof with overhang -->
+              <polygon points="60,92 184,22 308,92" fill="#C4B090"/>
+              <polygon points="60,92 184,22 308,92" fill="none" stroke="#B0A07E" stroke-width="1.5"/>
+              <!-- Roof ridge -->
+              <line x1="184" y1="22" x2="184" y2="40" stroke="#9A8A6E" stroke-width="1.5"/>
+              <!-- Eave shadow -->
+              <polygon points="60,92 184,22 308,92 310,95 58,95" fill="rgba(0,0,0,0.06)"/>
+
+              <!-- Chimney -->
+              <rect x="226" y="34" width="24" height="36" fill="#C4B090"/>
+              <rect x="224" y="32" width="28" height="6" rx="1" fill="#B0A07E"/>
+
+              <!-- Left window -->
+              <rect x="96" y="106" width="50" height="40" rx="3" fill="#BDD4E6"/>
+              <rect x="96" y="106" width="50" height="40" rx="3" stroke="#C4B090" stroke-width="1.5" fill="none"/>
+              <!-- Window glare -->
+              <path d="M99 109 L108 109 L99 118 Z" fill="rgba(255,255,255,0.35)"/>
+              <line x1="121" y1="106" x2="121" y2="146" stroke="#C4B090" stroke-width="1"/>
+              <line x1="96" y1="126" x2="146" y2="126" stroke="#C4B090" stroke-width="1"/>
+
+              <!-- Right window -->
+              <rect x="222" y="106" width="50" height="40" rx="3" fill="#BDD4E6"/>
+              <rect x="222" y="106" width="50" height="40" rx="3" stroke="#C4B090" stroke-width="1.5" fill="none"/>
+              <path d="M225 109 L234 109 L225 118 Z" fill="rgba(255,255,255,0.35)"/>
+              <line x1="247" y1="106" x2="247" y2="146" stroke="#C4B090" stroke-width="1"/>
+              <line x1="222" y1="126" x2="272" y2="126" stroke="#C4B090" stroke-width="1"/>
+
+              <!-- Door with frame -->
+              <rect x="158" y="148" width="52" height="64" rx="3" fill="#174A2A"/>
+              <rect x="160" y="150" width="48" height="60" rx="2" fill="none" stroke="#21663C" stroke-width="1"/>
+              <!-- Door panels -->
+              <rect x="163" y="154" width="18" height="22" rx="1" fill="rgba(255,255,255,0.07)"/>
+              <rect x="185" y="154" width="19" height="22" rx="1" fill="rgba(255,255,255,0.07)"/>
+              <rect x="163" y="180" width="41" height="14" rx="1" fill="rgba(255,255,255,0.05)"/>
+              <!-- Door knob -->
+              <circle cx="198" cy="183" r="3.5" fill="#C69B45"/>
+              <circle cx="198" cy="183" r="2" fill="#E8B85A"/>
+
+              <!-- Porch columns -->
+              <rect x="152" y="140" width="8" height="72" rx="2" fill="#E8E0D0"/>
+              <rect x="208" y="140" width="8" height="72" rx="2" fill="#E8E0D0"/>
+              <!-- Porch top beam -->
+              <rect x="148" y="138" width="72" height="6" rx="1" fill="#D8D0C0"/>
+
+              <!-- Accent trim & shutters -->
+              <rect x="90" y="104" width="8" height="44" rx="1" fill="#2A6040" opacity="0.7"/>
+              <rect x="148" y="104" width="8" height="44" rx="1" fill="#2A6040" opacity="0.7"/>
+              <rect x="214" y="104" width="8" height="44" rx="1" fill="#2A6040" opacity="0.7"/>
+              <rect x="274" y="104" width="8" height="44" rx="1" fill="#2A6040" opacity="0.7"/>
+
+              <!-- Small tree/shrub left -->
+              <ellipse cx="48" cy="185" rx="18" ry="22" fill="#2E7040" opacity="0.85"/>
+              <ellipse cx="48" cy="178" rx="14" ry="16" fill="#3A8050"/>
+              <rect x="46" y="200" width="4" height="12" fill="#7A5A35"/>
+
+              <!-- Small shrub right -->
+              <ellipse cx="325" cy="188" rx="20" ry="18" fill="#2E7040" opacity="0.85"/>
+              <ellipse cx="325" cy="182" rx="15" ry="13" fill="#3A8050"/>
+              <rect x="323" y="200" width="4" height="10" fill="#7A5A35"/>
+
+              <!-- Walkway -->
+              <path d="M184 212 L172 212 L170 200 L198 200 L196 212 Z" fill="#D8C8A8" opacity="0.7"/>
+              <line x1="184" y1="200" x2="184" y2="212" stroke="#C8B898" stroke-width="1" opacity="0.6"/>
+            </svg>
+          </div>
+
+          <!-- Layered Lawn & Soil Cutaway -->
+          <div class="ls-ground">
+
+            <!-- Surface lawn (grass blades) -->
+            <svg class="ls-grass-surface" viewBox="0 0 480 90" preserveAspectRatio="none">
+              <!-- Base green fill -->
+              <rect x="0" y="55" width="480" height="35" fill="#3F8F46"/>
+              <!-- First blade layer — lighter green, taller -->
+              <path d="M0 55 Q4 32 8 55 Q12 28 16 55 Q20 34 24 55 Q28 26 32 55 Q36 30 40 55 Q44 26 48 55 Q52 32 56 55 Q60 24 64 55 Q68 30 72 55 Q76 26 80 55 Q84 32 88 55 Q92 25 96 55 Q100 30 104 55 Q108 26 112 55 Q116 32 120 55 Q124 24 128 55 Q132 30 136 55 Q140 26 144 55 Q148 32 152 55 Q156 25 160 55 Q164 28 168 55 Q172 24 176 55 Q180 32 184 55 Q188 26 192 55 Q196 28 200 55 Q204 24 208 55 Q212 30 216 55 Q220 26 224 55 Q228 32 232 55 Q236 24 240 55 Q244 28 248 55 Q252 24 256 55 Q260 32 264 55 Q268 26 272 55 Q276 28 280 55 Q284 24 288 55 Q292 30 296 55 Q300 26 304 55 Q308 32 312 55 Q316 24 320 55 Q324 28 328 55 Q332 26 336 55 Q340 32 340 55 Q344 24 348 55 Q352 28 356 55 Q360 24 364 55 Q368 32 372 55 Q376 26 380 55 Q384 28 384 55 Q388 24 392 55 Q396 30 400 55 Q404 26 408 55 Q412 32 416 55 Q420 24 424 55 Q428 28 432 55 Q436 26 440 55 Q444 32 448 55 Q452 24 456 55 Q460 28 464 55 Q468 26 472 55 Q476 32 480 55 L480 90 L0 90 Z" fill="#4A9E52"/>
+              <!-- Second blade layer — dark green, mid -->
+              <path d="M0 62 Q6 44 12 62 Q18 40 24 62 Q30 46 36 62 Q42 40 48 62 Q54 44 60 62 Q66 40 72 62 Q78 46 84 62 Q90 40 96 62 Q102 44 108 62 Q114 40 120 62 Q126 46 132 62 Q138 40 144 62 Q150 44 156 62 Q162 40 168 62 Q174 46 180 62 Q186 40 192 62 Q198 44 204 62 Q210 40 216 62 Q222 46 228 62 Q234 40 240 62 Q246 44 252 62 Q258 40 264 62 Q270 46 276 62 Q282 40 288 62 Q294 44 300 62 Q306 40 312 62 Q318 46 324 62 Q330 40 336 62 Q342 44 348 62 Q354 40 360 62 Q366 46 372 62 Q378 40 384 62 Q390 44 396 62 Q402 40 408 62 Q414 46 420 62 Q426 40 432 62 Q438 44 444 62 Q450 40 456 62 Q462 46 468 62 Q474 40 480 62 L480 90 L0 90 Z" fill="#2E7A38" opacity="0.65"/>
+              <!-- Mowing stripe detail -->
+              <rect x="0" y="62" width="480" height="8" fill="rgba(255,255,255,0.04)"/>
+              <rect x="0" y="72" width="480" height="8" fill="rgba(0,0,0,0.04)"/>
+            </svg>
+
+            <!-- Soil cutaway (the diagnostic strip) -->
+            <div class="ls-soil-cutaway">
+
+              <div class="ls-soil-layer ls-soil-topsoil">
+                <div class="ls-soil-label">
+                  <span class="ls-soil-name">Topsoil &amp; Organic Matter</span>
+                </div>
+                <div class="ls-roots">
+                  <svg viewBox="0 0 480 42" preserveAspectRatio="none">
+                    <!-- Root system spreading from grass blades -->
+                    <path d="M48 0 Q45 15 42 30 Q38 40 30 42" stroke="rgba(167,212,111,0.8)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                    <path d="M48 0 Q52 18 55 28 Q58 38 52 42" stroke="rgba(167,212,111,0.6)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                    <path d="M96 0 Q94 16 90 30 Q86 40 78 42" stroke="rgba(167,212,111,0.8)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                    <path d="M96 0 Q100 20 104 30 Q108 38 100 42" stroke="rgba(167,212,111,0.55)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                    <path d="M144 0 Q142 16 138 28 Q135 38 128 42" stroke="rgba(167,212,111,0.8)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                    <path d="M192 0 Q190 16 188 28 Q185 38 178 42" stroke="rgba(167,212,111,0.8)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                    <path d="M192 0 Q196 18 200 30 Q204 40 196 42" stroke="rgba(167,212,111,0.55)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                    <path d="M240 0 Q238 14 235 26 Q232 38 225 42" stroke="rgba(167,212,111,0.8)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                    <path d="M288 0 Q286 16 282 28 Q278 38 272 42" stroke="rgba(167,212,111,0.8)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                    <path d="M288 0 Q292 18 296 30 Q300 38 292 42" stroke="rgba(167,212,111,0.55)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                    <path d="M336 0 Q334 16 330 28 Q326 38 318 42" stroke="rgba(167,212,111,0.8)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                    <path d="M384 0 Q382 16 378 28 Q374 38 366 42" stroke="rgba(167,212,111,0.8)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                    <path d="M432 0 Q430 16 426 28 Q422 38 415 42" stroke="rgba(167,212,111,0.8)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                    <!-- Micro-roots -->
+                    <path d="M42 30 Q36 35 32 40" stroke="rgba(167,212,111,0.4)" stroke-width="0.8" fill="none"/>
+                    <path d="M90 30 Q84 35 80 40" stroke="rgba(167,212,111,0.4)" stroke-width="0.8" fill="none"/>
+                    <path d="M235 26 Q228 33 222 40" stroke="rgba(167,212,111,0.4)" stroke-width="0.8" fill="none"/>
+                    <path d="M330 28 Q322 35 316 40" stroke="rgba(167,212,111,0.4)" stroke-width="0.8" fill="none"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="ls-soil-layer ls-soil-rootzone">
+                <div class="ls-soil-label">
+                  <span class="ls-soil-name">Root Zone</span>
+                </div>
+                <div class="ls-soil-nutrients">
+                  <span class="ls-nutrient-tag" title="Moisture">💧 Moisture</span>
+                  <span class="ls-nutrient-tag" title="Nutrients">⚗️ Nutrients</span>
+                  <span class="ls-nutrient-tag" title="Air pockets">🌬️ Air</span>
+                  <span class="ls-nutrient-tag" title="Organic matter">🍂 Organic</span>
+                </div>
+              </div>
+
+              <div class="ls-soil-layer ls-soil-subsoil">
+                <div class="ls-soil-label">
+                  <span class="ls-soil-name">Sandy Coastal Subsoil</span>
+                  <span class="ls-soil-note">Fast-draining · Low retention · Needs amendment</span>
+                </div>
+              </div>
+
+            </div>
+
+          <!-- Floating service badges — inside ls-ground so positions are always relative to the lawn/soil area -->
+          <div class="ls-badges" aria-hidden="true">
+            <div class="float-badge float-badge--fert" style="--delay:0s">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#174A2A" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l3.5 3.5"/></svg>
+              Fertilization Application
+            </div>
+            <div class="float-badge float-badge--weed" style="--delay:0.5s">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#174A2A" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+              Weed Control
+            </div>
+            <div class="float-badge float-badge--aerate" style="--delay:1s">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#174A2A" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Aeration
+            </div>
+          </div>
+
+          </div><!-- /ls-ground -->
+        </div><!-- /lawn-scene -->
+      </div><!-- /hero-visual -->
+
+    </div><!-- /hero-inner -->
+
+    <!-- Wave transition -->
+    <div class="section-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,20 C240,55 480,5 720,30 C960,55 1200,5 1440,25 L1440,60 L0,60 Z" fill="#F7F3E8"/>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       TRUST STRIP
+  ═══════════════════════════════════════ -->
+  <section class="trust-strip" aria-label="Why customers trust us">
+    <div class="container">
+      <ul class="trust-list">
+
+        <li class="trust-item reveal">
+          <div class="trust-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <strong>Licensed &amp; Insured</strong>
+            <span>Fully licensed lawn care professionals</span>
+          </div>
+        </li>
+
+        <li class="trust-item reveal">
+          <div class="trust-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <strong>Local Lowcountry Team</strong>
+            <span>We know this soil. We live here too.</span>
+          </div>
+        </li>
+
+        <li class="trust-item reveal">
+          <div class="trust-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <div>
+            <strong>No Hassle Service</strong>
+            <span>We show up, do the work, and keep you informed</span>
+          </div>
+        </li>
+
+        <li class="trust-item reveal">
+          <div class="trust-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div>
+            <strong>Your Satisfaction Matters</strong>
+            <span>We work until you're genuinely happy with the results</span>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════ -->
+  <section class="services section-pad" id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">What We Do</span>
+        <h2 id="services-heading">Lawn, Landscape &amp; Edible Garden Enhancements</h2>
+        <p>From seasonal fertilization and weed control to landscape maintenance, seasonal flower planting, and edible garden planning — we take care of every part of your outdoor space, all year long.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3>Seasonal Lawn Fertilization</h3>
+          <p>South Carolina warm-season lawns can't run on a generic national schedule. Our approach is based on your grass type, the current season, your soil conditions, and what's actually happening in your yard.</p>
+          <ul class="service-seasonal-list">
+            <li><strong>Spring:</strong> green-up support, weed prevention, soil review &amp; warm-season planning</li>
+            <li><strong>Summer:</strong> feeding once actively growing, heat-stress support &amp; irrigation guidance</li>
+            <li><strong>Fall:</strong> soil amendments, winter weed prevention &amp; seasonal cleanup</li>
+            <li><strong>Winter:</strong> dormant checkups, weed monitoring &amp; spring planning</li>
+          </ul>
+          <a href="#quote-form" class="service-link">Start with a Free Assessment →</a>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+          </div>
+          <h3>Weed Control</h3>
+          <p>Crabgrass, nutsedge, clover, and dollar weed are a constant battle in South Carolina. We apply targeted pre- and post-emergent treatments that knock back weeds without harming your turf.</p>
+          <a href="#quote-form" class="service-link">Get a Quote →</a>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Lawn Aeration</h3>
+          <p>Compacted, sandy Lowcountry soil chokes roots and blocks water absorption. Core aeration opens the ground so nutrients, air, and moisture can reach where they're needed most.</p>
+          <a href="#quote-form" class="service-link">Get a Quote →</a>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C10 4 10 8 12 10C14 8 14 4 12 2Z"/><path d="M2 12C4 14 8 14 10 12C8 10 4 10 2 12Z"/><path d="M22 12C20 10 16 10 14 12C16 14 20 14 22 12Z"/><path d="M12 22C14 20 14 16 12 14C10 16 10 20 12 22Z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3>Seasonal Flower Planting</h3>
+          <p>Spring and summer annuals, seasonal bed refreshes, winter color, and planting rotations that keep your landscape looking intentional and cared for throughout the year.</p>
+          <a href="#quote-form" class="service-link">Get a Quote →</a>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Landscape Maintenance</h3>
+          <p>Trimming, edging, mulching, bed cleanup, and seasonal flower planting — we keep your property looking cared for all year. Spring flower bed refreshes, summer color planting, fall seasonal color, and winter bed preparation can all be part of an ongoing plan.</p>
+          <a href="#quote-form" class="service-link">Get a Quote →</a>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/><path d="M5 7c0 2.8 1.6 5 7 5s7-2.2 7-5"/></svg>
+          </div>
+          <h3>Edible Garden Enhancements</h3>
+          <p>Raised beds, herb gardens, seasonal vegetable planting, and edible garden planning support for Lowcountry homes. We start with an assessment, then build a space-based plan around your soil, sun, and goals.</p>
+          <a href="#edible-garden" class="service-link">See How It Works →</a>
+        </article>
+
+      </div>
+
+      <div class="services-cta reveal">
+        <a href="#quote-form" class="btn btn-primary btn-lg">Get Your Free Lawn Quote</a>
+        <a href="#quote-form" class="btn btn-outline btn-lg">Schedule Free Assessment</a>
+        <!-- Phone number will be added later -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       LOWCOUNTRY SECTION
+  ═══════════════════════════════════════ -->
+  <section class="lowcountry-section section-pad" aria-labelledby="lowcountry-heading">
+    <div class="container">
+      <div class="lowcountry-inner">
+
+        <div class="lowcountry-content reveal">
+          <span class="eyebrow">More Than Lawn Care</span>
+          <h2 id="lowcountry-heading">Lawn Care &amp; Outdoor Enhancements Built for the Lowcountry</h2>
+          <p class="lc-lead">From turf health to seasonal planting, we help shape your yard around the way you actually want to use it.</p>
+          <p>Your yard is more than grass. It can be a cleaner lawn, a better-looking landscape, a seasonal flower bed, or even a small edible garden. We start with a free in-person assessment, then recommend a practical plan based on your soil, sunlight, grass type, drainage, and goals.</p>
+          <p>Every property is different. We treat lawns based on what's actually happening in the ground — not a generic schedule built for somewhere else. Whether you want a healthier lawn, a more attractive landscape, or a more useful outdoor space, we'll help you build a plan around that.</p>
+
+          <ul class="lc-highlights">
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Lawn health, weed control, soil improvement &amp; seasonal fertilization
+            </li>
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Seasonal planting, flower beds, mulching &amp; landscape maintenance
+            </li>
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Edible garden enhancements: raised beds, herbs, vegetables &amp; fruiting plants
+            </li>
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Free in-person lawn assessment before any recommendation
+            </li>
+          </ul>
+        </div>
+
+        <div class="lowcountry-visual reveal reveal-right" aria-hidden="true">
+          <div class="lc-card-stack">
+            <div class="lc-stat-card lc-stat-card--1">
+              <div class="lc-stat-icon">🌡️</div>
+              <strong>Long, Hot Summers</strong>
+              <span>Turf stress management &amp; summer planting support</span>
+            </div>
+            <div class="lc-stat-card lc-stat-card--2">
+              <div class="lc-stat-icon">🏖️</div>
+              <strong>Sandy Coastal Soil</strong>
+              <span>Custom nutrient, retention &amp; amendment plans</span>
+            </div>
+            <div class="lc-stat-card lc-stat-card--3">
+              <div class="lc-stat-icon">🌸</div>
+              <strong>Seasonal Planting</strong>
+              <span>Flower beds, edible gardens &amp; landscape color</span>
+            </div>
+            <div class="lc-stat-card lc-stat-card--4">
+              <div class="lc-stat-icon">🌿</div>
+              <strong>Year-Round Care</strong>
+              <span>Weed control, cleanup &amp; lawn enhancement all year</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       GROW MORE FROM YOUR YARD
+  ═══════════════════════════════════════ -->
+  <section class="grow-more section-pad" id="edible-garden" aria-labelledby="gm-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Lawn, Landscape &amp; Edible Gardens</span>
+        <h2 id="gm-heading">Grow More From Your Yard</h2>
+        <p>Your yard can do more than look good. With the right soil, sunlight, layout, and seasonal plan, unused space can become a place for herbs, vegetables, fruiting plants, flowers, and container gardens. We start with a free in-person assessment, then recommend a practical plan built around your property and goals.</p>
+      </div>
+
+      <div class="gm-cards">
+
+        <!-- Card 1: Outdoor Edible Gardens -->
+        <div class="gm-card reveal">
+          <div class="gm-card__visual gm-card__visual--outdoor" role="img" aria-label="Outdoor raised bed herb and vegetable garden">
+            <svg viewBox="0 0 440 195" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" aria-hidden="true">
+              <!-- Raised bed: corner posts -->
+              <rect x="22" y="106" width="13" height="72" rx="2" fill="#6A4422"/>
+              <rect x="405" y="106" width="13" height="72" rx="2" fill="#6A4422"/>
+              <!-- Raised bed: front boards -->
+              <rect x="30" y="130" width="380" height="36" rx="0" fill="#7E5228"/>
+              <rect x="30" y="115" width="380" height="18" fill="#8B5C30"/>
+              <rect x="30" y="106" width="380" height="12" rx="2" fill="#9B6838"/>
+              <!-- Top lip highlight -->
+              <rect x="30" y="106" width="380" height="5" rx="2" fill="#B8814A"/>
+              <!-- Board grain lines -->
+              <line x1="35" y1="124" x2="405" y2="124" stroke="#6A4422" stroke-width="0.7" opacity="0.22"/>
+              <line x1="35" y1="140" x2="405" y2="140" stroke="#6A4422" stroke-width="0.7" opacity="0.22"/>
+              <line x1="35" y1="156" x2="405" y2="156" stroke="#6A4422" stroke-width="0.7" opacity="0.22"/>
+              <!-- Soil surface -->
+              <rect x="36" y="98" width="368" height="12" rx="1" fill="#1A1008"/>
+              <rect x="36" y="98" width="368" height="3" rx="1" fill="rgba(255,255,255,0.035)"/>
+              <!-- Soil pebble texture -->
+              <ellipse cx="72" cy="105" rx="4" ry="1.8" fill="#2A1808" opacity="0.55"/>
+              <ellipse cx="155" cy="104" rx="3.5" ry="1.5" fill="#2A1808" opacity="0.45"/>
+              <ellipse cx="250" cy="106" rx="3" ry="1.5" fill="#2A1808" opacity="0.5"/>
+              <ellipse cx="330" cy="104" rx="4" ry="1.8" fill="#2A1808" opacity="0.45"/>
+              <ellipse cx="390" cy="105" rx="3" ry="1.5" fill="#2A1808" opacity="0.45"/>
+
+              <!-- Plant 1: Bushy herb (basil), far left -->
+              <line x1="78" y1="98" x2="78" y2="56" stroke="#4A8050" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M78 86 Q65 77 68 65 Q80 69 78 84Z" fill="#4E8C54" opacity="0.88"/>
+              <path d="M78 86 Q91 77 88 65 Q76 69 78 84Z" fill="#3E7844" opacity="0.82"/>
+              <path d="M78 72 Q65 63 68 51 Q80 55 78 70Z" fill="#5A9460" opacity="0.82"/>
+              <path d="M78 72 Q91 63 88 51 Q76 55 78 70Z" fill="#4A8050" opacity="0.78"/>
+              <ellipse cx="78" cy="50" rx="12" ry="9" fill="#5A9460"/>
+              <ellipse cx="78" cy="48" rx="8" ry="5.5" fill="#6AAA64" opacity="0.65"/>
+              <circle cx="74" cy="44" r="2.5" fill="#EDD050" opacity="0.8"/>
+              <circle cx="82" cy="46" r="2" fill="#F0C840" opacity="0.72"/>
+
+              <!-- Plant 2: Rosemary (tall thin), left-center -->
+              <line x1="140" y1="98" x2="140" y2="34" stroke="#3D7042" stroke-width="1.6" stroke-linecap="round"/>
+              <line x1="130" y1="98" x2="122" y2="50" stroke="#3D7042" stroke-width="1.3" stroke-linecap="round"/>
+              <line x1="150" y1="98" x2="158" y2="52" stroke="#3D7042" stroke-width="1.3" stroke-linecap="round"/>
+              <!-- Needle sprays left -->
+              <line x1="136" y1="86" x2="125" y2="81" stroke="#5A8C5C" stroke-width="1.1" stroke-linecap="round"/>
+              <line x1="136" y1="76" x2="125" y2="71" stroke="#5A8C5C" stroke-width="1.1" stroke-linecap="round"/>
+              <line x1="136" y1="66" x2="125" y2="61" stroke="#5A8C5C" stroke-width="1.1" stroke-linecap="round"/>
+              <line x1="136" y1="56" x2="125" y2="51" stroke="#5A8C5C" stroke-width="1.0" stroke-linecap="round"/>
+              <!-- Needle sprays right -->
+              <line x1="144" y1="86" x2="155" y2="81" stroke="#5A8C5C" stroke-width="1.1" stroke-linecap="round"/>
+              <line x1="144" y1="76" x2="155" y2="71" stroke="#5A8C5C" stroke-width="1.1" stroke-linecap="round"/>
+              <line x1="144" y1="66" x2="155" y2="61" stroke="#5A8C5C" stroke-width="1.1" stroke-linecap="round"/>
+              <line x1="144" y1="56" x2="155" y2="51" stroke="#5A8C5C" stroke-width="1.0" stroke-linecap="round"/>
+              <!-- Branch tips -->
+              <path d="M122 50 Q112 44 115 34 Q126 38 122 48Z" fill="#4A8050" opacity="0.82"/>
+              <path d="M158 52 Q168 46 165 36 Q154 40 158 50Z" fill="#4A8050" opacity="0.82"/>
+              <path d="M140 34 Q130 26 133 16 Q142 22 140 32Z" fill="#558A58" opacity="0.88"/>
+              <path d="M140 34 Q150 26 147 16 Q138 22 140 32Z" fill="#4A8050" opacity="0.82"/>
+
+              <!-- Plant 3: Seedling row (4 small), center -->
+              <line x1="196" y1="98" x2="196" y2="80" stroke="#6AAC6A" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M196 80 Q187 74 189 64 Q199 67 196 78Z" fill="#6AAC6A" opacity="0.82"/>
+              <path d="M196 80 Q205 74 203 64 Q193 67 196 78Z" fill="#56986C" opacity="0.75"/>
+              <line x1="218" y1="98" x2="218" y2="76" stroke="#6AAC6A" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M218 76 Q209 70 211 60 Q221 63 218 74Z" fill="#6AAC6A" opacity="0.85"/>
+              <path d="M218 76 Q227 70 225 60 Q215 63 218 74Z" fill="#56986C" opacity="0.76"/>
+              <line x1="240" y1="98" x2="240" y2="78" stroke="#72B070" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M240 78 Q231 72 233 62 Q243 65 240 76Z" fill="#72B070" opacity="0.82"/>
+              <path d="M240 78 Q249 72 247 62 Q237 65 240 76Z" fill="#5A9860" opacity="0.74"/>
+              <line x1="261" y1="98" x2="261" y2="82" stroke="#6AAC6A" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M261 82 Q252 76 254 66 Q264 69 261 80Z" fill="#6AAC6A" opacity="0.82"/>
+              <path d="M261 82 Q270 76 268 66 Q258 69 261 80Z" fill="#56986C" opacity="0.74"/>
+
+              <!-- Plant 4: Round bushy herb (oregano), right-center -->
+              <line x1="318" y1="98" x2="318" y2="60" stroke="#4A8050" stroke-width="1.8" stroke-linecap="round"/>
+              <line x1="305" y1="98" x2="297" y2="70" stroke="#4A8050" stroke-width="1.4" stroke-linecap="round"/>
+              <line x1="331" y1="98" x2="339" y2="72" stroke="#4A8050" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M297 70 Q284 62 288 50 Q300 56 297 68Z" fill="#5A9060" opacity="0.82"/>
+              <path d="M339 72 Q352 64 348 52 Q336 58 339 70Z" fill="#5A9060" opacity="0.82"/>
+              <path d="M318 80 Q305 72 309 58 Q321 64 318 78Z" fill="#4A8050" opacity="0.88"/>
+              <path d="M318 80 Q331 72 327 58 Q315 64 318 78Z" fill="#3E7844" opacity="0.82"/>
+              <ellipse cx="305" cy="64" rx="14" ry="10" fill="#5A9060" opacity="0.72"/>
+              <ellipse cx="318" cy="57" rx="15" ry="11" fill="#4E8C54"/>
+              <ellipse cx="331" cy="64" rx="13" ry="10" fill="#5A9060" opacity="0.76"/>
+              <ellipse cx="318" cy="55" rx="10" ry="7" fill="#6AAA64" opacity="0.6"/>
+
+              <!-- Plant 5: Herb, far right -->
+              <line x1="383" y1="98" x2="383" y2="62" stroke="#4A8050" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M383 88 Q372 80 375 68 Q385 72 383 86Z" fill="#4E8C54" opacity="0.88"/>
+              <path d="M383 88 Q394 80 391 68 Q381 72 383 86Z" fill="#3E7844" opacity="0.82"/>
+              <path d="M383 75 Q372 67 375 55 Q385 59 383 73Z" fill="#5A9460" opacity="0.82"/>
+              <path d="M383 75 Q394 67 391 55 Q381 59 383 73Z" fill="#4A8050" opacity="0.78"/>
+              <ellipse cx="383" cy="57" rx="13" ry="9" fill="#5A9460"/>
+              <ellipse cx="383" cy="55" rx="9" ry="6" fill="#6AAA64" opacity="0.62"/>
+              <circle cx="380" cy="51" r="2.5" fill="#D07C32" opacity="0.78"/>
+              <circle cx="387" cy="53" r="2" fill="#C69B45" opacity="0.70"/>
+            </svg>
+            <div class="gm-card__visual-fade"></div>
+          </div>
+          <div class="gm-card__body">
+            <span class="gm-card__pill">Raised Beds &amp; Seasonal Planting</span>
+            <h3>Outdoor Edible Gardens</h3>
+            <p>Raised beds, herbs, vegetables, small fruiting plants, soil preparation, seasonal refreshes, and maintenance guidance for Lowcountry homes.</p>
+            <ul class="gm-card__features">
+              <li>Raised bed planning</li>
+              <li>Seasonal vegetables &amp; herbs</li>
+              <li>Soil prep and refreshes</li>
+            </ul>
+            <a href="#quote-form" class="gm-card__cta">Ask About Outdoor Gardens
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Indoor & Patio Growing Consultation -->
+        <div class="gm-card reveal">
+          <div class="gm-card__visual gm-card__visual--indoor" role="img" aria-label="Terracotta pots with herbs and citrus on a patio">
+            <svg viewBox="0 0 440 195" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" aria-hidden="true">
+              <!-- Floor / shelf line -->
+              <rect x="0" y="158" width="440" height="37" fill="rgba(215,200,180,0.38)"/>
+              <line x1="0" y1="158" x2="440" y2="158" stroke="rgba(185,165,138,0.30)" stroke-width="1"/>
+
+              <!-- Small pot — left -->
+              <!-- Saucer -->
+              <ellipse cx="118" cy="157" rx="34" ry="6.5" fill="#C48440" opacity="0.42"/>
+              <!-- Pot body -->
+              <path d="M92 118 Q88 154 96 157 L140 157 Q148 154 144 118 Z" fill="#B86028"/>
+              <rect x="84" y="108" width="68" height="13" rx="6.5" fill="#CA7030"/>
+              <!-- Soil -->
+              <ellipse cx="118" cy="119" rx="30" ry="5.5" fill="#1A1008" opacity="0.92"/>
+              <!-- Herb stems -->
+              <line x1="118" y1="116" x2="118" y2="84" stroke="#4A8050" stroke-width="1.6" stroke-linecap="round"/>
+              <line x1="109" y1="116" x2="103" y2="88" stroke="#558A58" stroke-width="1.3" stroke-linecap="round"/>
+              <line x1="127" y1="116" x2="133" y2="90" stroke="#558A58" stroke-width="1.3" stroke-linecap="round"/>
+              <!-- Branch leaves -->
+              <path d="M103 88 Q91 80 95 68 Q107 74 103 86Z" fill="#558A58" opacity="0.88"/>
+              <path d="M133 90 Q145 82 141 70 Q129 76 133 88Z" fill="#558A58" opacity="0.88"/>
+              <!-- Main stem leaves -->
+              <path d="M118 100 Q107 92 111 78 Q122 84 118 98Z" fill="#4A8050" opacity="0.88"/>
+              <path d="M118 100 Q129 92 125 78 Q114 84 118 98Z" fill="#3E7844" opacity="0.82"/>
+              <!-- Crown -->
+              <ellipse cx="106" cy="78" rx="13" ry="10" fill="#558A58" opacity="0.78"/>
+              <ellipse cx="118" cy="72" rx="15" ry="11" fill="#4E8C54"/>
+              <ellipse cx="130" cy="78" rx="12" ry="9" fill="#558A58" opacity="0.74"/>
+              <ellipse cx="118" cy="70" rx="10" ry="7" fill="#6AAA64" opacity="0.62"/>
+
+              <!-- Large main pot — center -->
+              <!-- Saucer -->
+              <ellipse cx="242" cy="157" rx="50" ry="8.5" fill="#C08038" opacity="0.40"/>
+              <!-- Pot body -->
+              <path d="M202 108 Q196 152 206 157 L278 157 Q288 152 282 108 Z" fill="#B05C24"/>
+              <rect x="193" y="96" width="98" height="15" rx="7.5" fill="#C46C2E"/>
+              <!-- Pot detail line -->
+              <path d="M202 108 Q196 152 206 157" stroke="#983E10" stroke-width="1" opacity="0.3" fill="none"/>
+              <!-- Soil -->
+              <ellipse cx="242" cy="109" rx="46" ry="8" fill="#1A1008" opacity="0.9"/>
+              <ellipse cx="230" cy="111" rx="4" ry="2" fill="#2A1808" opacity="0.45"/>
+              <ellipse cx="254" cy="110" rx="3.5" ry="1.5" fill="#2A1808" opacity="0.40"/>
+              <!-- Stems -->
+              <line x1="242" y1="106" x2="242" y2="44" stroke="#3D7042" stroke-width="2" stroke-linecap="round"/>
+              <line x1="228" y1="106" x2="219" y2="58" stroke="#4A8050" stroke-width="1.6" stroke-linecap="round"/>
+              <line x1="256" y1="106" x2="265" y2="60" stroke="#4A8050" stroke-width="1.6" stroke-linecap="round"/>
+              <line x1="234" y1="106" x2="228" y2="70" stroke="#558A58" stroke-width="1.3" stroke-linecap="round"/>
+              <line x1="250" y1="106" x2="256" y2="72" stroke="#558A58" stroke-width="1.3" stroke-linecap="round"/>
+              <!-- Outer branch leaves -->
+              <path d="M219 58 Q205 50 210 36 Q222 44 219 56Z" fill="#558A58" opacity="0.90"/>
+              <path d="M265 60 Q279 52 274 38 Q262 46 265 58Z" fill="#558A58" opacity="0.90"/>
+              <!-- Inner branch leaves -->
+              <path d="M228 70 Q216 62 220 50 Q232 56 228 68Z" fill="#4A8050" opacity="0.85"/>
+              <path d="M256 72 Q268 64 264 52 Q252 58 256 70Z" fill="#4A8050" opacity="0.85"/>
+              <!-- Main leaves -->
+              <path d="M242 84 Q229 76 233 62 Q245 68 242 82Z" fill="#4E8C54" opacity="0.90"/>
+              <path d="M242 84 Q255 76 251 62 Q239 68 242 82Z" fill="#3E7844" opacity="0.85"/>
+              <path d="M242 66 Q229 58 233 44 Q245 50 242 64Z" fill="#5A9460" opacity="0.85"/>
+              <path d="M242 66 Q255 58 251 44 Q239 50 242 64Z" fill="#4A8050" opacity="0.80"/>
+              <!-- Crown clusters -->
+              <ellipse cx="228" cy="52" rx="17" ry="12" fill="#5A9460" opacity="0.82"/>
+              <ellipse cx="242" cy="44" rx="20" ry="14" fill="#4E8C54"/>
+              <ellipse cx="256" cy="52" rx="17" ry="12" fill="#5A9460" opacity="0.78"/>
+              <ellipse cx="242" cy="42" rx="14" ry="10" fill="#6AAA64" opacity="0.58"/>
+
+              <!-- Citrus pot — right -->
+              <!-- Saucer -->
+              <ellipse cx="360" cy="158" rx="42" ry="7.5" fill="#C08038" opacity="0.38"/>
+              <!-- Pot body -->
+              <path d="M327 112 Q323 154 330 158 L390 158 Q397 154 393 112 Z" fill="#BF6828"/>
+              <rect x="319" y="101" width="82" height="14" rx="7" fill="#CE7A32"/>
+              <!-- Soil -->
+              <ellipse cx="360" cy="113" rx="36" ry="6.5" fill="#1A1008" opacity="0.9"/>
+              <!-- Citrus stems (darker, waxy leaves) -->
+              <line x1="360" y1="110" x2="360" y2="58" stroke="#4A6C26" stroke-width="1.8" stroke-linecap="round"/>
+              <line x1="348" y1="110" x2="338" y2="70" stroke="#4A6C26" stroke-width="1.4" stroke-linecap="round"/>
+              <line x1="372" y1="110" x2="382" y2="72" stroke="#4A6C26" stroke-width="1.4" stroke-linecap="round"/>
+              <!-- Citrus leaves (broader, glossy) -->
+              <path d="M338 70 Q323 61 327 48 Q341 55 338 68Z" fill="#4A6C26" opacity="0.92"/>
+              <path d="M382 72 Q397 63 393 50 Q379 57 382 70Z" fill="#4A6C26" opacity="0.92"/>
+              <path d="M360 88 Q347 80 351 64 Q364 70 360 86Z" fill="#527430" opacity="0.90"/>
+              <path d="M360 88 Q373 80 369 64 Q356 70 360 86Z" fill="#476428" opacity="0.85"/>
+              <path d="M360 72 Q347 64 351 48 Q364 56 360 70Z" fill="#5E8438" opacity="0.85"/>
+              <path d="M360 72 Q373 64 369 48 Q356 56 360 70Z" fill="#4E7430" opacity="0.80"/>
+              <!-- Crown cluster -->
+              <ellipse cx="346" cy="60" rx="15" ry="11" fill="#507030" opacity="0.88"/>
+              <ellipse cx="360" cy="53" rx="18" ry="13" fill="#527430"/>
+              <ellipse cx="374" cy="60" rx="15" ry="11" fill="#507030" opacity="0.84"/>
+              <ellipse cx="360" cy="51" rx="12" ry="8" fill="#6A9440" opacity="0.56"/>
+              <!-- Citrus fruits -->
+              <circle cx="348" cy="60" r="7" fill="#E89420" opacity="0.88"/>
+              <circle cx="360" cy="53" r="6.5" fill="#E8A018" opacity="0.84"/>
+              <circle cx="372" cy="61" r="6" fill="#E09016" opacity="0.80"/>
+              <!-- Fruit highlights -->
+              <circle cx="346" cy="58" r="2.5" fill="#F8D860" opacity="0.48"/>
+              <circle cx="358" cy="51" r="2" fill="#F8D860" opacity="0.44"/>
+            </svg>
+            <div class="gm-card__visual-fade"></div>
+          </div>
+          <div class="gm-card__body">
+            <span class="gm-card__pill">Container &amp; Small-Space Growing</span>
+            <h3>Indoor &amp; Patio Growing Consultation</h3>
+            <p>Container herbs, patio vegetables, citrus containers, sunlight placement, watering guidance, and simple care plans for porches, patios, and smaller spaces.</p>
+            <ul class="gm-card__features">
+              <li>Patio containers</li>
+              <li>Indoor herb guidance</li>
+              <li>Sunlight and watering plans</li>
+            </ul>
+            <a href="#quote-form" class="gm-card__cta">Ask About Container Growing
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="gm-assessment reveal">
+        <span class="gm-assessment__icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </span>
+        <span>Every edible garden or planting plan starts with a <strong>free in-person assessment</strong> so we can review sunlight, soil, drainage, space, and your goals before recommending anything.</span>
+      </div>
+
+      <div class="gm-cta reveal">
+        <a href="#quote-form" class="btn btn-primary btn-lg">Schedule a Free Assessment</a>
+        <a href="#quote-form" class="btn btn-outline btn-lg">Ask About Edible Gardens</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       HOW IT WORKS
+  ═══════════════════════════════════════ -->
+  <section class="how-it-works section-pad" id="how-it-works" aria-labelledby="hiw-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Simple Process</span>
+        <h2 id="hiw-heading">How It Works</h2>
+        <p>Getting started is straightforward. No sales pressure, no complicated contracts — just a clear path to a healthier lawn.</p>
+      </div>
+
+      <ol class="steps-list">
+        <li class="step-item reveal">
+          <div class="step-number" aria-hidden="true">01</div>
+          <div class="step-content">
+            <h3>Request a Free Quote</h3>
+            <p>Fill out the short form and tell us your address and what's going on with your yard. No need to diagnose anything — that's what we're here for.</p>
+          </div>
+        </li>
+        <li class="step-item reveal">
+          <div class="step-number" aria-hidden="true">02</div>
+          <div class="step-content">
+            <h3>Free In-Person Lawn Assessment</h3>
+            <p>We come out and look at your lawn in person — grass type, soil condition, weed pressure, drainage, and problem areas. You get honest feedback before any commitment is made.</p>
+          </div>
+        </li>
+        <li class="step-item reveal">
+          <div class="step-number" aria-hidden="true">03</div>
+          <div class="step-content">
+            <h3>Custom Lawn &amp; Enhancement Plan</h3>
+            <p>Based on the assessment, we put together a plan for your specific lawn and goals — whether that's turf health, seasonal planting, landscape improvement, or all of the above.</p>
+          </div>
+        </li>
+        <li class="step-item reveal">
+          <div class="step-number" aria-hidden="true">04</div>
+          <div class="step-content">
+            <h3>Seasonal Care, Planting &amp; Results</h3>
+            <p>We handle treatments and planting on schedule, keep you updated after each visit, and adjust the plan with the season. Over time, your yard reflects the work — and you'll notice the difference.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="hiw-cta reveal">
+        <a href="#quote-form" class="btn btn-primary btn-lg">Schedule Free Assessment</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       LAWN PROBLEMS
+  ═══════════════════════════════════════ -->
+  <section class="lawn-problems section-pad" id="lawn-problems" aria-labelledby="lp-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Sound Familiar?</span>
+        <h2 id="lp-heading">Common Lawn Problems We Fix</h2>
+        <p>If any of these look like your yard, you're not alone. These are some of the most common issues we see across Bluffton, Beaufort, and Hilton Head.</p>
+      </div>
+
+      <div class="problems-grid">
+
+        <div class="problem-card reveal">
+          <div class="problem-img-wrap">
+            <img src="assets/images/lawn-problems/weeds.webp" alt="Yellow dandelion weeds in a Lowcountry lawn" class="problem-img" width="900" height="560" loading="lazy">
+          </div>
+          <div class="problem-card__body">
+            <h3>Weeds Taking Over</h3>
+            <p>Crabgrass, nutsedge, dollar weed, and clover spread fast in warm SC soil. Left untreated, they crowd out desirable grass and become harder to control each season.</p>
+            <span class="problem-tag">Pre-emergent + Post-emergent Treatments</span>
+          </div>
+        </div>
+
+        <div class="problem-card reveal">
+          <div class="problem-img-wrap">
+            <img src="assets/images/lawn-problems/patchy-grass.webp" alt="Patchy uneven grass with bare soil spots" class="problem-img" width="900" height="560" loading="lazy">
+          </div>
+          <div class="problem-card__body">
+            <h3>Patchy, Uneven Grass</h3>
+            <p>Bare spots and thin patches are often caused by poor soil contact, compaction, or turf stress from heat and foot traffic. Aeration and overseeding are usually the right fix.</p>
+            <span class="problem-tag">Aeration + Overseeding</span>
+          </div>
+        </div>
+
+        <div class="problem-card reveal">
+          <div class="problem-img-wrap">
+            <img src="assets/images/lawn-problems/dry-spots.webp" alt="Brown and green dry lawn during summer drought" class="problem-img" width="900" height="560" loading="lazy">
+          </div>
+          <div class="problem-card__body">
+            <h3>Dry Spots &amp; Brown Areas</h3>
+            <p>Sandy soils in the Lowcountry don't hold moisture well. Dry spots can also signal compaction or fungal damage. We identify the root cause before treating.</p>
+            <span class="problem-tag">Soil Health + Fertilization</span>
+          </div>
+        </div>
+
+        <div class="problem-card reveal">
+          <div class="problem-img-wrap">
+            <img src="assets/images/lawn-problems/lawn-pests.webp" alt="Yellowed dry grass showing signs of lawn pest damage" class="problem-img" width="900" height="560" loading="lazy">
+          </div>
+          <div class="problem-card__body">
+            <h3>Lawn Pests</h3>
+            <p>Chinch bugs, armyworms, grubs, and mole crickets are common in coastal SC. They damage roots and turf from below and above, often before you notice anything is wrong.</p>
+            <span class="problem-tag">Pest Protection Treatments</span>
+          </div>
+        </div>
+
+        <div class="problem-card reveal">
+          <div class="problem-img-wrap">
+            <img src="assets/images/lawn-problems/poor-soil.webp" alt="Hands holding nutrient-depleted garden soil" class="problem-img" width="900" height="560" loading="lazy">
+          </div>
+          <div class="problem-card__body">
+            <h3>Poor or Depleted Soil</h3>
+            <p>Years of mowing and growth strip nutrients from the soil. Sandy coastal soils drain too fast, leaving grass underfed. Regular fertilization and soil amendments make a lasting difference.</p>
+            <span class="problem-tag">Fertilization + Soil Amendment</span>
+          </div>
+        </div>
+
+        <div class="problem-card reveal">
+          <div class="problem-img-wrap">
+            <img src="assets/images/lawn-problems/thinning-turf.webp" alt="Thinning sparse lawn with cracked soil visible" class="problem-img" width="900" height="560" loading="lazy">
+          </div>
+          <div class="problem-card__body">
+            <h3>Thinning, Weak Turf</h3>
+            <p>Turf that looks tired, pale, or thin usually needs a combination of fertilization, aeration, and overseeding. We assess the underlying cause rather than applying a one-size-fits-all fix.</p>
+            <span class="problem-tag">Custom Treatment Program</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       SOIL HEALTH
+  ═══════════════════════════════════════ -->
+  <section class="soil-health section-pad" aria-labelledby="sh-heading">
+    <div class="container">
+      <div class="soil-health-inner">
+
+        <div class="soil-visual reveal" aria-hidden="true">
+          <div class="soil-cutaway">
+            <div class="soil-layer-grass">
+              <svg viewBox="0 0 300 60" preserveAspectRatio="none">
+                <rect x="0" y="40" width="300" height="20" fill="#3F8F46"/>
+                <path d="M0 40 Q7.5 18 15 40 Q22.5 12 30 40 Q37.5 20 45 40 Q52.5 14 60 40 Q67.5 20 75 40 Q82.5 14 90 40 Q97.5 18 105 40 Q112.5 14 120 40 Q127.5 20 135 40 Q142.5 14 150 40 Q157.5 18 165 40 Q172.5 14 180 40 Q187.5 20 195 40 Q202.5 14 210 40 Q217.5 18 225 40 Q232.5 14 240 40 Q247.5 20 255 40 Q262.5 14 270 40 Q277.5 18 285 40 Q292.5 14 300 40 L300 60 L0 60 Z" fill="#4A9E52"/>
+                <path d="M0 48 Q15 36 30 48 Q45 34 60 48 Q75 36 90 48 Q105 34 120 48 Q135 38 150 48 Q165 34 180 48 Q195 38 210 48 Q225 34 240 48 Q255 38 270 48 Q285 34 300 48 L300 60 L0 60 Z" fill="#174A2A" opacity="0.45"/>
+              </svg>
+            </div>
+            <div class="soil-layer-top">
+              <div class="soil-label">Topsoil &amp; Organic Matter</div>
+              <div class="soil-roots">
+                <div class="root root-1"></div>
+                <div class="root root-2"></div>
+                <div class="root root-3"></div>
+                <div class="root root-4"></div>
+                <div class="root root-5"></div>
+              </div>
+            </div>
+            <div class="soil-layer-mid">
+              <div class="soil-label">Root Zone</div>
+              <div class="soil-particles">
+                <span>💧</span><span>⚗️</span><span>🌬️</span><span>💧</span><span>⚗️</span>
+              </div>
+            </div>
+            <div class="soil-layer-deep">
+              <div class="soil-label">Sandy Coastal Subsoil</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="soil-content-text reveal">
+          <span class="eyebrow">What's Under the Surface</span>
+          <h2 id="sh-heading">Healthy Roots Make a Healthy Lawn</h2>
+          <p>A great-looking lawn starts underground. Compacted soil, low nutrient levels, and poor water retention prevent roots from developing the way they need to — and that's what causes thin turf, dry spots, and slow recovery from stress.</p>
+          <p>Professional lawn care isn't just about spraying the surface. It's about improving what's happening in the soil so your grass has the foundation it needs to grow dense, deep, and resilient — even through Lowcountry summers.</p>
+
+          <div class="soil-benefits">
+            <div class="soil-benefit">
+              <div class="sb-icon" aria-hidden="true">💧</div>
+              <div>
+                <strong>Better Moisture Retention</strong>
+                <span>Aeration and organic amendments help sandy soil hold water longer, reducing stress during dry spells.</span>
+              </div>
+            </div>
+            <div class="soil-benefit">
+              <div class="sb-icon" aria-hidden="true">⚗️</div>
+              <div>
+                <strong>Proper Nutrient Uptake</strong>
+                <span>Balanced fertilization gives roots access to the nitrogen, potassium, and phosphorus they need to push dense, green growth.</span>
+              </div>
+            </div>
+            <div class="soil-benefit">
+              <div class="sb-icon" aria-hidden="true">🌱</div>
+              <div>
+                <strong>Deeper, Stronger Roots</strong>
+                <span>A healthy root system helps grass survive heat, traffic, and seasonal transitions without thinning out.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       BEFORE / AFTER GALLERY
+  ═══════════════════════════════════════ -->
+  <section class="gallery section-pad" aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Real Work, Real Yards</span>
+        <h2 id="gallery-heading">Before &amp; After</h2>
+        <p class="disclaimer-note">Demo photos shown for layout preview. Final project photos can be replaced with client-approved images.</p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item reveal">
+          <div class="gallery-pair">
+            <div class="gallery-img-wrap">
+              <img src="assets/images/before-after/bluffton-before.webp" alt="Before: patchy weedy lawn, Bluffton SC" class="gallery-img" width="900" height="560" loading="lazy">
+              <span class="gallery-badge gallery-badge--before" aria-hidden="true">Before</span>
+            </div>
+            <div class="gallery-img-wrap">
+              <img src="assets/images/before-after/bluffton-after.webp" alt="After: lush weed-free lawn, Bluffton SC" class="gallery-img" width="900" height="560" loading="lazy">
+              <span class="gallery-badge gallery-badge--after" aria-hidden="true">After</span>
+            </div>
+          </div>
+          <p class="gallery-caption">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#68766C" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Fertilization + Weed Control — Bluffton, SC
+          </p>
+        </div>
+
+        <div class="gallery-item reveal">
+          <div class="gallery-pair">
+            <div class="gallery-img-wrap">
+              <img src="assets/images/before-after/beaufort-before.webp" alt="Before: dry stressed lawn, Beaufort SC" class="gallery-img" width="900" height="560" loading="lazy">
+              <span class="gallery-badge gallery-badge--before" aria-hidden="true">Before</span>
+            </div>
+            <div class="gallery-img-wrap">
+              <img src="assets/images/before-after/beaufort-after.webp" alt="After: dense healthy turf, Beaufort SC" class="gallery-img" width="900" height="560" loading="lazy">
+              <span class="gallery-badge gallery-badge--after" aria-hidden="true">After</span>
+            </div>
+          </div>
+          <p class="gallery-caption">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#68766C" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Aeration + Overseeding — Beaufort, SC
+          </p>
+        </div>
+
+        <div class="gallery-item reveal">
+          <div class="gallery-pair">
+            <div class="gallery-img-wrap">
+              <img src="assets/images/before-after/hilton-head-before.webp" alt="Before: overgrown landscape beds, Hilton Head SC" class="gallery-img" width="900" height="560" loading="lazy">
+              <span class="gallery-badge gallery-badge--before" aria-hidden="true">Before</span>
+            </div>
+            <div class="gallery-img-wrap">
+              <img src="assets/images/before-after/hilton-head-after.webp" alt="After: clean mulched landscape beds, Hilton Head SC" class="gallery-img" width="900" height="560" loading="lazy">
+              <span class="gallery-badge gallery-badge--after" aria-hidden="true">After</span>
+            </div>
+          </div>
+          <p class="gallery-caption">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#68766C" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Landscape Maintenance + Cleanup — Hilton Head, SC
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════
+       TESTIMONIALS
+  ═══════════════════════ -->
+  <section class="sg-reviews-section section-pad" id="reviews" aria-labelledby="reviews-heading">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="eyebrow">What Customers Are Saying</span>
+        <div class="sg-reviews-divider" aria-hidden="true">
+          <svg width="140" height="22" viewBox="0 0 140 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="11" x2="52" y2="11" stroke="#C8DCBE" stroke-width="1"/>
+            <path d="M70 20 L70 5" stroke="#3F8F46" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M70 13 Q65 9 63 5" stroke="#3F8F46" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            <path d="M70 13 Q75 9 77 5" stroke="#3F8F46" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            <path d="M70 10 Q67 7 66 3" stroke="#A7D46F" stroke-width="1" stroke-linecap="round" fill="none"/>
+            <path d="M70 10 Q73 7 74 3" stroke="#A7D46F" stroke-width="1" stroke-linecap="round" fill="none"/>
+            <line x1="88" y1="11" x2="140" y2="11" stroke="#C8DCBE" stroke-width="1"/>
+          </svg>
+        </div>
+        <h2 id="reviews-heading">Words from Real Lowcountry Homeowners</h2>
+        <p class="sg-reviews-note">Placeholder testimonials — real client reviews will be added with permission.</p>
+      </div>
+
+      <div class="sg-reviews-grid">
+
+        <blockquote class="sg-review-card reveal">
+          <p class="sg-review-quote">My lawn went from a mess to the best on the block. Reliable, professional, and worth every penny.</p>
+          <div class="sg-review-divider" aria-hidden="true"></div>
+          <footer class="sg-review-footer">
+            <div class="sg-review-avatar" aria-label="Thomas H.">TH</div>
+            <div class="sg-review-byline">
+              <span class="sg-review-name">Thomas H.</span>
+              <span class="sg-review-location">Bluffton, SC</span>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="sg-review-card reveal">
+          <p class="sg-review-quote">They know exactly what our lawn needs. The difference is obvious every time they come.</p>
+          <div class="sg-review-divider" aria-hidden="true"></div>
+          <footer class="sg-review-footer">
+            <div class="sg-review-avatar" aria-label="Robin B.">RB</div>
+            <div class="sg-review-byline">
+              <span class="sg-review-name">Robin B.</span>
+              <span class="sg-review-location">Beaufort, SC</span>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="sg-review-card reveal">
+          <p class="sg-review-quote">Communication is great and the results speak for themselves. Highly recommend.</p>
+          <div class="sg-review-divider" aria-hidden="true"></div>
+          <footer class="sg-review-footer">
+            <div class="sg-review-avatar" aria-label="Karen M.">KM</div>
+            <div class="sg-review-byline">
+              <span class="sg-review-name">Karen M.</span>
+              <span class="sg-review-location">Hilton Head Island, SC</span>
+            </div>
+          </footer>
+        </blockquote>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       QUOTE FORM SECTION
+  ═══════════════════════════════════════ -->
+  <section class="quote-section section-pad" id="quote-form" aria-labelledby="quote-heading">
+    <div class="container">
+      <div class="quote-inner">
+
+        <div class="quote-text reveal">
+          <span class="eyebrow">Free Quote — No Obligation</span>
+          <h2 id="quote-heading">Let's Talk About Your Yard</h2>
+          <p>Fill out the form and we'll get back to you within one business day. No pushy follow-ups, no auto-generated estimates — just a real conversation about what your lawn and yard actually need.</p>
+          <p>Every quote starts with a <strong>free in-person lawn assessment</strong>. We'll visit your yard, look at your grass, soil, weeds, drainage, and goals, and build a plan around what we actually find.</p>
+          <!-- Phone number will be added later -->
+        </div>
+
+        <div class="quote-form-wrap reveal">
+          <form id="main-quote-form" novalidate aria-label="Free lawn quote request form">
+
+            <div class="form-group">
+              <label for="q-name">Your Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="q-name" name="name" placeholder="Your name" required autocomplete="name" aria-required="true" />
+            </div>
+
+            <!-- Phone number will be added later -->
+            <div class="form-group">
+              <label for="q-email">Email Address <span aria-hidden="true">*</span></label>
+              <input type="email" id="q-email" name="email" placeholder="you@example.com" required autocomplete="email" aria-required="true" />
+            </div>
+
+            <div class="form-group">
+              <label for="q-address">Address or ZIP Code <span aria-hidden="true">*</span></label>
+              <input type="text" id="q-address" name="address" placeholder="Address or ZIP code" required autocomplete="street-address" aria-required="true" />
+            </div>
+
+            <div class="form-group">
+              <label for="q-service">Service You're Interested In <span class="optional-label">(Optional)</span></label>
+              <select id="q-service" name="service">
+                <option value="">Not sure yet — just exploring</option>
+                <option value="seasonal-fertilization">Seasonal Lawn Fertilization</option>
+                <option value="weed-control">Weed Control</option>
+                <option value="aeration">Lawn Aeration</option>
+                <option value="landscape-maintenance">Landscape Maintenance</option>
+                <option value="seasonal-flower-planting">Seasonal Flower Planting</option>
+                <option value="edible-garden">Edible Garden Enhancement</option>
+                <option value="indoor-patio-consultation">Indoor / Patio Garden Consultation</option>
+                <option value="seasonal-vegetable-planting">Seasonal Vegetable Planting</option>
+                <option value="fruit-herb-planning">Fruit &amp; Herb Garden Planning</option>
+                <option value="free-assessment">Free In-Person Lawn Assessment</option>
+                <option value="not-sure">Not Sure Yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="q-message">Anything else we should know? <span class="optional-label">(Optional)</span></label>
+              <textarea id="q-message" name="message" rows="4" placeholder="Tell us what you'd like help with — or just say hello."></textarea>
+            </div>
+
+            <button type="submit" id="quote-submit-btn" class="btn btn-primary btn-full btn-lg">Get Free Quote</button>
+
+            <p class="form-privacy">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#68766C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Your information is never sold or shared. We'll only use it to respond to your quote request.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       FAQ
+  ═══════════════════════════════════════ -->
+  <section class="faq section-pad" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Common Questions</span>
+        <h2 id="faq-heading">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <details class="faq-item reveal">
+          <summary>How soon will I see results?</summary>
+          <div class="faq-body">
+            <p>It depends on the service and your lawn's current condition. Weed control typically shows results within 7–14 days. Fertilization improvements in color and density usually appear within 2–4 weeks. Aeration and overseeding take a full growing season to show their full impact. We'll be upfront with you about what to expect before we start.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>Do you service my area?</summary>
+          <div class="faq-body">
+            <p>We serve the Lowcountry region of South Carolina, including Bluffton, Beaufort, Hilton Head Island, Sun City, Okatie, and surrounding communities. If you're not sure whether we cover your area, just give us a call or drop your address in the quote form — we'll let you know right away.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>Do you offer one-time service or only ongoing programs?</summary>
+          <div class="faq-body">
+            <p>Both. Some customers start with a one-time treatment to address a specific problem. Others sign up for a seasonal or annual program. We'll suggest what makes sense for your lawn without pushing you toward a commitment you don't want.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>Is lawn treatment safe for my family and pets?</summary>
+          <div class="faq-body">
+            <p>Yes — once applied products have fully dried, your lawn is safe for children and pets under normal use. We'll always let you know the recommended re-entry time after each treatment. If you have concerns about a specific product, just ask and we'll explain what we're using and why.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>What lawn problems do you treat?</summary>
+          <div class="faq-body">
+            <p>We handle a wide range of issues including weeds (crabgrass, nutsedge, dollar weed, clover), thin or patchy turf, dry spots, compacted soil, lawn pests (chinch bugs, armyworms, grubs), and general nutrient deficiencies. If you're dealing with something specific, reach out and we'll tell you whether it falls within what we do.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>How do I know if I need fertilization, aeration, or weed control?</summary>
+          <div class="faq-body">
+            <p>Honestly, you don't have to figure that out on your own. That's what the free lawn assessment is for. We'll look at your specific grass type, soil condition, and current issues and tell you exactly what would make the most difference. Often a lawn needs more than one service, but we'll prioritize and explain the reasoning so you can make an informed decision.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       FINAL CTA
+  ═══════════════════════════════════════ -->
+  <section class="final-cta" aria-labelledby="final-cta-heading">
+    <div class="final-cta-bg" aria-hidden="true"></div>
+    <div class="container final-cta-inner reveal">
+      <div class="final-cta-botanical" aria-hidden="true">
+        <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0.12">
+          <path d="M60 110 Q55 80 60 50" stroke="#A7D46F" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M60 80 Q40 65 30 70" stroke="#A7D46F" stroke-width="2" stroke-linecap="round"/>
+          <path d="M60 70 Q80 55 90 58" stroke="#A7D46F" stroke-width="2" stroke-linecap="round"/>
+          <path d="M60 60 Q44 46 36 50" stroke="#A7D46F" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M60 55 Q74 42 82 46" stroke="#A7D46F" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="60" cy="50" r="3" fill="#A7D46F"/>
+        </svg>
+      </div>
+      <h2 id="final-cta-heading">Start With a Free In-Person Lawn Assessment.</h2>
+      <p>We'll look at your grass, soil, weeds, drainage, and goals — then build a practical plan around what we actually find. No pressure, no guesswork.</p>
+      <div class="final-cta-actions">
+        <a href="#quote-form" class="btn btn-primary btn-lg">Schedule Free Assessment</a>
+        <a href="#quote-form" class="btn btn-white btn-lg">Get Free Quote</a>
+        <!-- Phone number will be added later -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <a href="#" class="logo logo--light" aria-label="InfiniteAg — Back to top">
+          <span class="logo-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 28 Q18 24 32 28" stroke="#A7D46F" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+              <path d="M18 28 Q17 20 18 10" stroke="#A7D46F" stroke-width="2" stroke-linecap="round"/>
+              <path d="M18 15 Q10 10 6 14" stroke="#A7D46F" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+              <path d="M18 15 Q26 10 30 14" stroke="#A7D46F" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+              <path d="M18 11 Q12 6 9 8" stroke="#3F8F46" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              <path d="M18 11 Q24 6 27 8" stroke="#3F8F46" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              <circle cx="18" cy="10" r="1.5" fill="#A7D46F"/>
+              <path d="M10 28 Q9 24 10 21" stroke="#3F8F46" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M12 28 Q12.5 23 13 20" stroke="#3F8F46" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M24 28 Q24 23 25 21" stroke="#3F8F46" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M26 28 Q27 24 27 21" stroke="#3F8F46" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="logo-text">Infinite<strong>Ag</strong></span>
+        </a>
+        <p class="footer-tagline">Professional lawn care, landscaping, and seasonal enhancements<br/>for the Lowcountry, South Carolina.</p>
+        <!-- Phone number will be added later -->
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Seasonal Lawn Fertilization</a></li>
+          <li><a href="#services">Weed Control</a></li>
+          <li><a href="#services">Lawn Aeration</a></li>
+          <li><a href="#services">Overseeding</a></li>
+          <li><a href="#services">Landscape Maintenance</a></li>
+          <li><a href="#services">Seasonal Planting</a></li>
+          <li><a href="#edible-garden">Edible Garden Enhancement</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#lawn-problems">Lawn Problems</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#quote-form">Get a Quote</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Service Area</h4>
+        <ul>
+          <li>Bluffton, SC</li>
+          <li>Beaufort, SC</li>
+          <li>Hilton Head Island, SC</li>
+          <li>Sun City Hilton Head, SC</li>
+          <li>Okatie, SC</li>
+          <li>Lowcountry Region, SC</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 InfiniteAg. All rights reserved. Serving the Lowcountry, SC.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════
+       STICKY MOBILE CTA BAR
+  ═══════════════════════════════════════ -->
+  <div class="mobile-cta-bar" id="mobile-cta-bar" role="complementary" aria-label="Quick contact options">
+    <!-- Phone number will be added later -->
+    <a href="#quote-form" class="btn btn-outline mobile-cta-btn">Free Assessment</a>
+    <a href="#quote-form" class="btn btn-primary mobile-cta-btn">Get Free Quote</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

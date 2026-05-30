@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" role="img" aria-label="After: dense weed-free lawn in Bluffton SC">
+<defs>
+  <linearGradient id="sk2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#8EC8F0"/><stop offset="100%" stop-color="#C8E8F8"/></linearGradient>
+  <linearGradient id="gd2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2E7030"/><stop offset="100%" stop-color="#245A28"/></linearGradient>
+</defs>
+<rect width="480" height="240" fill="url(#sk2)"/>
+<rect y="80" width="480" height="160" fill="url(#gd2)"/>
+<!-- Dense hedge/tree line, lush green -->
+<ellipse cx="55" cy="81" rx="60" ry="22" fill="#204A20" opacity=".6"/>
+<ellipse cx="185" cy="77" rx="78" ry="26" fill="#1E4818" opacity=".55"/>
+<ellipse cx="330" cy="79" rx="70" ry="24" fill="#224E22" opacity=".55"/>
+<ellipse cx="455" cy="81" rx="50" ry="19" fill="#1E4818" opacity=".55"/>
+<!-- House silhouette (same position as before) -->
+<rect x="342" y="46" width="82" height="32" fill="#D8D0B8" opacity=".32"/>
+<polygon points="334,52 383,28 432,52" fill="#C4BCA8" opacity=".32"/>
+<rect x="374" y="60" width="11" height="18" fill="#96908A" opacity=".32"/>
+<!-- Rich mid-ground grass patches – dense, no bare soil -->
+<ellipse cx="90" cy="114" rx="80" ry="24" fill="#2A6A2A" opacity=".75"/>
+<ellipse cx="240" cy="118" rx="95" ry="26" fill="#2E6E2E" opacity=".7"/>
+<ellipse cx="385" cy="116" rx="80" ry="23" fill="#2A6A28" opacity=".72"/>
+<!-- Subtle texture variation (natural lawn variation, not bad) -->
+<ellipse cx="160" cy="130" rx="55" ry="16" fill="#347A34" opacity=".35"/>
+<ellipse cx="320" cy="132" rx="60" ry="15" fill="#2E7030" opacity=".3"/>
+<!-- Foreground grass – dense lush blades, uniform rich greens -->
+<g stroke-width="2.3" fill="none" stroke-linecap="round">
+<path d="M12,240 Q11,218 16,202" stroke="#2E7832"/><path d="M22,240 Q24,220 20,205" stroke="#3A8840"/>
+<path d="M33,240 Q31,215 37,200" stroke="#327636"/><path d="M44,240 Q46,220 42,205" stroke="#3E9044"/>
+<path d="M55,240 Q53,214 59,198" stroke="#2E7832"/><path d="M66,240 Q68,219 64,204" stroke="#367E3A"/>
+<path d="M77,240 Q75,212 81,197" stroke="#3A8840"/><path d="M88,240 Q90,219 86,204" stroke="#2E7832"/>
+<path d="M99,240 Q97,215 103,200" stroke="#347038"/><path d="M110,240 Q112,220 108,205" stroke="#3A8840"/>
+<path d="M122,240 Q120,213 126,197" stroke="#2E7832"/><path d="M134,240 Q136,219 132,204" stroke="#367E3A"/>
+<path d="M146,240 Q144,215 150,200" stroke="#3A8840"/><path d="M158,240 Q160,219 156,205" stroke="#2E7832"/>
+<path d="M170,240 Q168,212 174,197" stroke="#347038"/><path d="M182,240 Q184,219 180,204" stroke="#3E9044"/>
+<path d="M194,240 Q192,215 198,200" stroke="#2E7832"/><path d="M206,240 Q208,220 204,205" stroke="#367E3A"/>
+<path d="M218,240 Q216,213 222,197" stroke="#3A8840"/><path d="M230,240 Q232,219 228,204" stroke="#2E7832"/>
+<path d="M242,240 Q240,215 246,200" stroke="#347038"/><path d="M254,240 Q256,219 252,205" stroke="#3E9044"/>
+<path d="M266,240 Q264,212 270,197" stroke="#2E7832"/><path d="M278,240 Q280,219 276,204" stroke="#367E3A"/>
+<path d="M290,240 Q288,215 294,200" stroke="#3A8840"/><path d="M302,240 Q304,220 300,205" stroke="#2E7832"/>
+<path d="M314,240 Q312,213 318,197" stroke="#347038"/><path d="M326,240 Q328,219 324,204" stroke="#3E9044"/>
+<path d="M338,240 Q336,215 342,200" stroke="#2E7832"/><path d="M350,240 Q352,219 348,205" stroke="#3A8840"/>
+<path d="M362,240 Q360,212 366,197" stroke="#367E3A"/><path d="M374,240 Q376,219 372,204" stroke="#2E7832"/>
+<path d="M386,240 Q384,215 390,200" stroke="#347038"/><path d="M398,240 Q400,220 396,205" stroke="#3E9044"/>
+<path d="M410,240 Q408,213 414,197" stroke="#2E7832"/><path d="M422,240 Q424,219 420,204" stroke="#367E3A"/>
+<path d="M434,240 Q432,215 438,200" stroke="#3A8840"/><path d="M446,240 Q448,220 444,205" stroke="#2E7832"/>
+<path d="M458,240 Q456,213 462,198" stroke="#347038"/>
+</g>
+</svg>

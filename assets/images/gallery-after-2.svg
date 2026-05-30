@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" role="img" aria-label="After: healthy thick turf after aeration, Beaufort SC">
+<defs>
+  <linearGradient id="sk4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#78C0F0"/><stop offset="100%" stop-color="#BADEEE"/></linearGradient>
+  <linearGradient id="gd4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2C6E30"/><stop offset="100%" stop-color="#224E24"/></linearGradient>
+</defs>
+<rect width="480" height="240" fill="url(#sk4)"/>
+<rect y="82" width="480" height="158" fill="url(#gd4)"/>
+<!-- Lush tree/hedge horizon -->
+<ellipse cx="65" cy="83" rx="58" ry="21" fill="#1C4A1C" opacity=".6"/>
+<ellipse cx="195" cy="79" rx="75" ry="25" fill="#1A4818" opacity=".55"/>
+<ellipse cx="340" cy="81" rx="70" ry="23" fill="#1E4C20" opacity=".58"/>
+<ellipse cx="455" cy="83" rx="50" ry="19" fill="#1A4818" opacity=".55"/>
+<!-- Same fence line, now brighter -->
+<line x1="0" y1="95" x2="480" y2="95" stroke="#C8D4A0" stroke-width="1.5" opacity=".3"/>
+<rect x="55" y="89" width="4" height="16" fill="#C8D4A0" opacity=".3" rx="1"/>
+<rect x="135" y="89" width="4" height="16" fill="#C8D4A0" opacity=".3" rx="1"/>
+<rect x="215" y="89" width="4" height="16" fill="#C8D4A0" opacity=".3" rx="1"/>
+<rect x="295" y="89" width="4" height="16" fill="#C8D4A0" opacity=".3" rx="1"/>
+<rect x="375" y="89" width="4" height="16" fill="#C8D4A0" opacity=".3" rx="1"/>
+<rect x="455" y="89" width="4" height="16" fill="#C8D4A0" opacity=".3" rx="1"/>
+<!-- Dense mid-ground – no bare soil -->
+<ellipse cx="90" cy="115" rx="85" ry="24" fill="#2A6828" opacity=".78"/>
+<ellipse cx="240" cy="119" rx="98" ry="26" fill="#2E6E2C" opacity=".75"/>
+<ellipse cx="385" cy="116" rx="82" ry="23" fill="#2A6828" opacity=".78"/>
+<!-- Healthy Bermuda texture dots (fine grass) -->
+<ellipse cx="160" cy="128" rx="55" ry="14" fill="#388038" opacity=".3"/>
+<ellipse cx="310" cy="130" rx="60" ry="14" fill="#347A36" opacity=".28"/>
+<!-- Foreground: dense, upright, richly green blades -->
+<g stroke-width="2.4" fill="none" stroke-linecap="round">
+<path d="M10,240 Q9,216 14,200" stroke="#2E7A34"/><path d="M20,240 Q22,220 18,204" stroke="#3A8A3E"/>
+<path d="M30,240 Q28,214 34,198" stroke="#2C7432"/><path d="M40,240 Q42,220 38,205" stroke="#3E9244"/>
+<path d="M50,240 Q48,215 54,199" stroke="#2E7A34"/><path d="M60,240 Q62,220 58,204" stroke="#367C38"/>
+<path d="M70,240 Q68,213 74,197" stroke="#3A8A3E"/><path d="M80,240 Q82,220 78,205" stroke="#2C7432"/>
+<path d="M90,240 Q88,215 94,199" stroke="#3E9244"/><path d="M100,240 Q102,220 98,205" stroke="#2E7A34"/>
+<path d="M110,240 Q108,213 114,197" stroke="#367C38"/><path d="M120,240 Q122,220 118,204" stroke="#3A8A3E"/>
+<path d="M130,240 Q128,215 134,199" stroke="#2C7432"/><path d="M140,240 Q142,220 138,205" stroke="#3E9244"/>
+<path d="M150,240 Q148,213 154,197" stroke="#2E7A34"/><path d="M160,240 Q162,220 158,204" stroke="#367C38"/>
+<path d="M170,240 Q168,215 174,199" stroke="#3A8A3E"/><path d="M180,240 Q182,220 178,205" stroke="#2C7432"/>
+<path d="M190,240 Q188,213 194,197" stroke="#3E9244"/><path d="M200,240 Q202,220 198,204" stroke="#2E7A34"/>
+<path d="M210,240 Q208,215 214,199" stroke="#367C38"/><path d="M220,240 Q222,220 218,205" stroke="#3A8A3E"/>
+<path d="M230,240 Q228,213 234,197" stroke="#2C7432"/><path d="M240,240 Q242,220 238,205" stroke="#3E9244"/>
+<path d="M250,240 Q248,215 254,199" stroke="#2E7A34"/><path d="M260,240 Q262,220 258,204" stroke="#367C38"/>
+<path d="M270,240 Q268,213 274,197" stroke="#3A8A3E"/><path d="M280,240 Q282,220 278,205" stroke="#2C7432"/>
+<path d="M290,240 Q288,215 294,199" stroke="#3E9244"/><path d="M300,240 Q302,220 298,204" stroke="#2E7A34"/>
+<path d="M310,240 Q308,213 314,197" stroke="#367C38"/><path d="M320,240 Q322,220 318,205" stroke="#3A8A3E"/>
+<path d="M330,240 Q328,215 334,199" stroke="#2C7432"/><path d="M340,240 Q342,220 338,205" stroke="#3E9244"/>
+<path d="M350,240 Q348,213 354,197" stroke="#2E7A34"/><path d="M360,240 Q362,220 358,204" stroke="#367C38"/>
+<path d="M370,240 Q368,215 374,199" stroke="#3A8A3E"/><path d="M380,240 Q382,220 378,205" stroke="#2C7432"/>
+<path d="M390,240 Q388,213 394,197" stroke="#3E9244"/><path d="M400,240 Q402,220 398,204" stroke="#2E7A34"/>
+<path d="M410,240 Q408,215 414,199" stroke="#367C38"/><path d="M420,240 Q422,220 418,205" stroke="#3A8A3E"/>
+<path d="M430,240 Q428,213 434,197" stroke="#2C7432"/><path d="M440,240 Q442,220 438,205" stroke="#3E9244"/>
+<path d="M450,240 Q448,215 454,199" stroke="#2E7A34"/><path d="M460,240 Q462,220 458,204" stroke="#367C38"/>
+<path d="M470,240 Q468,213 474,197" stroke="#3A8A3E"/>
+</g>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="Dry brown grass with drought stress and dead spots">
+<defs>
+  <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#C87830"/><stop offset="100%" stop-color="#9A5818"/></linearGradient>
+</defs>
+<rect width="400" height="200" fill="url(#g3)"/>
+<!-- Dry cracked soil patches -->
+<ellipse cx="75" cy="90" rx="60" ry="28" fill="#B06828" opacity=".55"/>
+<ellipse cx="220" cy="105" rx="70" ry="30" fill="#A86020" opacity=".5"/>
+<ellipse cx="355" cy="95" rx="55" ry="26" fill="#B06828" opacity=".52"/>
+<!-- Bleached/dead grass areas -->
+<ellipse cx="140" cy="140" rx="55" ry="24" fill="#D4B060" opacity=".45"/>
+<ellipse cx="280" cy="130" rx="48" ry="22" fill="#CCА858" opacity=".42"/>
+<!-- Dried yellow-tan grass blades — scattered, wilted -->
+<g stroke-linecap="round" fill="none">
+<!-- Very dry/golden blades -->
+<path d="M12,200 Q14,180 10,162" stroke="#C8A040" stroke-width="2"/><path d="M22,200 Q20,177 25,158" stroke="#B89030" stroke-width="1.8"/>
+<path d="M35,200 Q37,178 33,160" stroke="#D4AA48" stroke-width="2"/><path d="M48,200 Q46,176 52,157" stroke="#C0981C" stroke-width="1.8"/>
+<path d="M62,200 Q64,180 60,163" stroke="#C8A040" stroke-width="2"/><path d="M76,200 Q74,177 80,158" stroke="#B89030" stroke-width="1.8"/>
+<path d="M90,200 Q92,178 88,160" stroke="#D4AA48" stroke-width="2"/><path d="M104,200 Q102,177 108,158" stroke="#C8A040" stroke-width="2"/>
+<path d="M118,200 Q120,179 116,161" stroke="#B89030" stroke-width="1.8"/><path d="M132,200 Q130,177 136,158" stroke="#C0981C" stroke-width="2"/>
+<path d="M146,200 Q148,179 144,161" stroke="#D4AA48" stroke-width="2"/><path d="M160,200 Q158,177 164,158" stroke="#C8A040" stroke-width="1.8"/>
+<path d="M174,200 Q176,179 172,161" stroke="#B89030" stroke-width="2"/><path d="M188,200 Q186,177 192,158" stroke="#C8A040" stroke-width="1.8"/>
+<path d="M202,200 Q204,179 200,161" stroke="#D4AA48" stroke-width="2"/><path d="M216,200 Q214,177 220,158" stroke="#C0981C" stroke-width="1.8"/>
+<path d="M230,200 Q232,179 228,161" stroke="#C8A040" stroke-width="2"/><path d="M244,200 Q242,177 248,158" stroke="#B89030" stroke-width="1.8"/>
+<path d="M258,200 Q260,179 256,161" stroke="#C8A040" stroke-width="2"/><path d="M272,200 Q270,177 276,158" stroke="#D4AA48" stroke-width="1.8"/>
+<path d="M286,200 Q288,179 284,161" stroke="#C0981C" stroke-width="2"/><path d="M300,200 Q298,177 304,158" stroke="#C8A040" stroke-width="1.8"/>
+<path d="M314,200 Q316,179 312,161" stroke="#B89030" stroke-width="2"/><path d="M328,200 Q326,177 332,158" stroke="#C8A040" stroke-width="1.8"/>
+<path d="M342,200 Q344,179 340,161" stroke="#D4AA48" stroke-width="2"/><path d="M356,200 Q354,177 360,158" stroke="#C0981C" stroke-width="1.8"/>
+<path d="M370,200 Q372,179 368,161" stroke="#C8A040" stroke-width="2"/><path d="M384,200 Q382,177 388,158" stroke="#B89030" stroke-width="1.8"/>
+</g>
+<!-- Short stubby dead blades and bent over dry grass -->
+<g stroke-linecap="round" fill="none" opacity=".7">
+<path d="M18,200 Q20,192 16,185" stroke="#E0B840" stroke-width="1.8"/>
+<path d="M55,200 Q53,191 58,182" stroke="#D4A838" stroke-width="1.8"/>
+<path d="M95,200 Q97,193 93,184" stroke="#E0B840" stroke-width="1.8"/>
+<path d="M135,200 Q133,192 138,183" stroke="#D4A838" stroke-width="1.8"/>
+<path d="M175,200 Q177,193 173,184" stroke="#E0B840" stroke-width="1.8"/>
+<path d="M215,200 Q213,192 218,183" stroke="#D4A838" stroke-width="1.8"/>
+<path d="M255,200 Q257,193 253,184" stroke="#E0B840" stroke-width="1.8"/>
+<path d="M295,200 Q293,192 298,183" stroke="#D4A838" stroke-width="1.8"/>
+<path d="M335,200 Q337,193 333,184" stroke="#E0B840" stroke-width="1.8"/>
+<path d="M375,200 Q373,192 378,183" stroke="#D4A838" stroke-width="1.8"/>
+</g>
+<!-- A few surviving green blades in patches -->
+<g stroke-linecap="round" fill="none" opacity=".75">
+<path d="M68,200 Q66,175 72,158" stroke="#6A8030" stroke-width="2.2"/>
+<path d="M168,200 Q170,174 166,157" stroke="#6A8030" stroke-width="2.2"/>
+<path d="M268,200 Q266,174 272,157" stroke="#6A8030" stroke-width="2.2"/>
+<path d="M368,200 Q370,175 366,158" stroke="#6A8030" stroke-width="2.2"/>
+</g>
+</svg>

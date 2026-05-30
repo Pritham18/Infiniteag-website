@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="Thinning sparse grass with visible soil gaps">
+<defs>
+  <linearGradient id="g6" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#8A8255"/><stop offset="100%" stop-color="#706842"/></linearGradient>
+</defs>
+<rect width="400" height="200" fill="url(#g6)"/>
+<!-- Scattered pale/thin grass tufts -->
+<ellipse cx="50" cy="100" rx="40" ry="22" fill="#7A8C3A" opacity=".5"/>
+<ellipse cx="145" cy="88" rx="48" ry="24" fill="#728430" opacity=".48"/>
+<ellipse cx="248" cy="102" rx="44" ry="20" fill="#7A8C3A" opacity=".5"/>
+<ellipse cx="350" cy="92" rx="42" ry="22" fill="#728430" opacity=".48"/>
+<ellipse cx="96" cy="155" rx="35" ry="18" fill="#7A8C3A" opacity=".45"/>
+<ellipse cx="206" cy="160" rx="38" ry="17" fill="#728430" opacity=".44"/>
+<ellipse cx="315" cy="150" rx="36" ry="18" fill="#7A8C3A" opacity=".46"/>
+<!-- Pale very thin blades — widely spaced, showing lots of soil -->
+<g stroke-linecap="round" fill="none">
+<!-- Very sparse pale-green blades -->
+<path d="M18,200 Q17,180 22,164" stroke="#8A9840" stroke-width="1.7"/>
+<path d="M35,200 Q37,178 33,162" stroke="#909E44" stroke-width="1.5"/>
+<!-- Big gap -->
+<path d="M72,200 Q70,181 76,165" stroke="#8A9840" stroke-width="1.7"/>
+<path d="M85,200 Q87,179 83,163" stroke="#909E44" stroke-width="1.5"/>
+<path d="M98,200 Q96,181 102,165" stroke="#8A9840" stroke-width="1.7"/>
+<!-- Big gap -->
+<path d="M138,200 Q136,180 142,164" stroke="#909E44" stroke-width="1.5"/>
+<path d="M152,200 Q154,179 150,163" stroke="#8A9840" stroke-width="1.7"/>
+<!-- Big gap -->
+<path d="M192,200 Q190,180 196,164" stroke="#8A9840" stroke-width="1.7"/>
+<path d="M206,200 Q208,178 204,162" stroke="#909E44" stroke-width="1.5"/>
+<path d="M220,200 Q218,180 224,164" stroke="#8A9840" stroke-width="1.7"/>
+<!-- Big gap -->
+<path d="M262,200 Q260,181 266,165" stroke="#909E44" stroke-width="1.5"/>
+<path d="M276,200 Q278,179 274,163" stroke="#8A9840" stroke-width="1.7"/>
+<!-- Big gap -->
+<path d="M318,200 Q316,180 322,164" stroke="#8A9840" stroke-width="1.7"/>
+<path d="M332,200 Q334,178 330,162" stroke="#909E44" stroke-width="1.5"/>
+<path d="M346,200 Q344,180 350,164" stroke="#8A9840" stroke-width="1.7"/>
+<!-- Big gap -->
+<path d="M388,200 Q386,180 392,164" stroke="#909E44" stroke-width="1.5"/>
+</g>
+<!-- Pale/yellowing short blades (weak growth) -->
+<g stroke-linecap="round" fill="none" opacity=".65">
+<path d="M26,200 Q28,190 24,183" stroke="#C0CC50" stroke-width="1.5"/>
+<path d="M108,200 Q106,190 112,182" stroke="#C0CC50" stroke-width="1.5"/>
+<path d="M165,200 Q167,190 163,182" stroke="#BACA48" stroke-width="1.5"/>
+<path d="M232,200 Q230,190 236,182" stroke="#C0CC50" stroke-width="1.5"/>
+<path d="M290,200 Q292,190 288,182" stroke="#BACA48" stroke-width="1.5"/>
+<path d="M360,200 Q358,190 364,182" stroke="#C0CC50" stroke-width="1.5"/>
+</g>
+<!-- Highly visible soil / bare gaps (a lot more soil visible than healthy lawn) -->
+<rect x="40" y="182" width="30" height="18" fill="#887050" opacity=".38" rx="4"/>
+<rect x="105" y="185" width="28" height="15" fill="#887050" opacity=".35" rx="4"/>
+<rect x="172" y="180" width="18" height="20" fill="#887050" opacity=".38" rx="4"/>
+<rect x="238" y="184" width="22" height="16" fill="#887050" opacity=".35" rx="4"/>
+<rect x="298" y="182" width="16" height="18" fill="#887050" opacity=".38" rx="4"/>
+<rect x="356" y="185" width="28" height="15" fill="#887050" opacity=".35" rx="4"/>
+</svg>

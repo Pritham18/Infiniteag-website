@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="Patchy, uneven grass with bare spots">
+<defs>
+  <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#7A7240"/><stop offset="100%" stop-color="#605A2E"/></linearGradient>
+</defs>
+<!-- Sandy/dry soil base -->
+<rect width="400" height="200" fill="url(#g2)"/>
+<!-- Irregular grass patches — mixed green/bare -->
+<ellipse cx="50" cy="100" rx="45" ry="30" fill="#4A6A28" opacity=".75"/>
+<ellipse cx="145" cy="85" rx="55" ry="32" fill="#527030" opacity=".7"/>
+<ellipse cx="248" cy="105" rx="48" ry="28" fill="#4A6A28" opacity=".72"/>
+<ellipse cx="358" cy="90" rx="50" ry="30" fill="#527030" opacity=".68"/>
+<ellipse cx="30" cy="155" rx="35" ry="22" fill="#527030" opacity=".65"/>
+<ellipse cx="120" cy="160" rx="42" ry="24" fill="#4A6A28" opacity=".7"/>
+<ellipse cx="225" cy="150" rx="38" ry="20" fill="#4E6C2C" opacity=".68"/>
+<ellipse cx="320" cy="162" rx="44" ry="22" fill="#527030" opacity=".65"/>
+<!-- Bare soil areas — scattered between patches -->
+<ellipse cx="100" cy="120" rx="38" ry="20" fill="#9C8A58" opacity=".8"/>
+<ellipse cx="200" cy="80" rx="30" ry="16" fill="#A08E60" opacity=".78"/>
+<ellipse cx="300" cy="125" rx="35" ry="18" fill="#9C8A58" opacity=".75"/>
+<ellipse cx="385" cy="145" rx="22" ry="14" fill="#A08E60" opacity=".72"/>
+<ellipse cx="170" cy="165" rx="28" ry="14" fill="#9C8A58" opacity=".7"/>
+<ellipse cx="270" cy="175" rx="24" ry="12" fill="#A08E60" opacity=".68"/>
+<!-- Grass blades in patches -->
+<g stroke-width="1.9" fill="none" stroke-linecap="round">
+<path d="M30,200 Q29,180 34,165" stroke="#527838"/><path d="M42,200 Q44,178 40,163" stroke="#4E7430"/>
+<path d="M55,200 Q53,181 59,166" stroke="#527838"/><path d="M68,200 Q70,179 66,164" stroke="#4E7430"/>
+<path d="M130,200 Q128,181 134,165" stroke="#527838"/><path d="M144,200 Q146,178 142,163" stroke="#4E7430"/>
+<path d="M158,200 Q156,181 162,166" stroke="#527838"/>
+<path d="M220,200 Q218,181 224,165" stroke="#4E7430"/><path d="M234,200 Q236,178 232,163" stroke="#527838"/>
+<path d="M248,200 Q246,181 252,166" stroke="#4E7430"/>
+<path d="M310,200 Q308,181 314,165" stroke="#527838"/><path d="M324,200 Q326,178 322,163" stroke="#4E7430"/>
+<path d="M338,200 Q336,181 342,166" stroke="#527838"/><path d="M352,200 Q354,178 350,163" stroke="#4E7430"/>
+<path d="M368,200 Q366,181 372,165" stroke="#527838"/><path d="M382,200 Q384,178 380,163" stroke="#4E7430"/>
+</g>
+<!-- Thin/dry blades in weak patches -->
+<g stroke-width="1.4" fill="none" stroke-linecap="round" opacity=".75">
+<path d="M108,200 Q107,183 111,170" stroke="#909840"/><path d="M118,200 Q120,181 116,168" stroke="#A09040"/>
+<path d="M192,200 Q190,183 196,170" stroke="#909840"/><path d="M205,200 Q207,181 203,168" stroke="#A09040"/>
+<path d="M275,200 Q273,183 279,170" stroke="#909840"/><path d="M288,200 Q290,181 286,168" stroke="#A09040"/>
+</g>
+</svg>

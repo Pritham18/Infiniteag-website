@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="Weeds such as crabgrass and clover growing in lawn">
+<defs>
+  <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4A7030"/><stop offset="100%" stop-color="#3A5824"/></linearGradient>
+</defs>
+<rect width="400" height="200" fill="url(#g1)"/>
+<!-- Base lawn grass texture -->
+<g stroke-width="1.8" fill="none" stroke-linecap="round" opacity=".7">
+<path d="M15,200 Q14,182 18,170" stroke="#507A38"/><path d="M28,200 Q30,180 26,167" stroke="#4A7230"/>
+<path d="M45,200 Q43,183 49,170" stroke="#527A38"/><path d="M62,200 Q64,180 60,168" stroke="#4A7230"/>
+<path d="M80,200 Q78,183 84,170" stroke="#507A38"/><path d="M98,200 Q100,180 96,168" stroke="#527A38"/>
+<path d="M118,200 Q116,183 122,170" stroke="#4A7230"/><path d="M138,200 Q140,180 136,168" stroke="#507A38"/>
+<path d="M158,200 Q156,183 162,170" stroke="#527A38"/><path d="M178,200 Q180,180 176,168" stroke="#4A7230"/>
+<path d="M198,200 Q196,183 202,170" stroke="#507A38"/><path d="M218,200 Q220,180 216,168" stroke="#527A38"/>
+<path d="M238,200 Q236,183 242,170" stroke="#4A7230"/><path d="M258,200 Q260,180 256,168" stroke="#507A38"/>
+<path d="M278,200 Q276,183 282,170" stroke="#527A38"/><path d="M298,200 Q300,180 296,168" stroke="#4A7230"/>
+<path d="M318,200 Q316,183 322,170" stroke="#507A38"/><path d="M338,200 Q340,180 336,168" stroke="#527A38"/>
+<path d="M358,200 Q356,183 362,170" stroke="#4A7230"/><path d="M378,200 Q380,180 376,168" stroke="#507A38"/>
+</g>
+<!-- CLOVER patch - left area -->
+<g transform="translate(65,155)">
+  <circle cx="0" cy="-8" r="9" fill="#8FC840" opacity=".88"/>
+  <circle cx="11" cy="-3" r="8" fill="#8DC038" opacity=".85"/>
+  <circle cx="-11" cy="-3" r="8" fill="#96CC3E" opacity=".85"/>
+  <circle cx="5" cy="5" r="7" fill="#8FC840" opacity=".82"/>
+  <circle cx="-5" cy="5" r="7" fill="#8DC038" opacity=".82"/>
+  <line x1="0" y1="8" x2="0" y2="0" stroke="#4E7820" stroke-width="2"/>
+</g>
+<g transform="translate(105,162)">
+  <circle cx="0" cy="-7" r="7" fill="#8FC840" opacity=".82"/>
+  <circle cx="8" cy="-2" r="6" fill="#96CC3E" opacity=".8"/>
+  <circle cx="-8" cy="-2" r="6" fill="#8DC038" opacity=".8"/>
+  <line x1="0" y1="6" x2="0" y2="0" stroke="#4E7820" stroke-width="1.5"/>
+</g>
+<!-- CRABGRASS - center spreading -->
+<g transform="translate(195,145)" stroke="#9ABE40" stroke-width="2.5" fill="none" stroke-linecap="round">
+  <path d="M0,20 Q-25,10 -45,5"/><path d="M0,20 Q-15,-2 -20,-18"/>
+  <path d="M0,20 Q-5,0 0,-20"/><path d="M0,20 Q15,0 22,-16"/>
+  <path d="M0,20 Q28,10 48,6"/>
+</g>
+<g transform="translate(195,145)" fill="#9ABE40" opacity=".8">
+  <ellipse cx="-45" cy="4" rx="8" ry="3" transform="rotate(-15,-45,4)"/>
+  <ellipse cx="-19" cy="-19" rx="7" ry="3" transform="rotate(-60,-19,-19)"/>
+  <ellipse cx="0" cy="-20" rx="7" ry="3"/>
+  <ellipse cx="22" cy="-17" rx="7" ry="3" transform="rotate(50,22,-17)"/>
+  <ellipse cx="48" cy="5" rx="7" ry="3" transform="rotate(10,48,5)"/>
+</g>
+<!-- BROADLEAF WEEDS - right side (dollar weed style) -->
+<g transform="translate(300,150)">
+  <circle cx="0" cy="-15" r="13" fill="#7ABE38" opacity=".75"/>
+  <circle cx="18" cy="-8" r="11" fill="#82C840" opacity=".72"/>
+  <circle cx="-18" cy="-8" r="11" fill="#7ABE38" opacity=".72"/>
+  <circle cx="0" cy="2" r="10" fill="#82C840" opacity=".7"/>
+  <line x1="0" y1="12" x2="0" y2="-2" stroke="#3E6818" stroke-width="2"/>
+  <line x1="0" y1="4" x2="18" y2="-3" stroke="#3E6818" stroke-width="1.5"/>
+  <line x1="0" y1="4" x2="-18" y2="-3" stroke="#3E6818" stroke-width="1.5"/>
+</g>
+<!-- NUTSEDGE - tall sedge grass, yellow-green -->
+<g stroke="#C0C840" stroke-width="2.2" fill="none" stroke-linecap="round">
+  <path d="M155,200 Q154,175 158,155 Q160,140 162,125"/><path d="M165,200 Q167,173 163,152 Q161,137 164,120"/>
+  <path d="M345,200 Q344,172 348,150 Q350,135 352,118"/><path d="M357,200 Q359,174 355,152 Q353,136 356,120"/>
+</g>
+<!-- Nutsedge seed heads -->
+<ellipse cx="160" cy="122" rx="6" ry="4" fill="#B8C038" transform="rotate(-10,160,122)"/>
+<ellipse cx="164" cy="118" rx="5" ry="3" fill="#C0C840" transform="rotate(15,164,118)"/>
+<ellipse cx="352" cy="115" rx="6" ry="4" fill="#B8C038" transform="rotate(-12,352,115)"/>
+<ellipse cx="355" cy="119" rx="5" ry="3" fill="#C0C840" transform="rotate(10,355,119)"/>
+<!-- Foreground grass over weeds for depth -->
+<g stroke-width="2.0" fill="none" stroke-linecap="round" opacity=".9">
+<path d="M8,200 Q7,178 12,162" stroke="#3E6828"/><path d="M22,200 Q24,176 20,160" stroke="#447030"/>
+<path d="M38,200 Q36,179 42,163" stroke="#3E6828"/><path d="M54,200 Q56,177 52,162" stroke="#447030"/>
+</g>
+</svg>

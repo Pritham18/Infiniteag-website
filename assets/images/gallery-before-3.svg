@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" role="img" aria-label="Before: overgrown landscape beds, Hilton Head Island SC">
+<defs>
+  <linearGradient id="sk5" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#BEBEBC"/><stop offset="100%" stop-color="#D4D2CC"/></linearGradient>
+  <linearGradient id="gd5" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#5A6A30"/><stop offset="100%" stop-color="#485428"/></linearGradient>
+  <linearGradient id="bed5" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4A4230"/><stop offset="100%" stop-color="#3A3220"/></linearGradient>
+</defs>
+<rect width="480" height="240" fill="url(#sk5)"/>
+<!-- House wall/facade -->
+<rect x="0" y="0" width="480" height="88" fill="#D0C8B0" opacity=".55"/>
+<rect x="0" y="82" width="480" height="6" fill="#C0B89C" opacity=".5"/>
+<!-- Windows -->
+<rect x="48" y="22" width="52" height="38" fill="#AABAC0" opacity=".55" rx="2"/>
+<rect x="50" y="24" width="24" height="38" fill="#98AABA" opacity=".5" rx="1"/>
+<rect x="188" y="18" width="60" height="42" fill="#AABAC0" opacity=".55" rx="2"/>
+<rect x="190" y="20" width="28" height="42" fill="#98AABA" opacity=".5" rx="1"/>
+<rect x="340" y="22" width="52" height="38" fill="#AABAC0" opacity=".55" rx="2"/>
+<rect x="342" y="24" width="24" height="38" fill="#98AABA" opacity=".5" rx="1"/>
+<!-- Mulch bed base (foreground, messy) -->
+<rect y="88" width="480" height="152" fill="url(#bed5)"/>
+<!-- Lawn area behind bed (middle) -->
+<rect y="88" width="480" height="55" fill="url(#gd5)" opacity=".8"/>
+<!-- Overgrown shrub masses: irregular, unkempt -->
+<ellipse cx="90" cy="97" rx="75" ry="38" fill="#3A5A20" opacity=".85"/>
+<ellipse cx="90" cy="90" rx="60" ry="28" fill="#4A6A28" opacity=".7"/>
+<!-- Stray stems/branches poking out -->
+<path d="M30,88 Q28,65 35,50" stroke="#3A4E1A" stroke-width="3" fill="none"/>
+<path d="M55,88 Q60,60 50,42" stroke="#3A4E1A" stroke-width="2.5" fill="none"/>
+<path d="M80,88 Q85,55 75,38" stroke="#3A4E1A" stroke-width="3" fill="none"/>
+<path d="M108,88 Q112,62 104,46" stroke="#3A4E1A" stroke-width="2.5" fill="none"/>
+<path d="M130,88 Q134,58 124,40" stroke="#3A4E1A" stroke-width="2" fill="none"/>
+<!-- Overgrown shrubs middle -->
+<ellipse cx="255" cy="100" rx="80" ry="40" fill="#3C5E22" opacity=".82"/>
+<ellipse cx="255" cy="93" rx="62" ry="30" fill="#4A6A2A" opacity=".68"/>
+<path d="M210,88 Q208,64 215,46" stroke="#3A4E1A" stroke-width="2.5" fill="none"/>
+<path d="M235,88 Q240,58 230,40" stroke="#3A4E1A" stroke-width="3" fill="none"/>
+<path d="M260,88 Q264,62 256,44" stroke="#3A4E1A" stroke-width="2.5" fill="none"/>
+<path d="M285,88 Q290,58 280,40" stroke="#3A4E1A" stroke-width="2" fill="none"/>
+<!-- Right shrubs overgrown -->
+<ellipse cx="420" cy="96" rx="72" ry="36" fill="#405A20" opacity=".85"/>
+<ellipse cx="420" cy="90" rx="55" ry="26" fill="#4C6A2A" opacity=".7"/>
+<path d="M378,88 Q376,65 382,48" stroke="#3A4E1A" stroke-width="2.5" fill="none"/>
+<path d="M400,88 Q404,60 396,44" stroke="#3A4E1A" stroke-width="2.5" fill="none"/>
+<path d="M422,88 Q426,62 418,46" stroke="#3A4E1A" stroke-width="3" fill="none"/>
+<path d="M448,88 Q452,58 442,40" stroke="#3A4E1A" stroke-width="2" fill="none"/>
+<!-- Weeds growing in messy mulch bed -->
+<g transform="translate(155,150)">
+  <path d="M0,0 Q-8,-12 -14,-18" stroke="#6A9030" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M0,0 Q2,-15 0,-24" stroke="#6A9030" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M0,0 Q10,-10 18,-14" stroke="#6A9030" stroke-width="2" fill="none" stroke-linecap="round"/>
+</g>
+<g transform="translate(340,155)">
+  <path d="M0,0 Q-6,-14 -10,-20" stroke="#729838" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M0,0 Q4,-14 6,-22" stroke="#729838" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M0,0 Q8,-8 14,-12" stroke="#729838" stroke-width="2" fill="none" stroke-linecap="round"/>
+</g>
+<!-- Messy mulch surface - exposed soil/roots -->
+<ellipse cx="185" cy="165" rx="38" ry="10" fill="#3A3028" opacity=".45"/>
+<ellipse cx="320" cy="172" rx="32" ry="9" fill="#3A3028" opacity=".42"/>
+<ellipse cx="80" cy="175" rx="28" ry="8" fill="#3A3028" opacity=".4"/>
+<!-- Debris: sticks/leaves in bed -->
+<line x1="140" y1="185" x2="175" y2="178" stroke="#5A4820" stroke-width="2" opacity=".5"/>
+<line x1="290" y1="190" x2="330" y2="182" stroke="#5A4820" stroke-width="2" opacity=".48"/>
+<line x1="400" y1="186" x2="436" y2="179" stroke="#5A4820" stroke-width="2" opacity=".45"/>
+</svg>

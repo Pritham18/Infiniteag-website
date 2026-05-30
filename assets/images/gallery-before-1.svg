@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" role="img" aria-label="Before: patchy weedy lawn in Bluffton SC">
+<defs>
+  <linearGradient id="sk1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#C8C4AE"/><stop offset="100%" stop-color="#DEDAD0"/></linearGradient>
+  <linearGradient id="gd1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#767040"/><stop offset="100%" stop-color="#5C5630"/></linearGradient>
+</defs>
+<rect width="480" height="240" fill="url(#sk1)"/>
+<rect y="78" width="480" height="162" fill="url(#gd1)"/>
+<!-- Hedge/tree horizon -->
+<ellipse cx="60" cy="79" rx="58" ry="19" fill="#4E5E2A" opacity=".5"/>
+<ellipse cx="185" cy="75" rx="72" ry="23" fill="#445428" opacity=".48"/>
+<ellipse cx="330" cy="77" rx="68" ry="22" fill="#506030" opacity=".45"/>
+<ellipse cx="450" cy="79" rx="52" ry="18" fill="#4A5828" opacity=".48"/>
+<!-- House silhouette (residential context) -->
+<rect x="342" y="46" width="82" height="32" fill="#C4BAA0" opacity=".32"/>
+<polygon points="334,52 383,28 432,52" fill="#AEA488" opacity=".32"/>
+<rect x="374" y="60" width="11" height="18" fill="#857C6A" opacity=".32"/>
+<!-- Sparse yellowed grass patches -->
+<ellipse cx="85" cy="112" rx="72" ry="21" fill="#6E7C38" opacity=".6"/>
+<ellipse cx="225" cy="120" rx="85" ry="23" fill="#647030" opacity=".55"/>
+<ellipse cx="370" cy="115" rx="75" ry="20" fill="#6A7838" opacity=".58"/>
+<!-- Bare soil patches -->
+<ellipse cx="155" cy="138" rx="46" ry="16" fill="#9C8C5A" opacity=".72"/>
+<ellipse cx="295" cy="148" rx="38" ry="13" fill="#9A8A54" opacity=".68"/>
+<ellipse cx="430" cy="143" rx="30" ry="11" fill="#9C8C5A" opacity=".7"/>
+<!-- Weed 1: dandelion-style, left -->
+<g transform="translate(110,128)">
+  <line x1="0" y1="0" x2="0" y2="-16" stroke="#4E6820" stroke-width="1.5"/>
+  <line x1="0" y1="-5" x2="-10" y2="-9" stroke="#4E6820" stroke-width="1"/>
+  <line x1="0" y1="-5" x2="9" y2="-10" stroke="#4E6820" stroke-width="1"/>
+  <ellipse cx="0" cy="-20" rx="5" ry="8" fill="#8CB838" opacity=".9"/>
+  <ellipse cx="-9" cy="-15" rx="5" ry="7" fill="#7EAA30" opacity=".85" transform="rotate(-35,-9,-15)"/>
+  <ellipse cx="9" cy="-14" rx="5" ry="7" fill="#8CB838" opacity=".85" transform="rotate(35,9,-14)"/>
+</g>
+<!-- Weed 2: crabgrass spread, centre -->
+<g transform="translate(264,146)" stroke="#82AA30" stroke-width="2" fill="none" stroke-linecap="round">
+  <path d="M0,0 Q-14,-7 -26,-4"/><path d="M0,0 Q-7,-15 -10,-24"/>
+  <path d="M0,0 Q10,-13 18,-18"/><path d="M0,0 Q14,-6 26,-3"/>
+</g>
+<!-- Weed 3: right -->
+<g transform="translate(390,135)">
+  <line x1="0" y1="0" x2="0" y2="-14" stroke="#4E6820" stroke-width="1.5"/>
+  <ellipse cx="0" cy="-18" rx="4" ry="7" fill="#88B430"/>
+  <ellipse cx="-7" cy="-14" rx="4" ry="6" fill="#7EAA30" transform="rotate(-38,-7,-14)"/>
+  <ellipse cx="7" cy="-13" rx="4" ry="6" fill="#88B430" transform="rotate(38,7,-13)"/>
+</g>
+<!-- Foreground grass blades: stressed/yellow/thin mix -->
+<g stroke-width="2.1" fill="none" stroke-linecap="round">
+<path d="M16,240 Q15,220 19,204" stroke="#818642"/><path d="M26,240 Q28,218 24,202" stroke="#A09040"/>
+<path d="M38,240 Q36,214 42,197" stroke="#7A8040"/><path d="M50,240 Q52,220 48,205" stroke="#A09040"/>
+<path d="M62,240 Q60,212 66,196" stroke="#818642"/><path d="M75,240 Q77,218 73,203" stroke="#907E38"/>
+<path d="M88,240 Q86,210 92,195" stroke="#7A8040"/>
+</g>
+<rect x="100" y="220" width="30" height="20" fill="#9A8858" opacity=".42" rx="4"/>
+<g stroke-width="2.1" fill="none" stroke-linecap="round">
+<path d="M140,240 Q138,214 144,198" stroke="#818642"/><path d="M154,240 Q156,220 152,204" stroke="#A09040"/>
+<path d="M170,240 Q168,212 175,196" stroke="#7A8040"/><path d="M188,240 Q190,218 186,203" stroke="#818642"/>
+<path d="M205,240 Q203,210 209,195" stroke="#907E38"/>
+</g>
+<rect x="218" y="218" width="24" height="22" fill="#9A8858" opacity=".4" rx="4"/>
+<g stroke-width="2.1" fill="none" stroke-linecap="round">
+<path d="M252,240 Q250,214 256,198" stroke="#818642"/><path d="M268,240 Q270,220 266,204" stroke="#A09040"/>
+<path d="M285,240 Q283,212 289,196" stroke="#7A8040"/><path d="M300,240 Q302,218 298,203" stroke="#818642"/>
+<path d="M318,240 Q316,210 322,195" stroke="#907E38"/><path d="M334,240 Q336,218 332,203" stroke="#7A8040"/>
+</g>
+<rect x="348" y="221" width="20" height="19" fill="#9A8858" opacity=".42" rx="3"/>
+<g stroke-width="2.1" fill="none" stroke-linecap="round">
+<path d="M378,240 Q376,214 382,198" stroke="#818642"/><path d="M394,240 Q396,220 392,204" stroke="#A09040"/>
+<path d="M412,240 Q410,212 416,196" stroke="#7A8040"/><path d="M428,240 Q430,218 426,203" stroke="#818642"/>
+<path d="M444,240 Q442,210 448,195" stroke="#907E38"/><path d="M460,240 Q462,218 458,204" stroke="#7A8040"/>
+</g>
+</svg>
