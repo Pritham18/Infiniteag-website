@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   INFINITEAH — STYLES
+   INFINITEAG — STYLES
    Design system · Layout · Components · Responsive · A11y
    ───────────────────────────────────────────────────────────
    10 CSS variables:
@@ -70,7 +70,7 @@
   --dur-sm:      180ms;
   --dur-md:      280ms;
   --dur-lg:      420ms;
-  --header-h: 72px;
+  --header-h: 80px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -121,11 +121,11 @@ p{color:var(--color-muted);max-width:65ch}
 .site-header{position:sticky;top:0;z-index:100;height:var(--header-h);background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--color-border);transition:box-shadow var(--dur-md) var(--ease)}
 .site-header.scrolled{box-shadow:var(--shadow-md)}
 .header-inner{display:flex;align-items:center;gap:var(--space-6);height:100%}
-.site-logo,.logo{display:inline-flex;align-items:center;gap:0.7rem;flex-shrink:0;text-decoration:none;white-space:nowrap}
-.site-logo-icon{width:38px;height:38px;object-fit:contain;display:block}
-.site-logo-text{color:#174A2A;font-weight:800;font-size:1.3rem;letter-spacing:-0.02em;white-space:nowrap;line-height:1}
-.site-logo-img{display:block;height:48px;width:auto;max-width:220px}
-.site-logo-img--footer{height:72px;max-width:160px}
+.site-logo,.logo{display:inline-flex;align-items:center;flex-shrink:0;text-decoration:none}
+.site-logo-icon{width:62px;height:62px;object-fit:contain;display:block;flex-shrink:0}
+.site-logo-text{font-family:"Playfair Display",serif;color:#174A2A;font-weight:700;font-size:1.85rem;letter-spacing:-0.02em;white-space:nowrap;line-height:1}
+.site-logo-img{display:block;height:72px;width:auto;max-width:200px;object-fit:contain}
+.site-logo-img--footer{height:260px;max-width:320px;background:#fff;border-radius:12px;padding:12px;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;filter:contrast(1.12)}
 .logo--light .logo-text{color:var(--color-white)}
 .main-nav{flex:1;display:flex;justify-content:center}
 .main-nav ul{display:flex;gap:var(--space-6)}
@@ -515,9 +515,15 @@ p{color:var(--color-muted);max-width:65ch}
   .footer-brand{grid-column:span 2}
 }
 
+@media (max-width:768px){
+  .site-logo-icon{width:52px;height:52px}
+  .site-logo-text{font-size:1.6rem}
+  .site-logo-img{height:58px;max-width:170px}
+}
+
 /* MOBILE */
 @media (max-width:640px){
-  :root{--header-h:60px}
+  :root{--header-h:68px}
   body{padding-bottom:76px}
   .header-actions .btn-sm{display:none}
   .hero{padding-block:var(--space-12);padding-bottom:0}
@@ -526,10 +532,11 @@ p{color:var(--color-muted);max-width:65ch}
   .form-row .btn{width:100%;border-radius:var(--radius-md);justify-content:center}
   .trust-list{grid-template-columns:1fr;gap:var(--space-5)}
   .services-grid{grid-template-columns:1fr}
-  .site-logo-img{height:40px;max-width:180px}
-  .site-logo-img--footer{height:60px;max-width:140px}
-  .site-logo-icon{width:34px;height:34px}
-  .site-logo-text{font-size:1.15rem}
+  .site-logo-img{height:50px;max-width:150px}
+  .site-logo-img--footer{height:200px;max-width:260px;padding:10px;border-radius:10px;filter:contrast(1.12)}
+  .site-logo-icon{width:42px;height:42px}
+  .site-logo-text{font-size:1.35rem}
+
   .pd-profile-card{padding:28px 20px}
   .pd-cta{flex-direction:column}
   .pd-cta .btn{width:100%}
