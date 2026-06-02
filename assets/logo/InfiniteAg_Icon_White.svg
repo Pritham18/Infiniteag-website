@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1400" viewBox="0 0 1400 1400">
+
+<defs>
+  <linearGradient id="loopGradient" x1="280" y1="0" x2="1360" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#122516"/>
+    <stop offset="0.44" stop-color="#6B7F3A"/>
+    <stop offset="0.58" stop-color="#122516"/>
+    <stop offset="1" stop-color="#C79A4E"/>
+  </linearGradient>
+  <linearGradient id="leafGradient" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#6B7F3A"/>
+    <stop offset="1" stop-color="#122516"/>
+  </linearGradient>
+  <linearGradient id="rootGradient" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#5B452F"/>
+    <stop offset="1" stop-color="#332417"/>
+  </linearGradient>
+</defs>
+<style><![CDATA[
+
+  .wordmark { font-family: "EB Garamond", "Cormorant Garamond", Georgia, serif; font-size: 210px; letter-spacing: 0px; }
+  .wordmark-small { font-family: "EB Garamond", Georgia, serif; font-size: 164px; letter-spacing: 0px; }
+  .tagline { font-family: "DejaVu Sans", Arial, sans-serif; font-size: 40px; letter-spacing: 12px; font-weight: 500; }
+  .tagline-small { font-family: "DejaVu Sans", Arial, sans-serif; font-size: 31px; letter-spacing: 8px; font-weight: 500; }
+  .micro { font-family: "DejaVu Sans", Arial, sans-serif; font-size: 27px; letter-spacing: 8px; font-weight: 600; }
+
+]]></style>
+
+<rect width="1400" height="1400" fill="#0D1710"/>
+<g transform="translate(700 540) scale(1.25)" fill="none" stroke="none">
+      <path d="M 0 0 C -130 -160 -330 -138 -360 0 C -390 138 -134 163 0 0 C 134 -163 390 -138 360 0 C 330 138 130 160 0 0 Z" fill="none" stroke="#FFFFFF" stroke-width="68" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M0 -30 C4 -105 0 -145 0 -185" fill="none" stroke="#FFFFFF" stroke-width="15" stroke-linecap="round"/>
+      <path d="M2 -130 C34 -186 85 -199 118 -184 C99 -134 57 -112 2 -130 Z" fill="#FFFFFF"/>
+      <path d="M-8 -106 C-58 -154 -105 -154 -130 -126 C-92 -88 -51 -84 -8 -106 Z" fill="#FFFFFF"/>
+      <path d="M8 -182 C30 -244 75 -274 112 -266 C107 -205 70 -176 8 -182 Z" fill="#FFFFFF"/>
+      <path d="M0 8 C0 80 -2 132 0 198" fill="none" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round"/>
+      <path d="M0 76 C-42 114 -92 132 -146 146 M0 95 C46 125 92 141 155 150 M0 128 C-26 165 -57 196 -104 229 M0 128 C32 169 69 199 116 232 M-58 137 C-86 181 -118 202 -160 218 M63 137 C93 179 125 200 169 216 M-102 155 C-136 153 -163 164 -193 186 M103 155 C138 151 168 164 197 186 M-72 178 C-78 210 -93 239 -121 270 M74 178 C81 211 98 238 126 267 M-25 180 C-41 225 -63 260 -90 298 M24 180 C40 225 60 260 88 298 M-5 190 C-5 230 -4 266 -2 315 M-140 148 C-172 136 -207 138 -238 154 M145 149 C176 138 208 138 240 154" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+    </g>
+</svg>

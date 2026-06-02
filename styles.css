@@ -121,7 +121,9 @@ p{color:var(--color-muted);max-width:65ch}
 .site-header{position:sticky;top:0;z-index:100;height:var(--header-h);background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--color-border);transition:box-shadow var(--dur-md) var(--ease)}
 .site-header.scrolled{box-shadow:var(--shadow-md)}
 .header-inner{display:flex;align-items:center;gap:var(--space-6);height:100%}
-.logo{display:inline-flex;align-items:center;flex-shrink:0;text-decoration:none;white-space:nowrap}
+.site-logo,.logo{display:inline-flex;align-items:center;gap:0.7rem;flex-shrink:0;text-decoration:none;white-space:nowrap}
+.site-logo-icon{width:38px;height:38px;object-fit:contain;display:block}
+.site-logo-text{color:#174A2A;font-weight:800;font-size:1.3rem;letter-spacing:-0.02em;white-space:nowrap;line-height:1}
 .site-logo-img{display:block;height:48px;width:auto;max-width:220px}
 .site-logo-img--footer{height:72px;max-width:160px}
 .logo--light .logo-text{color:var(--color-white)}
@@ -145,7 +147,7 @@ p{color:var(--color-muted);max-width:65ch}
 
 /* HERO */
 .hero{position:relative;background:linear-gradient(160deg,var(--color-primary) 0%,#1f6035 55%,#2a7a42 100%);overflow:hidden;padding-block:clamp(var(--space-16),10vw,var(--space-24));padding-bottom:0}
-.hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12);align-items:center;padding-bottom:clamp(var(--space-16),8vw,var(--space-20))}
+.hero-inner{display:grid;grid-template-columns:1.1fr 0.9fr;gap:var(--space-10);align-items:center;padding-bottom:clamp(var(--space-16),8vw,var(--space-20))}
 .hero-content .eyebrow{color:var(--color-accent)}
 .hero-content h1{color:var(--color-white);margin-bottom:var(--space-5)}
 .hero-sub{font-size:clamp(var(--text-base),2vw,var(--text-md));color:rgba(255,255,255,.82);max-width:50ch;margin-bottom:var(--space-8)}
@@ -160,7 +162,7 @@ p{color:var(--color-muted);max-width:65ch}
 .hero-secondary-cta{display:flex;align-items:center;gap:var(--space-3);color:rgba(255,255,255,.75);font-size:var(--text-sm)}
 .cta-phone-link{display:flex;align-items:center;gap:var(--space-2);font-weight:600;color:var(--color-accent);transition:color var(--dur-sm)}
 .cta-phone-link:hover{color:var(--color-white)}
-.hero-visual{display:flex;align-items:flex-end;justify-content:center;position:relative}
+.hero-visual{display:flex;align-items:center;justify-content:center;position:relative;padding-top:var(--space-4)}
 .hero-visual::before{content:'';position:absolute;inset:-24px -8px;background:radial-gradient(ellipse at 55% 50%,rgba(247,243,232,.18) 0%,transparent 65%);pointer-events:none;z-index:0}
 .hero-visual .lawn-scene{position:relative;z-index:1}
 .lawn-3d-scene{position:relative;width:100%;max-width:480px}
@@ -460,7 +462,7 @@ p{color:var(--color-muted);max-width:65ch}
 .sg-review-card:nth-child(3){transition-delay:200ms}
 
 /* LAWN SCENE (hero illustration) */
-.lawn-scene{position:relative;width:100%;max-width:520px;margin:0 auto;background:linear-gradient(175deg,#FFFDF7 0%,#F7F3E8 55%,#EDE8DC 100%);border-radius:var(--radius-xl);border:1.5px solid rgba(255,255,255,.32);box-shadow:0 28px 70px rgba(0,0,0,.38),0 10px 28px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.8);overflow:hidden}
+.lawn-scene{position:relative;width:100%;max-width:560px;margin:0 auto;background:linear-gradient(145deg,#FFFDF7 0%,#F7F3E8 55%,#DDE8D6 100%);border-radius:30px;border:1px solid rgba(221,232,214,0.8);box-shadow:0 28px 75px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.8);overflow:hidden}
 .ls-sky{position:relative;background:linear-gradient(180deg,#B8D8EE 0%,#C8E5F0 35%,#DAF0EB 70%,#EEF5EE 100%);height:80px;overflow:hidden}
 .ls-sun-haze{position:absolute;top:-35px;right:12%;width:150px;height:150px;background:radial-gradient(circle,rgba(255,215,80,.32) 0%,rgba(255,230,140,.12) 45%,transparent 65%);border-radius:50%}
 .ls-marsh{position:absolute;bottom:0;left:0;right:0;width:100%;height:80px;display:block}
@@ -526,6 +528,8 @@ p{color:var(--color-muted);max-width:65ch}
   .services-grid{grid-template-columns:1fr}
   .site-logo-img{height:40px;max-width:180px}
   .site-logo-img--footer{height:60px;max-width:140px}
+  .site-logo-icon{width:34px;height:34px}
+  .site-logo-text{font-size:1.15rem}
   .pd-profile-card{padding:28px 20px}
   .pd-cta{flex-direction:column}
   .pd-cta .btn{width:100%}
