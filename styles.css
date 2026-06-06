@@ -876,3 +876,34 @@ p{color:var(--color-muted);max-width:65ch}
 .svc-card__link:hover{color:#174A2A;gap:.5rem}
 @media(max-width:900px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:580px){.svc-grid{grid-template-columns:1fr}}
+
+/* ═══════════════════════════════════════════════════════════
+   PHONE CTA — All locations
+═══════════════════════════════════════════════════════════ */
+
+/* Header phone link */
+.header-phone-link{display:inline-flex;align-items:center;gap:.35rem;font-size:.78rem;font-weight:600;color:var(--color-primary);text-decoration:none;white-space:nowrap;padding:.35rem .6rem;border-radius:var(--radius-full);transition:background 150ms,color 150ms}
+.header-phone-link:hover{background:rgba(23,74,42,.07);color:var(--color-secondary)}
+@media(max-width:860px){.header-phone-link{display:none}}
+
+/* Hero phone bar */
+.hero-phone-bar{background:#0d2e1d;text-align:center;padding:.6rem 1rem;font-size:.8rem;color:rgba(255,255,255,.6);line-height:1.4}
+.hero-phone-bar a{color:#A7D46F;font-weight:700;text-decoration:none;margin-left:.3rem;transition:color 150ms}
+.hero-phone-bar a:hover{color:#fff}
+
+/* Quote section phone */
+.quote-phone{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;font-size:.875rem;color:var(--color-muted);margin-top:var(--space-6);padding-top:var(--space-5);border-top:1px solid var(--color-border)}
+.quote-phone svg{flex-shrink:0;stroke:var(--color-secondary)}
+.quote-phone a{font-weight:700;color:var(--color-primary);text-decoration:none;transition:color 150ms}
+.quote-phone a:hover{color:var(--color-secondary)}
+
+/* Final CTA phone */
+.final-cta-phone{display:inline-flex;align-items:center;gap:.45rem;font-size:.875rem;font-weight:600;color:rgba(255,255,255,.65);text-decoration:none;margin-top:var(--space-4);transition:color 150ms}
+.final-cta-phone:hover{color:#fff}
+.final-cta-phone svg{flex-shrink:0}
+
+/* Footer phone */
+.footer-phone{margin-top:var(--space-3)}
+.footer-phone a{display:inline-flex;align-items:center;gap:.4rem;font-size:.875rem;font-weight:600;color:rgba(255,255,255,.7);text-decoration:none;transition:color 150ms}
+.footer-phone a:hover{color:#fff}
+.footer-phone svg{flex-shrink:0}
