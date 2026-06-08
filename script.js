@@ -165,34 +165,44 @@ if (quoteSection) {
         submitBtn.textContent = 'Sending…';
       }
 
-      /* NOTE: Replace with a real fetch() to your form endpoint, e.g.:
-         fetch('/api/quote', { method: 'POST', body: new FormData(mainForm) })
-           .then(() => showSuccess())
-           .catch(() => showSuccess()); // still reset on error
-      */
+      const formData = {
+        name:    mainForm.querySelector('[name="name"]').value.trim(),
+        email:   mainForm.querySelector('[name="email"]').value.trim(),
+        address: mainForm.querySelector('[name="address"]').value.trim(),
+        service: mainForm.querySelector('[name="service"]').value,
+        message: mainForm.querySelector('[name="message"]').value.trim(),
+      };
 
-      /* Simulate short network delay then show success */
-      setTimeout(() => {
+      const showMsg = (text, isError) => {
         const existing = mainForm.querySelector('.form-success-msg');
         if (existing) existing.remove();
+        const msg = document.createElement('p');
+        msg.className = 'form-success-msg';
+        msg.setAttribute('role', 'status');
+        msg.textContent = text;
+        msg.style.cssText = `font-weight:600;margin-top:1rem;font-size:.95rem;text-align:center;color:${isError ? '#c0392b' : 'var(--color-secondary)'}`;
+        mainForm.appendChild(msg);
+      };
 
-        const successMsg = document.createElement('p');
-        successMsg.className = 'form-success-msg';
-        successMsg.setAttribute('role', 'status');
-        successMsg.textContent = 'Request received. InfiniteAg will review your details and follow up soon.';
-        successMsg.style.cssText = 'color:var(--color-secondary);font-weight:600;margin-top:1rem;font-size:.95rem;text-align:center';
-        mainForm.appendChild(successMsg);
-
-        mainForm.reset();
-
-        /* Restore button after 3 seconds */
-        setTimeout(() => {
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+        .then(res => res.ok ? res.json() : Promise.reject(res))
+        .then(() => {
+          showMsg('Request received. InfiniteAg will review your details and follow up soon.', false);
+          mainForm.reset();
+        })
+        .catch(() => {
+          showMsg('Something went wrong. Please call us at (803) 903-7059 or try again.', true);
+        })
+        .finally(() => {
           if (submitBtn) {
             submitBtn.disabled = false;
-            submitBtn.textContent = 'Get Free Quote';
+            submitBtn.textContent = 'Request a Quote';
           }
-        }, 3000);
-      }, 600);
+        });
     });
   }
 }
