@@ -11,7 +11,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 const TO_ADDRESS   = 'Agri@INFINITEAGWORLD.COM';
-const FROM_ADDRESS = 'InfiniteAg Website <noreply@infiniteagworld.com>';
+const FROM_ADDRESS = 'InfiniteAg Website <onboarding@resend.dev>';
 const RESEND_API   = 'https://api.resend.com/emails';
 
 module.exports = async function handler(req, res) {
