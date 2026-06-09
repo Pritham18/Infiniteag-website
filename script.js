@@ -184,15 +184,19 @@ if (quoteSection) {
         mainForm.appendChild(msg);
       };
 
-      fetch('/api/contact', {
+      fetch('/api/send-lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       })
-        .then(res => res.ok ? res.json() : Promise.reject(res))
-        .then(() => {
-          showMsg('Request received. InfiniteAg will review your details and follow up soon.', false);
-          mainForm.reset();
+        .then(res => res.json().then(data => ({ ok: res.ok, data })))
+        .then(({ ok, data }) => {
+          if (ok && data.success) {
+            showMsg('Request received. InfiniteAg will review your details and follow up soon.', false);
+            mainForm.reset();
+          } else {
+            showMsg(data.error || 'Something went wrong. Please call us at (803) 903-7059 or try again.', true);
+          }
         })
         .catch(() => {
           showMsg('Something went wrong. Please call us at (803) 903-7059 or try again.', true);
