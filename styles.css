@@ -2160,15 +2160,15 @@ p{color:var(--color-muted);max-width:65ch}
 /* ── HOME HERO ── */
 .home-hero {
   background: #F7F3EA;
-  padding: 68px 0 0;
+  padding: 0;
 }
 .home-hero__inner {
   max-width: 1480px;
   margin: 0 auto;
-  padding: 0 64px 60px;
+  padding: 44px 60px 36px;
   display: grid;
-  grid-template-columns: 45fr 55fr;
-  gap: 60px;
+  grid-template-columns: 52fr 48fr;
+  gap: 52px;
   align-items: center;
 }
 
@@ -2185,11 +2185,11 @@ p{color:var(--color-muted);max-width:65ch}
 }
 .home-hero__title {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(2.9rem, 4.4vw, 4.2rem);
+  font-size: clamp(2.6rem, 3.5vw, 3.3rem);
   color: #0E3B20;
   line-height: 1.07;
   font-weight: 700;
-  letter-spacing: -.02em;
+  letter-spacing: -.025em;
   margin: 0 0 18px;
 }
 .home-hero__ornament {
@@ -2202,7 +2202,7 @@ p{color:var(--color-muted);max-width:65ch}
   font-size: 1.05rem;
   color: #465743;
   line-height: 1.72;
-  max-width: 50ch;
+  max-width: 46ch;
   margin: 0 0 30px;
 }
 .home-hero__actions {
@@ -2258,20 +2258,18 @@ p{color:var(--color-muted);max-width:65ch}
 .btn-hp-secondary:hover { background: rgba(18,69,31,.07); border-color: rgba(18,69,31,.65); transform: translateY(-1px); }
 .btn-hp-secondary:focus-visible { outline: 3px solid #3F8F46; outline-offset: 3px; }
 
-/* Right visual */
-.home-hero__visual { position: relative; }
-.home-hero__image {
+/* Right visual — is the frame; img.home-hero__image is its direct child */
+.home-hero__visual {
   position: relative;
-  border-radius: 26px;
+  width: 100%;
+  border-radius: 28px;
   overflow: hidden;
-  height: 560px;
   box-shadow: 0 28px 70px rgba(14,59,32,.18), 0 8px 24px rgba(14,59,32,.1);
 }
-.home-hero__image img {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  object-position: center center;
+.home-hero__image {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* Floating callout */
@@ -2313,7 +2311,7 @@ p{color:var(--color-muted);max-width:65ch}
 /* ── HERO SERVICE CARDS ── */
 .hero-service-grid {
   background: #F7F3EA;
-  padding: 0 64px 72px;
+  padding: 0 60px 64px;
 }
 .hero-service-grid__inner {
   max-width: 1480px;
@@ -2399,18 +2397,17 @@ p{color:var(--color-muted);max-width:65ch}
 /* ── RESPONSIVE ── */
 @media (max-width: 1200px) {
   .site-header__inner { padding: 0 28px; gap: 18px; }
-  .home-hero__inner   { padding: 0 40px 52px; gap: 40px; }
-  .hero-service-grid  { padding: 0 40px 60px; }
+  .home-hero__inner   { padding: 36px 40px 32px; gap: 40px; }
+  .hero-service-grid  { padding: 0 40px 56px; }
   .nav__link { padding: 7px 9px; font-size: .82rem; }
 }
 @media (max-width: 960px) {
   /* Hide desktop nav — mobile toggle handles it */
   .nav { display: none; }
   .site-header__inner { height: 76px; padding: 0 20px; }
-  .home-hero { padding-top: 40px; }
-  .home-hero__inner { grid-template-columns: 1fr; padding: 0 24px 40px; gap: 28px; }
+  .home-hero { padding-top: 36px; }
+  .home-hero__inner { grid-template-columns: 1fr; padding: 0 24px 36px; gap: 28px; }
   .home-hero__visual { order: -1; }
-  .home-hero__image  { height: 380px; }
   .hero-service-grid { padding: 0 24px 48px; }
   .hero-service-grid__inner { grid-template-columns: repeat(3, 1fr); gap: 12px; }
 }
@@ -2418,369 +2415,9 @@ p{color:var(--color-muted);max-width:65ch}
   .site-header__inner { height: 68px; padding: 0 14px; }
   .brand__logo { height: 38px; width: 38px; }
   .brand__name { font-size: 1.1rem; }
-  .home-hero__title { font-size: 2.4rem; }
-  .home-hero__image  { height: 300px; border-radius: 18px; }
+  .home-hero__title { font-size: 2.2rem; }
   .home-hero__callout { max-width: calc(100% - 32px); bottom: 14px; left: 14px; animation: none; }
   .home-hero__actions { flex-direction: column; }
   .btn-hp-primary, .btn-hp-secondary { width: 100%; justify-content: center; }
   .hero-service-grid__inner { grid-template-columns: 1fr 1fr; }
-}
-
-/* ═══════════════════════════════════════════════════════════
-   HERO SURGICAL FIX — clean image, correct frame, grid, cards
-   All !important to override prior appended layers.
-═══════════════════════════════════════════════════════════ */
-
-/* ── Hero inner grid ── */
-.home-hero__inner {
-  max-width: 1500px !important;
-  margin: 0 auto !important;
-  display: grid !important;
-  grid-template-columns: minmax(460px, 0.85fr) minmax(580px, 1.15fr) !important;
-  gap: clamp(48px, 5vw, 88px) !important;
-  align-items: center !important;
-  padding: 70px 64px 44px !important;
-}
-
-/* ── Right visual column ── */
-.home-hero__visual {
-  position: relative !important;
-  width: 100% !important;
-}
-
-/* ── Image frame ── */
-.home-hero__image {
-  position: relative !important;
-  width: 100% !important;
-  height: clamp(420px, 42vw, 600px) !important;
-  border-radius: 28px !important;
-  overflow: hidden !important;
-  box-shadow: 0 28px 72px rgba(14,59,32,.17), 0 8px 24px rgba(14,59,32,.09) !important;
-}
-
-/* ── Image itself ── */
-.home-hero__image img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center center !important;
-  display: block !important;
-}
-
-/* ── Headline: practical size that reads cleanly in the column ── */
-.home-hero__title {
-  font-size: clamp(2.6rem, 3.5vw, 4.0rem) !important;
-  line-height: 1.06 !important;
-  letter-spacing: -0.03em !important;
-  max-width: 18ch !important;
-  margin-bottom: 18px !important;
-}
-
-/* ── Floating callout: position over image (right side) ── */
-.home-hero__callout {
-  position: absolute !important;
-  bottom: clamp(22px, 3.5vw, 40px) !important;
-  left: clamp(20px, 3vw, 36px) !important;
-  right: auto !important;
-  max-width: 340px !important;
-  background: #F3EBD9 !important;
-  border-radius: 18px !important;
-  box-shadow: 0 20px 55px rgba(18,45,24,.18), 0 4px 12px rgba(0,0,0,.08) !important;
-  padding: 18px 20px !important;
-  display: flex !important;
-  align-items: flex-start !important;
-  gap: 12px !important;
-  z-index: 4 !important;
-}
-
-/* ── Service card grid: tight, matched to mockup ── */
-.hero-service-grid {
-  background: #F7F3EA !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.hero-service-grid__inner {
-  max-width: 1372px !important;
-  margin: 0 auto 72px !important;
-  padding: 0 64px !important;
-  display: grid !important;
-  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
-  gap: 18px !important;
-}
-
-/* ── Card height consistency ── */
-.hero-service-card {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  min-height: 180px !important;
-}
-
-/* ── Responsive corrections ── */
-@media (max-width: 1100px) {
-  .home-hero__inner { padding: 52px 36px 36px !important; gap: 36px !important; }
-  .hero-service-grid__inner { padding: 0 36px !important; gap: 14px !important; }
-}
-
-@media (max-width: 960px) {
-  .home-hero__inner {
-    grid-template-columns: 1fr !important;
-    padding: 40px 24px 28px !important;
-    gap: 28px !important;
-  }
-  .home-hero__visual { order: -1 !important; }
-  .home-hero__image { height: 340px !important; }
-  .home-hero__callout {
-    bottom: 14px !important;
-    left: 14px !important;
-    max-width: calc(100% - 28px) !important;
-  }
-  .hero-service-grid__inner {
-    grid-template-columns: repeat(3, 1fr) !important;
-    padding: 0 24px !important;
-    margin-bottom: 48px !important;
-  }
-}
-
-@media (max-width: 640px) {
-  .home-hero__inner { padding: 28px 16px 20px !important; }
-  .home-hero__title { font-size: 2.2rem !important; }
-  .home-hero__image { height: 260px !important; border-radius: 18px !important; }
-  .home-hero__callout { position: relative !important; bottom: auto !important; left: auto !important; margin: 12px 0 0 !important; max-width: 100% !important; animation: none !important; }
-  .hero-service-grid__inner {
-    grid-template-columns: repeat(2, 1fr) !important;
-    padding: 0 16px !important;
-    gap: 12px !important;
-    margin-bottom: 40px !important;
-  }
-}
-
-/* ═══════════════════════════════════════════════════════════
-   HERO IMAGE ZOOM FIX + LOGO UPDATE  v26
-   Replace fixed height with aspect-ratio so image fills
-   the frame at natural proportions — zero unwanted zoom.
-═══════════════════════════════════════════════════════════ */
-
-/* ── Hero image: aspect-ratio drives height, no zoom ── */
-.home-hero__image {
-  position: relative !important;
-  width: 100% !important;
-  height: auto !important;              /* let aspect-ratio control this */
-  aspect-ratio: 1200 / 760 !important; /* exact ratio of lowcountry-hero-clean.webp */
-  max-height: 600px !important;
-  border-radius: 28px !important;
-  overflow: hidden !important;
-  box-shadow: 0 28px 72px rgba(14,59,32,.17), 0 8px 24px rgba(14,59,32,.09) !important;
-}
-
-.home-hero__image img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center center !important;
-  display: block !important;
-}
-
-/* ── Logo: clean new icon, proper sizing ── */
-.brand__logo {
-  height: 52px !important;
-  width: 52px !important;
-  object-fit: contain !important;
-  flex-shrink: 0 !important;
-  display: block !important;
-  /* white bg circle behind the logo for header clarity */
-  background: #fff !important;
-  border-radius: 8px !important;
-}
-
-/* ── Responsive: reduce image on tablet ── */
-@media (max-width: 960px) {
-  .home-hero__image {
-    max-height: 360px !important;
-    /* On tablet/mobile image stacks above text — give it a good height */
-  }
-}
-
-@media (max-width: 640px) {
-  .home-hero__image {
-    aspect-ratio: 4 / 3 !important;  /* slightly squarer on small screens */
-    max-height: 280px !important;
-  }
-  .brand__logo { height: 40px !important; width: 40px !important; }
-}
-
-/* ═══════════════════════════════════════════════════════════
-   HERO IMAGE — portrait source, no zoom  v27
-   Source 691×790 (0.875:1). Container uses same ratio.
-   object-fit:cover scales to ~1.04× — essentially 1:1.
-   object-position:top shows porch→palm→garden in order.
-═══════════════════════════════════════════════════════════ */
-
-.home-hero__image {
-  /* Match the portrait source ratio so cover fills at ~1× */
-  aspect-ratio: 691 / 790 !important;
-  height: auto !important;
-  max-height: 640px !important;
-  width: 100% !important;
-  position: relative !important;
-  border-radius: 28px !important;
-  overflow: hidden !important;
-  box-shadow: 0 28px 72px rgba(14,59,32,.17), 0 8px 24px rgba(14,59,32,.09) !important;
-}
-
-.home-hero__image img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  /* Show from the top: porch ceiling/fan → palm → lawn → garden */
-  object-position: center top !important;
-  display: block !important;
-}
-
-/* Callout: keep at bottom-left of image */
-.home-hero__callout {
-  position: absolute !important;
-  bottom: 28px !important;
-  left: 24px !important;
-  right: auto !important;
-  max-width: 300px !important;
-  animation: hpCalloutFloat 5s ease-in-out infinite !important;
-}
-
-/* Align hero grid so portrait image + text sit at the same top */
-.home-hero__inner {
-  align-items: flex-start !important;
-  padding-top: 60px !important;
-}
-
-/* Responsive */
-@media (max-width: 960px) {
-  .home-hero__image {
-    max-height: 400px !important;
-    aspect-ratio: 4/3 !important;  /* slightly wider on tablet */
-  }
-}
-@media (max-width: 640px) {
-  .home-hero__image {
-    max-height: 300px !important;
-    aspect-ratio: 4/3 !important;
-    border-radius: 18px !important;
-  }
-  .home-hero__callout {
-    position: relative !important;
-    bottom: auto !important; left: auto !important;
-    margin: 12px 0 0 !important;
-    max-width: 100% !important;
-    animation: none !important;
-  }
-}
-
-/* ═══════════════════════════════════════════════════════════
-   HERO IMAGE — DEFINITIVE v28
-   Flat HTML: img is direct child of .home-hero__visual.
-   .home-hero__visual = the entire visual frame.
-   object-position: center 68% → shows garden/lawn prominently.
-═══════════════════════════════════════════════════════════ */
-
-/* ── Hero grid — user's exact spec ── */
-.home-hero__inner {
-  max-width: 1480px !important;
-  margin: 0 auto !important;
-  display: grid !important;
-  grid-template-columns: minmax(460px, 0.9fr) minmax(720px, 1.25fr) !important;
-  gap: clamp(56px, 5vw, 92px) !important;
-  align-items: center !important;
-  padding: 72px 64px 42px !important;
-}
-
-/* ── Visual frame — user's exact spec ── */
-.home-hero__visual {
-  position: relative !important;
-  width: 100% !important;
-  min-height: clamp(520px, 42vw, 640px) !important;
-  border-radius: 28px !important;
-  overflow: hidden !important;
-  box-shadow: 0 28px 80px rgba(18, 45, 24, 0.18) !important;
-  background: #e8eadc !important;
-  /* Remove any conflicting aspect-ratio */
-  aspect-ratio: unset !important;
-  height: auto !important;
-}
-
-/* ── Image fills the frame ── */
-.home-hero__image,
-.home-hero__visual img {
-  width: 100% !important;
-  height: 100% !important;
-  min-height: clamp(520px, 42vw, 640px) !important;
-  display: block !important;
-  object-fit: cover !important;
-  /* 68% biases toward lower scene: lawn + garden beds + tomatoes visible */
-  object-position: center 68% !important;
-}
-
-/* ── Remove the extra wrapper div in case it's still rendered ── */
-.home-hero__image:not(img) {
-  position: static !important;
-  width: 100% !important;
-  height: 100% !important;
-  border-radius: 0 !important;
-  overflow: visible !important;
-  box-shadow: none !important;
-  aspect-ratio: unset !important;
-}
-
-/* ── Callout: lower-right of the visual frame ── */
-.home-hero__callout {
-  position: absolute !important;
-  right: 42px !important;
-  bottom: 38px !important;
-  left: auto !important;
-  max-width: 390px !important;
-  background: #F3EBD9 !important;
-  border-radius: 18px !important;
-  box-shadow: 0 20px 55px rgba(18, 45, 24, 0.18) !important;
-  padding: 22px 24px !important;
-  display: flex !important;
-  align-items: flex-start !important;
-  gap: 12px !important;
-  z-index: 4 !important;
-  animation: hpCalloutFloat 5s ease-in-out infinite !important;
-}
-
-/* ── Mobile — user's exact spec ── */
-@media (max-width: 900px) {
-  .home-hero__inner {
-    grid-template-columns: 1fr !important;
-    padding: 48px 22px 32px !important;
-    gap: 24px !important;
-  }
-  .home-hero__visual {
-    min-height: 360px !important;
-    order: -1 !important;
-  }
-  .home-hero__image,
-  .home-hero__visual img {
-    min-height: 360px !important;
-  }
-  .home-hero__callout {
-    position: static !important;
-    margin-top: 16px !important;
-    max-width: none !important;
-    animation: none !important;
-  }
-}
-
-@media (max-width: 640px) {
-  .home-hero__inner { padding: 32px 14px 20px !important; }
-  .home-hero__visual { min-height: 280px !important; border-radius: 18px !important; }
-  .home-hero__image, .home-hero__visual img { min-height: 280px !important; }
-  .home-hero__callout { padding: 14px 16px !important; }
-}
-
-/* ── v29: new clean wide hero image — center-center composition ── */
-.home-hero__image,
-.home-hero__visual img {
-  object-position: center center !important;
 }
