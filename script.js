@@ -125,9 +125,12 @@ if (quoteSection) {
   /* Live-clear errors on input (hoisted via mainForm below) */
 
   const validators = {
-    name:    v => v.trim().length >= 2    ? null : 'Please enter your name.',
-    email:   v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? null : 'Please enter a valid email address.',
-    address: v => v.trim().length >= 3    ? null : 'Please enter your address or ZIP code.',
+    name:  v => v.trim().length >= 2 ? null : 'Please enter your name.',
+    phone: v => {
+      const d = v.replace(/\D/g, '');
+      return d.length >= 10 ? null : 'Please enter a valid phone number (10 digits).';
+    },
+    email: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? null : 'Please enter a valid email address.',
   };
 
   const mainForm = document.querySelector('#main-quote-form');
@@ -166,11 +169,12 @@ if (quoteSection) {
       }
 
       const formData = {
-        name:    mainForm.querySelector('[name="name"]').value.trim(),
-        email:   mainForm.querySelector('[name="email"]').value.trim(),
-        address: mainForm.querySelector('[name="address"]').value.trim(),
-        service: mainForm.querySelector('[name="service"]').value,
-        message: mainForm.querySelector('[name="message"]').value.trim(),
+        name:    mainForm.querySelector('[name="name"]')?.value.trim() || '',
+        phone:   mainForm.querySelector('[name="phone"]')?.value.trim() || '',
+        email:   mainForm.querySelector('[name="email"]')?.value.trim() || '',
+        city:    mainForm.querySelector('[name="city"]')?.value.trim() || '',
+        service: mainForm.querySelector('[name="service"]')?.value || '',
+        message: mainForm.querySelector('[name="message"]')?.value.trim() || '',
       };
 
       const showMsg = (text, isError) => {
@@ -233,11 +237,50 @@ if (heroForm) {
   });
 }
 
+/* ── Cinematic hero: mouse parallax + entrance ───────────── */
+(function () {
+  'use strict';
+
+  const hero  = document.querySelector('.lc-hero');
+  const scene = document.querySelector('.lc-hero-scene-img');
+  if (!hero || !scene) return;
+
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduced) return;
+
+  let rafId = null;
+  let tx = 0, ty = 0;       /* target */
+  let cx = 0, cy = 0;       /* current (lerped) */
+
+  function tick () {
+    rafId = null;
+    cx += (tx - cx) * 0.075;
+    cy += (ty - cy) * 0.075;
+    scene.style.transform = `translate(${cx}px,${cy}px)`;
+
+    if (Math.abs(tx - cx) > 0.05 || Math.abs(ty - cy) > 0.05) {
+      rafId = requestAnimationFrame(tick);
+    }
+  }
+
+  hero.addEventListener('mousemove', e => {
+    const r = hero.getBoundingClientRect();
+    tx = ((e.clientX - r.left) / r.width  - 0.5) * -14;
+    ty = ((e.clientY - r.top)  / r.height - 0.5) * -8;
+    if (!rafId) rafId = requestAnimationFrame(tick);
+  }, { passive: true });
+
+  hero.addEventListener('mouseleave', () => {
+    tx = 0; ty = 0;
+    if (!rafId) rafId = requestAnimationFrame(tick);
+  });
+})();
+
 /* ── Mobile sticky CTA bar visibility ───────────────────── */
 const mobileCTABar = document.querySelector('.mobile-cta-bar');
 
 if (mobileCTABar) {
-  const heroSection = document.querySelector('.hero');
+  const heroSection = document.querySelector('.lc-hero') || document.querySelector('.main-hero') || document.querySelector('.hero');
 
   if (heroSection) {
     const cbaObserver = new IntersectionObserver(

@@ -6,24 +6,30 @@
 const { Resend } = require('resend');
 
 module.exports = async function handler(req, res) {
-  // Only accept POST
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { name, email, address, service, message } = req.body || {};
+  const { name, phone, email, city, service, message } = req.body || {};
 
-  // ── Server-side validation ─────────────────────────────────────────────────
-  if (!name || !email || !address) {
-    return res.status(400).json({ error: 'Name, email, and address are required.' });
+  // ── Server-side validation ──────────────────────────────────────────────────
+  if (!name || !phone) {
+    return res.status(400).json({ error: 'Name and phone number are required.' });
   }
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    return res.status(400).json({ error: 'Invalid email address.' });
+  const phoneDigits = (phone || '').replace(/\D/g, '');
+  if (phoneDigits.length < 10) {
+    return res.status(400).json({ error: 'Please enter a valid phone number.' });
   }
 
-  // ── Resolve env vars (server-side only) ───────────────────────────────────
+  if (email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return res.status(400).json({ error: 'Invalid email address.' });
+    }
+  }
+
+  // ── Resolve env vars ───────────────────────────────────────────────────────
   const apiKey    = process.env.RESEND_API_KEY;
   const fromEmail = process.env.LEAD_FROM_EMAIL;
   const toEmail   = process.env.LEAD_TO_EMAIL;
@@ -35,20 +41,24 @@ module.exports = async function handler(req, res) {
 
   // ── Build email body ───────────────────────────────────────────────────────
   const serviceLabel = service || 'Not specified';
-  const messageText  = message  || 'None';
+  const cityLabel    = city    || 'Not specified';
+  const emailLabel   = email   || 'Not provided';
+  const messageText  = message || 'None';
 
   const textBody = [
     'New quote request from InfiniteAg website',
     '─'.repeat(44),
-    `Name:     ${name}`,
-    `Address:  ${address}`,
-    `Service:  ${serviceLabel}`,
+    `Name:    ${name}`,
+    `Phone:   ${phone}`,
+    `Email:   ${emailLabel}`,
+    `City:    ${cityLabel}`,
+    `Service: ${serviceLabel}`,
     '',
     'Message:',
     messageText,
     '',
     '─'.repeat(44),
-    'Reply directly to this email to respond to the enquiry.',
+    'Call or text the customer directly to follow up.',
   ].join('\n');
 
   const htmlBody = `
@@ -57,18 +67,19 @@ module.exports = async function handler(req, res) {
       <p style="color:#68766C;margin-top:0;font-size:13px">Submitted via InfiniteAg website</p>
       <hr style="border:none;border-top:1px solid #E6EDE2;margin:16px 0"/>
       <table style="width:100%;border-collapse:collapse;font-size:15px">
-        <tr><td style="padding:6px 0;color:#68766C;width:90px">Name</td><td style="padding:6px 0;font-weight:600">${escapeHtml(name)}</td></tr>
-        <tr><td style="padding:6px 0;color:#68766C">Address</td><td style="padding:6px 0">${escapeHtml(address)}</td></tr>
-        <tr><td style="padding:6px 0;color:#68766C">Service</td><td style="padding:6px 0">${escapeHtml(serviceLabel)}</td></tr>
+        <tr><td style="padding:6px 0;color:#68766C;width:90px;vertical-align:top">Name</td><td style="padding:6px 0;font-weight:600">${escapeHtml(name)}</td></tr>
+        <tr><td style="padding:6px 0;color:#68766C;vertical-align:top">Phone</td><td style="padding:6px 0;font-weight:600"><a href="tel:${escapeHtml(phoneDigits)}" style="color:#3F8F46">${escapeHtml(phone)}</a></td></tr>
+        <tr><td style="padding:6px 0;color:#68766C;vertical-align:top">Email</td><td style="padding:6px 0">${email ? `<a href="mailto:${escapeHtml(email)}" style="color:#3F8F46">${escapeHtml(email)}</a>` : '<span style="color:#aaa">Not provided</span>'}</td></tr>
+        <tr><td style="padding:6px 0;color:#68766C;vertical-align:top">City</td><td style="padding:6px 0">${escapeHtml(cityLabel)}</td></tr>
+        <tr><td style="padding:6px 0;color:#68766C;vertical-align:top">Service</td><td style="padding:6px 0">${escapeHtml(serviceLabel)}</td></tr>
       </table>
       ${message ? `<hr style="border:none;border-top:1px solid #E6EDE2;margin:16px 0"/><p style="color:#68766C;font-size:13px;margin-bottom:4px">Message</p><p style="margin-top:0">${escapeHtml(message).replace(/\n/g, '<br/>')}</p>` : ''}
       <hr style="border:none;border-top:1px solid #E6EDE2;margin:20px 0"/>
-      <p style="font-size:12px;color:#A0A0A0">Reply to this email to contact the customer directly.</p>
+      <p style="font-size:12px;color:#A0A0A0">Call or text <strong>${escapeHtml(phone)}</strong> to follow up with this customer.</p>
     </div>
   `;
 
-  // ── Send via Resend SDK ────────────────────────────────────────────────────
-  console.log('[send-lead] Received submission. Service:', serviceLabel);
+  console.log('[send-lead] Received submission. Service:', serviceLabel, 'City:', cityLabel);
 
   const resend = new Resend(apiKey);
 
@@ -76,8 +87,8 @@ module.exports = async function handler(req, res) {
     const { data, error } = await resend.emails.send({
       from:    fromEmail,
       to:      [toEmail],
-      replyTo: email,
-      subject: `New Quote Request — ${name}`,
+      replyTo: email || undefined,
+      subject: `New Quote Request — ${name} (${phone})`,
       text:    textBody,
       html:    htmlBody,
     });
@@ -87,7 +98,7 @@ module.exports = async function handler(req, res) {
       return res.status(502).json({ error: 'Failed to send email. Please try again.' });
     }
 
-    console.log('[send-lead] Email sent successfully. ID:', data?.id);
+    console.log('[send-lead] Email sent. ID:', data?.id);
     return res.status(200).json({ success: true });
 
   } catch (err) {
@@ -96,7 +107,6 @@ module.exports = async function handler(req, res) {
   }
 };
 
-// Simple HTML escape to prevent XSS in email body
 function escapeHtml(str) {
   return String(str)
     .replace(/&/g, '&amp;')

@@ -3,52 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="InfiniteAg provides Lowcountry lawn care, edible landscape enhancement, soil health guidance, sustainable yard planning, and plant science consulting for South Carolina homeowners." />
-  <meta property="og:title" content="InfiniteAg | Lawn Care, Edible Landscapes &amp; Plant Science Guidance" />
-  <meta property="og:description" content="Science-based lawn care and edible landscape enhancement for healthier, more productive, and sustainable outdoor spaces." />
+  <title>InfiniteAg | Lawn Care &amp; Edible Landscape Design in Charleston, SC</title>
+  <meta name="description" content="Plant scientist-led lawn care, soil health assessments, yard diagnosis, edible gardens, and sustainable landscape planning for Charleston, Mount Pleasant, Summerville, and nearby Lowcountry homes. Call or text (803) 903-7059." />
+  <link rel="canonical" href="https://www.infiniteagworld.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="InfiniteAg | Lawn Care &amp; Edible Landscape Design in Charleston, SC" />
+  <meta property="og:description" content="Plant scientist-led lawn care, soil health, edible landscape design, and yard diagnosis for Charleston, Mount Pleasant, Summerville, and the SC Lowcountry." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://infiniteagworld.com/" />
-  <meta property="og:image" content="https://infiniteagworld.com/assets/logo/og-image.png" />
+  <meta property="og:url" content="https://www.infiniteagworld.com/" />
+  <meta property="og:image" content="https://www.infiniteagworld.com/assets/logo/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="InfiniteAg — Lawn Care, Edible Landscapes &amp; Plant Science Guidance" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://infiniteagworld.com/assets/logo/og-image.png" />
-  <title>InfiniteAg | Lawn Care, Edible Landscapes &amp; Plant Science Guidance</title>
+  <meta name="twitter:image" content="https://www.infiniteagworld.com/assets/logo/og-image.png" />
+
+  <!-- Preload LCP hero image -->
+  <link rel="preload" as="image" href="assets/images/lowcountry-hero-clean.webp" type="image/webp" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="assets/logo/InfiniteAg_Favicon_512px.png">
-  <link rel="stylesheet" href="styles.css?v=16" />
+  <link rel="icon" type="image/png" href="assets/logo/InfiniteAg_Favicon_512px.png" />
+  <link rel="stylesheet" href="styles.css?v=29" />
+
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "InfiniteAg",
+    "description": "Plant scientist-led lawn care, soil health assessments, yard diagnosis, edible garden design, edible landscape planning, raised garden bed consultation, and sustainable landscaping guidance for homeowners in Charleston, Mount Pleasant, Summerville, and the South Carolina Lowcountry.",
+    "url": "https://www.infiniteagworld.com/",
+    "telephone": "+18039037059",
+    "image": "https://www.infiniteagworld.com/assets/logo/og-image.png",
+    "logo": "https://www.infiniteagworld.com/assets/logo/InfiniteAg_Logo_transparent.png",
+    "priceRange": "$$",
+    "areaServed": [
+      { "@type": "City", "name": "Charleston", "containedInPlace": { "@type": "State", "name": "South Carolina" } },
+      { "@type": "City", "name": "Mount Pleasant", "containedInPlace": { "@type": "State", "name": "South Carolina" } },
+      { "@type": "City", "name": "Summerville", "containedInPlace": { "@type": "State", "name": "South Carolina" } },
+      { "@type": "City", "name": "Bluffton", "containedInPlace": { "@type": "State", "name": "South Carolina" } },
+      { "@type": "City", "name": "Hilton Head Island", "containedInPlace": { "@type": "State", "name": "South Carolina" } },
+      { "@type": "City", "name": "Beaufort", "containedInPlace": { "@type": "State", "name": "South Carolina" } },
+      { "@type": "AdministrativeArea", "name": "South Carolina Lowcountry" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "InfiniteAg Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lawn Care", "areaServed": "Charleston, SC" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Soil Health Assessment" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Yard Diagnosis" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Edible Landscape Design" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Raised Garden Bed Consultation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Indoor Growing Guidance" } }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════
-       STICKY HEADER
-  ═══════════════════════════════════════ -->
+  <!-- ═══════════ HEADER ═══════════ -->
   <header class="site-header" id="site-header">
-    <div class="container header-inner">
+    <div class="site-header__inner">
 
-      <a href="/" class="site-logo" aria-label="InfiniteAg home">
-        <img src="assets/logo/InfiniteAg_Logo_transparent.png" alt="InfiniteAg" class="site-logo-img site-logo-img--header">
+      <!-- Brand -->
+      <a href="/" class="brand" aria-label="InfiniteAg — Lawn Care and Edible Landscapes">
+        <img src="assets/logo/infiniteag-icon.webp" alt="InfiniteAg logo" class="brand__logo" width="52" height="52" />
+        <div class="brand__text">
+          <span class="brand__name">InfiniteAg</span>
+          <span class="brand__sub">Lawn Care &amp; Edible Landscapes</span>
+        </div>
       </a>
 
-      <nav class="main-nav" aria-label="Main navigation">
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#packages">Packages</a></li>
-          <li><a href="#edible-landscapes">Edible Landscapes</a></li>
-          <li><a href="#plant-scientist">Plant Scientist</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-        </ul>
+      <!-- Desktop nav -->
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#services" class="nav__link">Services</a>
+        <a href="/lawn-care-charleston-sc/" class="nav__link">Lawn Care</a>
+        <a href="/soil-health-assessment-bluffton-sc/" class="nav__link">Soil Health</a>
+        <a href="#edible-landscapes" class="nav__link">Edible Landscapes</a>
+        <a href="#plant-scientist" class="nav__link">Plant Scientist</a>
+        <a href="#service-areas" class="nav__link">Service Areas</a>
       </nav>
 
-      <div class="header-actions">
-        <a href="tel:+18039037059" class="header-phone-link" aria-label="Call InfiniteAg at 803 903 7059">
+      <!-- Right actions -->
+      <div class="header-right">
+        <a href="tel:+18039037059" class="header-phone" aria-label="Call InfiniteAg at 803 903 7059">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           (803) 903-7059
         </a>
-        <a href="#quote-form" class="btn btn-primary btn-sm">Get Free Quote</a>
+        <a href="#quote-form" class="header-quote">Free Quote</a>
         <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
           <span></span><span></span><span></span>
         </button>
@@ -57,57 +104,309 @@
     </div>
   </header>
 
-  <!-- Mobile nav drawer -->
+  <!-- Mobile nav drawer (kept for mobile) -->
   <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
     <ul>
       <li><a href="#services">Services</a></li>
-      <li><a href="#packages">Packages</a></li>
+      <li><a href="/lawn-care-charleston-sc/">Lawn Care</a></li>
+      <li><a href="/soil-health-assessment-bluffton-sc/">Soil Health</a></li>
       <li><a href="#edible-landscapes">Edible Landscapes</a></li>
       <li><a href="#plant-scientist">Plant Scientist</a></li>
-      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#service-areas">Service Areas</a></li>
+      <li><a href="#faq">FAQ</a></li>
     </ul>
     <div class="mobile-nav-ctas">
-      <a href="tel:+18039037059" class="btn btn-outline btn-full" aria-label="Call InfiniteAg at 803 903 7059">Call (803) 903-7059</a>
-      <a href="#quote-form" class="btn btn-outline btn-full">Schedule Assessment</a>
-      <a href="#quote-form" class="btn btn-primary btn-full">Get Free Quote</a>
+      <a href="tel:+18039037059" class="btn btn-outline btn-full">Call (803) 903-7059</a>
+      <a href="#quote-form" class="btn btn-primary btn-full">Free Quote</a>
     </div>
   </nav>
 
 
-  <!-- ═══════════════════════════════════
-       HERO SECTION
-  ═══════════════════════════════════════ -->
-  <section class="hero" aria-label="InfiniteAg — Lowcountry Lawn Care &amp; Edible Landscape Services">
+  <!-- ═══════════ HOME HERO ═══════════ -->
+  <section class="home-hero" id="hero" aria-label="InfiniteAg — Plant scientist-led lawn care and edible landscape design in Charleston, Mount Pleasant, Summerville, and the SC Lowcountry">
 
-    <!-- Full-bleed designed hero graphic -->
-    <div class="hero-img-wrap">
-      <img
-        src="assets/images/hero-graphic.png"
-        alt="Lowcountry property at sunset — lush lawn, edible garden beds with tomatoes, palm tree, and charming porch. InfiniteAg lawn care, edible landscape, and plant science services."
-        class="hero-img"
-        fetchpriority="high">
-    </div>
+    <div class="home-hero__inner">
 
-    <div class="hero-phone-bar">
-      Prefer to call? <a href="tel:+18039037059" aria-label="Call InfiniteAg at 803 903 7059">(803) 903-7059</a>
+      <!-- ── LEFT: copy ── -->
+      <div class="home-hero__copy">
+        <span class="home-hero__eyebrow hp-anim hp-anim-d1">
+          Charleston &bull; Mount Pleasant &bull; Summerville &bull; SC Lowcountry
+        </span>
+
+        <h1 class="home-hero__title hp-anim hp-anim-d2">
+          Your Best-Looking Lawn.<br />Your Most Useful Yard.
+        </h1>
+
+        <!-- Botanical ornament under headline -->
+        <div class="home-hero__ornament hp-anim hp-anim-d3" aria-hidden="true">
+          <svg width="88" height="18" viewBox="0 0 88 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="9" x2="34" y2="9" stroke="#0E3B20" stroke-width="1.4" stroke-linecap="round" opacity=".45"/>
+            <path d="M44 1C44 1 39.5 6 39.5 10.5C39.5 13.5 41.5 16 44 16C46.5 16 48.5 13.5 48.5 10.5C48.5 6 44 1 44 1Z" fill="#0E3B20" opacity=".6"/>
+            <line x1="54" y1="9" x2="88" y2="9" stroke="#0E3B20" stroke-width="1.4" stroke-linecap="round" opacity=".45"/>
+          </svg>
+        </div>
+
+        <p class="home-hero__text hp-anim hp-anim-d3">
+          Plant scientist-led lawn care, soil health, yard diagnosis, and edible landscape design for Lowcountry homeowners who want healthier grass, better soil, and outdoor spaces they can actually use.
+        </p>
+
+        <div class="home-hero__actions hp-anim hp-anim-d4">
+          <a href="tel:+18039037059" class="btn-hp-primary" aria-label="Call or text InfiniteAg at 803 903 7059">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call or Text (803) 903-7059
+          </a>
+          <a href="#quote-form" class="btn-hp-secondary">Request a Yard Assessment</a>
+        </div>
+
+        <span class="home-hero__trust hp-anim hp-anim-d5">
+          Lawn care &bull; Soil health &bull; Edible gardens &bull; Raised beds &bull; Sustainable yard planning
+        </span>
+      </div>
+
+      <!-- ── RIGHT: image + floating callout ── -->
+      <div class="home-hero__visual hp-img-reveal">
+        <img
+          class="home-hero__image"
+          src="assets/images/lowcountry-hero-clean.webp"
+          alt="Golden-hour Lowcountry property — wide green lawn, curved edible garden beds with tomatoes and herbs, palm tree, Southern porch, and marsh water view"
+          fetchpriority="high"
+          width="1448" height="1086"
+        />
+        <!-- Floating callout card -->
+        <div class="home-hero__callout" role="note" aria-label="Built for SC conditions">
+          <div class="home-hero__callout-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+          </div>
+          <p class="home-hero__callout-text">Built for South Carolina's heat, humidity, coastal soil, drainage challenges, and year-round growing conditions.</p>
+        </div>
+      </div>
+
     </div>
 
   </section>
 
-  <!-- ═══════════════════════════════════
-       DR. BAZGHA ZIA — PLANT SCIENTIST
-  ═══════════════════════════════════════ -->
+
+  <!-- ═══════════ HERO SERVICE CARDS ═══════════ -->
+  <section class="hero-service-grid" aria-label="InfiniteAg core services">
+    <div class="hero-service-grid__inner">
+
+      <a href="/lawn-care-charleston-sc/" class="hero-service-card hp-anim hp-anim-d1">
+        <div class="svc-card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Lawn Care</h3>
+        <p>Healthier turf, fewer surprises, better seasonal decisions.</p>
+      </a>
+
+      <a href="/soil-health-assessment-bluffton-sc/" class="hero-service-card hp-anim hp-anim-d2">
+        <div class="svc-card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        </div>
+        <h3>Soil Health</h3>
+        <p>Understand what is happening below the surface.</p>
+      </a>
+
+      <a href="/yard-diagnosis-bluffton-sc/" class="hero-service-card hp-anim hp-anim-d3">
+        <div class="svc-card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <h3>Yard Diagnosis</h3>
+        <p>Find the cause of brown patches, weeds, drainage issues, and weak growth.</p>
+      </a>
+
+      <a href="/edible-landscape-design-bluffton-sc/" class="hero-service-card hp-anim hp-anim-d4">
+        <div class="svc-card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/><path d="M5 7c0 2.8 1.6 5 7 5s7-2.2 7-5"/></svg>
+        </div>
+        <h3>Edible Landscapes</h3>
+        <p>Add herbs, vegetables, fruiting plants, and useful garden features.</p>
+      </a>
+
+      <a href="/raised-garden-beds-bluffton-sc/" class="hero-service-card hp-anim hp-anim-d5">
+        <div class="svc-card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="17"/><line x1="9.5" y1="14.5" x2="14.5" y2="14.5"/></svg>
+        </div>
+        <h3>Raised Beds</h3>
+        <p>Plan better beds, soil, sunlight, irrigation, and planting choices.</p>
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════ TRUST STRIP ═══════════ -->
+  <!-- trust-strip removed; replaced by .hero-service-grid above -->
+
+
+  <!-- ═══════════ SERVICES ═══════════ -->
+  <section class="services services--dark section-pad" id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Services</span>
+        <h2 id="services-heading">Lawn Care, Soil Health &amp; Edible Landscape Services</h2>
+        <p class="section-subhead">Science-based care for Charleston, Mount Pleasant, Summerville, and the SC Lowcountry — every service starts with a real on-site assessment.</p>
+      </div>
+      <div class="svc-grid">
+
+        <article class="svc-card reveal">
+          <div class="svc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a7a32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <h3>Lawn Health &amp; Care</h3>
+          <p class="svc-card__problem">Thin grass, brown patches, weeds, or poor growth that standard treatments haven't fixed?</p>
+          <p>InfiniteAg evaluates your turf, soil, and drainage before recommending anything. Most Lowcountry lawn problems start below the surface — in compacted soil, poor drainage, or nutrient deficiency that surface products can't reach.</p>
+          <a href="/lawn-care-charleston-sc/" class="svc-card__link">Explore Lawn Care in Charleston →</a>
+        </article>
+
+        <article class="svc-card reveal">
+          <div class="svc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a7a32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <h3>Soil Health Assessment</h3>
+          <p class="svc-card__problem">Fertilizing isn't helping. Plants struggle. Grass stays thin even with regular care?</p>
+          <p>The problem is almost always in the soil. InfiniteAg assesses compaction, drainage, pH, nutrients, and biology — then recommends targeted amendments, not generic programs that don't address the actual limitation.</p>
+          <a href="/soil-health-assessment-bluffton-sc/" class="svc-card__link">Learn About Soil Health →</a>
+        </article>
+
+        <article class="svc-card reveal">
+          <div class="svc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a7a32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+          <h3>Yard Diagnosis</h3>
+          <p class="svc-card__problem">Brown spots, bare patches, pooling water, or plants that keep failing — and you don't know why?</p>
+          <p>A plant scientist evaluates your yard from the ground up — soil, drainage, irrigation coverage, disease signs, and root conditions — to identify the real cause rather than treating visible symptoms.</p>
+          <a href="/yard-diagnosis-bluffton-sc/" class="svc-card__link">Get a Yard Diagnosis →</a>
+        </article>
+
+        <article class="svc-card reveal">
+          <div class="svc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a7a32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/></svg></div>
+          <h3>Edible Landscape Design</h3>
+          <p class="svc-card__problem">Want a yard that produces food and looks intentional — not a chaotic vegetable patch in the corner?</p>
+          <p>InfiniteAg designs edible landscapes where fruit trees, herbs, berries, and vegetables integrate naturally into your existing yard. Every design is built around SC's climate, your soil, and your maintenance goals.</p>
+          <a href="/edible-landscape-design-bluffton-sc/" class="svc-card__link">Explore Edible Landscape Design →</a>
+        </article>
+
+        <article class="svc-card reveal">
+          <div class="svc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a7a32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="17"/><line x1="9.5" y1="14.5" x2="14.5" y2="14.5"/></svg></div>
+          <h3>Raised Garden Bed Consultation</h3>
+          <p class="svc-card__problem">SC's sandy or builder-grade soil makes in-ground vegetable gardening frustrating and unpredictable?</p>
+          <p>Raised beds solve the soil problem from day one. InfiniteAg advises on sizing, placement, soil mix, crop selection, irrigation, and seasonal planting so your beds produce reliably from the start.</p>
+          <a href="/raised-garden-beds-bluffton-sc/" class="svc-card__link">Plan Your Raised Beds →</a>
+        </article>
+
+        <article class="svc-card reveal">
+          <div class="svc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a7a32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22c1.25-4 3.5-7 8-8.5"/><path d="M12 2c0 4.5-2 8-6 10.5"/><path d="M12 2c0 4.5 2 8 6 10.5"/><path d="M22 22c-1.25-4-3.5-7-8-8.5"/></svg></div>
+          <h3>Indoor &amp; Small-Space Growing</h3>
+          <p class="svc-card__problem">Limited outdoor space, a patio without good soil, or interest in year-round growing indoors?</p>
+          <p>Container gardens, indoor herb setups, and patio edible spaces with practical advice for what actually grows well in South Carolina's climate and indoor conditions — no large yard required.</p>
+          <a href="#quote-form" class="svc-card__link">Request Growing Guidance →</a>
+        </article>
+
+      </div>
+      <div class="services-cta reveal">
+        <a href="tel:+18039037059" class="btn btn-accent btn-lg">Call or Text (803) 903-7059</a>
+        <a href="#quote-form" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,.4);color:#fff;">Request a Free Assessment</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ WHY CHOOSE INFINITEAG ═══════════ -->
+  <section class="why-choose section-pad" id="why-infiniteag" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Why InfiniteAg</span>
+        <h2 id="why-heading">Not Just Lawn Maintenance</h2>
+        <p>Most lawn services mow, apply products, and move on. InfiniteAg starts by understanding your specific soil, grass type, drainage, and goals — then builds a plan around what we actually find on your property in Charleston, Mount Pleasant, or Summerville.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div>
+          <h3>Plant Scientist-Led Recommendations</h3>
+          <p>InfiniteAg looks at your yard through the lens of soil science, plant biology, and SC's growing conditions. Recommendations are grounded in what your specific lawn or garden actually needs — not a one-size-fits-all service menu applied to every property.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg></div>
+          <h3>Soil-First Lawn Thinking</h3>
+          <p>Most lawn problems start underground — in compacted, nutrient-depleted, or poorly-drained soil. InfiniteAg diagnoses root-level conditions before recommending any surface treatment. That saves you money on fixes that don't address the real issue.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+          <h3>Local Lowcountry Growing Knowledge</h3>
+          <p>Charleston's heat, humidity, sandy coastal soils, and warm-season grasses don't respond like lawns in national programs. We know South Carolina's specific growing conditions and build care plans around them — not around a national average.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/></svg></div>
+          <h3>Edible + Functional Landscapes</h3>
+          <p>InfiniteAg helps homeowners design yards that produce fruit, herbs, and vegetables — not just look green. Edible landscapes, raised beds, and productive outdoor spaces are part of what we plan alongside traditional lawn care.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h3>Practical Plans, Not Guesswork</h3>
+          <p>Every assessment ends with specific, actionable next steps. You'll understand what's wrong, why it's happening, and what will realistically fix it — before spending money on treatments or services that may not address the actual issue.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <h3>Honest Guidance Without Pressure</h3>
+          <p>If the fix is simple, we'll say so. If your yard needs more work, we'll explain exactly why. InfiniteAg doesn't inflate diagnoses to justify unnecessary services — the goal is your yard, not a long contract.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ COMMON PROBLEMS ═══════════ -->
+  <section class="problems-section section-pad" id="problems" aria-labelledby="problems-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Common Yard &amp; Lawn Problems</span>
+        <h2 id="problems-heading">Problems InfiniteAg Helps Solve</h2>
+        <p>If any of these sound familiar, a plant scientist-led assessment is the right first step. We diagnose before we recommend — serving Charleston, Mount Pleasant, Summerville, and the SC Lowcountry.</p>
+      </div>
+      <div class="problems-list">
+        <div class="problem-card reveal">
+          <h3>Brown Patches &amp; Weak Grass</h3>
+          <p>Brown spots are a symptom, not the root cause. Soil compaction, poor drainage, fungal disease, heat stress, or nutrient imbalance can all look identical at the surface. InfiniteAg identifies which factor is actually at work before recommending any fix.</p>
+        </div>
+        <div class="problem-card reveal">
+          <h3>Weeds Taking Over</h3>
+          <p>Persistent weeds like nutsedge, crabgrass, and dollarweed thrive in stressed or thin turf. Treating weeds alone — without addressing underlying soil or grass health — creates a cycle that returns every season. InfiniteAg starts with why weeds are winning.</p>
+        </div>
+        <div class="problem-card reveal">
+          <h3>Poor Drainage &amp; Soggy Areas</h3>
+          <p>Pooling water after rain, persistently muddy spots, or turf that won't dry out usually points to compaction, a clay layer below the surface, or a grade issue. We evaluate where the drainage breakdown is actually happening before recommending any solution.</p>
+        </div>
+        <div class="problem-card reveal">
+          <h3>Compacted or Depleted Soil</h3>
+          <p>Soil that won't absorb water, won't hold nutrients, or produces shallow roots needs structural improvement — not just more fertilizer. InfiniteAg identifies what's limiting soil health and recommends amendments specific to your property's actual conditions.</p>
+        </div>
+        <div class="problem-card reveal">
+          <h3>Struggling Vegetable Garden</h3>
+          <p>Plants that fail to fruit, seedlings that die off, or vegetables that grow slowly despite watering almost always trace back to soil quality, drainage, or sunlight issues. We diagnose before recommending what to change — saving time on trial and error.</p>
+        </div>
+        <div class="problem-card reveal">
+          <h3>Unsure What to Plant Here</h3>
+          <p>Not every plant that grows elsewhere in the U.S. thrives in Charleston's summer heat and humidity. InfiniteAg helps Lowcountry homeowners select the right grass, edible plants, and landscape species for their specific site conditions and goals.</p>
+        </div>
+        <div class="problem-card reveal">
+          <h3>Bare or Thin Patches</h3>
+          <p>Bare spots that don't recover after reseeding usually mean conditions in that area — compaction, shade, drainage, or the wrong grass type — aren't supporting establishment. Adding seed without addressing the cause produces limited results.</p>
+        </div>
+        <div class="problem-card reveal">
+          <h3>Want Edibles, Not Just Ornamentals</h3>
+          <p>Many SC homeowners want a yard that actually produces something — herbs near the kitchen, fruit trees in the beds, vegetables in raised planters. InfiniteAg designs edible landscapes that fit your space, soil, and available time to maintain.</p>
+        </div>
+      </div>
+      <div class="problems-cta reveal">
+        <a href="#quote-form" class="btn btn-primary btn-lg">Get Help With Your Yard or Garden</a>
+        <a href="tel:+18039037059" class="btn btn-outline btn-lg">Call or Text (803) 903-7059</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ DR. ZIA — PLANT SCIENTIST ═══════════ -->
   <section class="dr-zia-section section-pad" id="plant-scientist" aria-labelledby="zia-heading">
     <div class="container">
       <div class="zia-inner">
-
-        <!-- Portrait column -->
         <div class="zia-portrait-col">
           <div class="zia-portrait-card">
-            <div class="zia-portrait-photo zia-portrait-photo--placeholder">
-              <div class="zia-avatar-icon">
-                <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
-              </div>
+            <div class="zia-portrait-photo">
+              <img src="assets/images/dr-zia.jpg" alt="Dr. Bazgha Zia, Plant Scientist at InfiniteAg" class="zia-photo-img" />
             </div>
             <div class="zia-portrait-meta">
               <div class="zia-portrait-meta__info">
@@ -117,535 +416,390 @@
             </div>
           </div>
         </div>
-
-        <!-- Content column -->
         <div class="zia-col reveal">
           <span class="eyebrow">Plant Science Expertise</span>
           <h2 id="zia-heading">Meet Dr. Bazgha Zia</h2>
           <span class="zia-subtitle">Plant Scientist</span>
-          <p class="zia-bio">Dr. Bazgha Zia helps homeowners make science-based decisions for lawn health, soil care, edible gardens, sustainable landscapes, and productive outdoor spaces. Her guidance supports healthier plant systems, better planning, and more functional, beautiful yards.</p>
+          <p class="zia-bio">Dr. Bazgha Zia brings real plant science expertise to lawn care, soil health, and edible garden design in Charleston and the SC Lowcountry. Her work helps homeowners make better decisions about their yards — based on what's actually in the soil and what's actually happening with the plants — rather than guesswork or generic treatments applied to every property.</p>
+          <p class="zia-bio--support">What makes InfiniteAg different from most lawn care companies is straightforward: a plant scientist is involved in every assessment and recommendation. That means the advice you receive is grounded in plant biology, soil science, and an honest understanding of what grows well in South Carolina's coastal climate.</p>
           <ul class="zia-values">
-            <li>
-              <div class="zia-value-dot" aria-hidden="true">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#A7D46F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              Lawn and soil insight
-            </li>
-            <li>
-              <div class="zia-value-dot" aria-hidden="true">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#A7D46F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              Edible garden planning
-            </li>
-            <li>
-              <div class="zia-value-dot" aria-hidden="true">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#A7D46F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              Sustainable landscape support
-            </li>
+            <li><div class="zia-value-dot" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#A7D46F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Lawn, turf, and soil health assessment</li>
+            <li><div class="zia-value-dot" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#A7D46F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Edible garden and landscape planning</li>
+            <li><div class="zia-value-dot" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#A7D46F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Sustainable landscaping guidance for SC properties</li>
           </ul>
           <div class="zia-ctas">
-            <a href="#quote-form" class="btn btn-primary">Consult Dr. Zia</a>
+            <a href="#quote-form" class="btn btn-primary">Request an Assessment</a>
+            <a href="tel:+18039037059" class="btn btn-outline">Call (803) 903-7059</a>
           </div>
         </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════
-       SERVICES
-  ═══════════════════════════════════════ -->
-  <section class="services services--dark section-pad" id="services" aria-labelledby="services-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">Our Services</span>
-        <h2 id="services-heading">Our Services</h2>
-        <p class="section-subhead">Science-based lawn, landscape, and edible garden care.</p>
-      </div>
-
-      <div class="svc-grid">
-
-        <article class="svc-card reveal">
-          <div class="svc-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A7D46F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </div>
-          <h3>Lawn Care</h3>
-          <p>Year-round turf management built around South Carolina's warm-season grasses, coastal soil, and seasonal weather patterns.</p>
-          <a href="#quote-form" class="svc-card__link">Schedule Assessment →</a>
-        </article>
-
-        <article class="svc-card reveal">
-          <div class="svc-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A7D46F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-          </div>
-          <h3>Soil Health</h3>
-          <p>Before we treat your lawn or landscape, we assess what's actually in the ground — informing every care decision we make.</p>
-          <a href="#quote-form" class="svc-card__link">Schedule Assessment →</a>
-        </article>
-
-        <article class="svc-card reveal">
-          <div class="svc-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A7D46F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          </div>
-          <h3>Yard Diagnosis</h3>
-          <p>Brown patches, persistent weeds, thinning turf, poor drainage — we identify the root cause before recommending solutions.</p>
-          <a href="#quote-form" class="svc-card__link">Get a Diagnosis →</a>
-        </article>
-
-        <article class="svc-card reveal">
-          <div class="svc-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A7D46F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/><path d="M5 7c0 2.8 1.6 5 7 5s7-2.2 7-5"/></svg>
-          </div>
-          <h3>Yard-to-Harvest</h3>
-          <p>A plant scientist helps you reimagine your property — creating an edible landscape that enhances beauty and supports food production.</p>
-          <a href="#edible-landscapes" class="svc-card__link">Explore Edible Landscapes →</a>
-        </article>
-
-        <article class="svc-card reveal">
-          <div class="svc-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A7D46F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          </div>
-          <h3>Edible Garden Design</h3>
-          <p>Custom edible garden layouts for your property — fruit, vegetable, herb, and berry integration designed for beauty and seasonal productivity.</p>
-          <a href="#edible-landscapes" class="svc-card__link">Explore Edible Landscapes →</a>
-        </article>
-
-        <article class="svc-card reveal">
-          <div class="svc-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A7D46F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22c1.25-4 3.5-7 8-8.5"/><path d="M12 2c0 4.5-2 8-6 10.5"/><path d="M12 2c0 4.5 2 8 6 10.5"/><path d="M22 22c-1.25-4-3.5-7-8-8.5"/></svg>
-          </div>
-          <h3>Indoor Growing</h3>
-          <p>Guidance for patios, balconies, indoor herb growing, and other small-footprint edible spaces — no large yard required.</p>
-          <a href="#quote-form" class="svc-card__link">Get Guidance →</a>
-        </article>
-
-      </div>
-
-      <div class="services-cta reveal">
-        <a href="#quote-form" class="btn btn-primary btn-lg">Get Free Quote</a>
-        <a href="#quote-form" class="btn btn-outline btn-lg">Schedule Assessment</a>
       </div>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════
-       PACKAGES
-  ═══════════════════════════════════════ -->
-  <section class="packages section-pad" id="packages" aria-labelledby="pkg-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">Service Packages</span>
-        <h2 id="pkg-heading">Choose a Lawn &amp; Landscape Care Package That Fits Your Needs</h2>
-        <p>Whether you need routine lawn maintenance, complete turf management, or an edible landscape plan, InfiniteAg offers flexible service packages built around your property, goals, and season.</p>
-      </div>
-      <div class="pkg-accordion">
-
-        <!-- Essential -->
-        <details class="pkg-item reveal">
-          <summary class="pkg-summary">
-            <span class="pkg-summary__label">Essential</span>
-            <span class="pkg-summary__name">Essential Lawn Care</span>
-            <svg class="pkg-summary__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <div class="pkg-detail">
-            <p class="pkg-best-for"><strong>Best for:</strong> Routine lawn maintenance and healthy turf growth.</p>
-            <ul class="pkg-includes">
-              <li>Regular mowing &amp; edging</li>
-              <li>Seasonal lawn inspections</li>
-              <li>Basic weed monitoring &amp; management</li>
-              <li>Lawn health recommendations</li>
-              <li>Seasonal care guidance</li>
-            </ul>
-            <a href="#quote-form" class="btn btn-outline pkg-cta">Get Started</a>
-          </div>
-        </details>
-
-        <!-- Complete -->
-        <details class="pkg-item reveal">
-          <summary class="pkg-summary">
-            <span class="pkg-summary__label">Complete</span>
-            <span class="pkg-summary__name">Complete Turf Management</span>
-            <svg class="pkg-summary__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <div class="pkg-detail">
-            <p class="pkg-best-for"><strong>Best for:</strong> Year-round lawn health and professional turf management.</p>
-            <ul class="pkg-includes">
-              <li>All Essential Package services</li>
-              <li>Integrated weed management programs</li>
-              <li>Seasonal fertilization &amp; nutrient replenishment</li>
-              <li>Soil health assessments</li>
-              <li>Irrigation &amp; water management recommendations</li>
-              <li>Pest &amp; disease monitoring</li>
-            </ul>
-            <a href="#quote-form" class="btn btn-outline pkg-cta">Choose Complete Care</a>
-          </div>
-        </details>
-
-        <!-- Premium -->
-        <details class="pkg-item reveal">
-          <summary class="pkg-summary">
-            <span class="pkg-summary__label">Premium</span>
-            <span class="pkg-summary__name">Premium Landscape Enhancement</span>
-            <svg class="pkg-summary__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <div class="pkg-detail">
-            <p class="pkg-best-for"><strong>Best for:</strong> A better-looking landscape with added functionality and sustainability.</p>
-            <ul class="pkg-includes">
-              <li>All Complete Turf Management services</li>
-              <li>Customized landscape improvement plans</li>
-              <li>Pollinator-friendly plant recommendations</li>
-              <li>Ornamental &amp; native plant integration</li>
-              <li>Soil improvement strategies</li>
-              <li>Seasonal planting guidance</li>
-            </ul>
-            <a href="#quote-form" class="btn btn-outline pkg-cta">Explore Premium</a>
-          </div>
-        </details>
-
-        <!-- Edible (featured) -->
-        <details class="pkg-item pkg-item--featured reveal">
-          <summary class="pkg-summary">
-            <span class="pkg-summary__label pkg-summary__label--featured">Edible</span>
-            <span class="pkg-summary__name">Edible Landscape &amp; Food Production</span>
-            <svg class="pkg-summary__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <div class="pkg-detail">
-            <p class="pkg-best-for"><strong>Best for:</strong> Turning your property into a beautiful, productive edible landscape.</p>
-            <ul class="pkg-includes">
-              <li>All Premium Package services</li>
-              <li>Edible landscape design &amp; planning</li>
-              <li>Fruit, vegetable, herb &amp; berry integration</li>
-              <li>Seasonal crop selection &amp; planting schedules</li>
-              <li>Raised bed &amp; kitchen garden consultation</li>
-              <li>Indoor &amp; small-scale growing recommendations</li>
-              <li>Harvest planning &amp; crop management support</li>
-            </ul>
-            <a href="#quote-form" class="btn btn-primary pkg-cta">Build My Edible Landscape</a>
-          </div>
-        </details>
-
-        <!-- Custom -->
-        <details class="pkg-item reveal">
-          <summary class="pkg-summary">
-            <span class="pkg-summary__label pkg-summary__label--custom">Custom</span>
-            <span class="pkg-summary__name">Custom Solutions</span>
-            <svg class="pkg-summary__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <div class="pkg-detail">
-            <p class="pkg-best-for"><strong>Best for:</strong> Unique properties, budgets, goals, and lifestyles.</p>
-            <ul class="pkg-includes">
-              <li>Any combination of lawn care, edible garden, and landscape services</li>
-              <li>Tailored to your property, schedule, and budget</li>
-            </ul>
-            <a href="#quote-form" class="btn btn-outline pkg-cta">Discuss Your Needs</a>
-          </div>
-        </details>
-
-      </div>
-      <div class="section-cta reveal">
-        <a href="#quote-form" class="btn btn-outline btn-lg">Get a Free Quote</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════
-       EDIBLE LANDSCAPES
-  ═══════════════════════════════════════ -->
-  <section class="edible-landscapes section-pad" id="edible-landscapes" aria-labelledby="el-heading">
-    <div class="container">
-      <div class="el-split">
-
-        <div class="el-content reveal">
-          <span class="eyebrow">Edible Landscape Services</span>
-          <h2 id="el-heading">Turn Your Yard Into a Beautiful, Productive Landscape</h2>
-          <p class="el-lead">InfiniteAg helps homeowners transform lawns, patios, landscape beds, and backyards into attractive edible spaces. Whether you're starting small with a kitchen herb garden or planning a complete yard-to-harvest transformation, our plant scientist will guide your project from first concept to seasonal harvest.</p>
-          <div class="el-ctas">
-            <a href="#quote-form" class="btn btn-primary btn-lg">Schedule Assessment</a>
-            <a href="#quote-form" class="btn btn-outline btn-lg">Ask About Edible Landscapes</a>
-          </div>
-          <p class="el-note">Start with an on-site assessment. No commitment required.</p>
-        </div>
-
-        <div class="el-cards-grid reveal reveal-right">
-
-          <div class="el-card">
-            <div class="el-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/></svg>
-            </div>
-            <h3>Fruit, Vegetable, Herb &amp; Berry Integration</h3>
-            <p>Food-producing plants integrated into your existing landscape for beauty and year-round harvests.</p>
-          </div>
-
-          <div class="el-card">
-            <div class="el-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="17"/><line x1="9.5" y1="14.5" x2="14.5" y2="14.5"/></svg>
-            </div>
-            <h3>Raised Bed &amp; Kitchen Garden Consultation</h3>
-            <p>Professional guidance on raised bed sizing, placement, soil composition, and planting strategies.</p>
-          </div>
-
-          <div class="el-card">
-            <div class="el-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22c1.25-4 3.5-7 8-8.5"/><path d="M12 2c0 4.5-2 8-6 10.5"/><path d="M12 2c0 4.5 2 8 6 10.5"/><path d="M22 22c-1.25-4-3.5-7-8-8.5"/></svg>
-            </div>
-            <h3>Indoor, Patio &amp; Small-Scale Growing</h3>
-            <p>Container gardening, patio setups, and indoor herb growing for any size space.</p>
-          </div>
-
-          <div class="el-card">
-            <div class="el-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
-            </div>
-            <h3>Pollinator-Friendly Plantings</h3>
-            <p>Integrate flowering plants that attract pollinators and support the health of your food garden.</p>
-          </div>
-
-          <div class="el-card">
-            <div class="el-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
-            </div>
-            <h3>Harvest Planning &amp; Crop Management Support</h3>
-            <p>Personalized planting calendars and seasonal guidance for productive, year-round harvests.</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════
-       HOW IT WORKS
-  ═══════════════════════════════════════ -->
+  <!-- ═══════════ HOW IT WORKS ═══════════ -->
   <section class="how-it-works section-pad" id="how-it-works" aria-labelledby="hiw-heading">
     <div class="container">
       <div class="section-header reveal">
         <span class="eyebrow">Simple Process</span>
         <h2 id="hiw-heading">How It Works</h2>
-        <p>Getting started is clear and straightforward. No sales pressure, no complicated contracts — just an honest path to a healthier, more productive outdoor space.</p>
+        <p>Getting started is clear and straightforward. No pressure, no complicated contracts — just an honest look at your Charleston, Mount Pleasant, or Summerville yard and a practical plan for what comes next.</p>
       </div>
-
       <ol class="steps-list">
         <li class="step-item reveal">
           <div class="step-number" aria-hidden="true">01</div>
           <div class="step-content">
-            <h3>Request a Quote</h3>
-            <p>Fill out the short form to tell us what you need.</p>
+            <h3>Request an Assessment</h3>
+            <p>Call, text, or submit the form with a few details about your lawn, garden, soil, or growing goals. We'll follow up to confirm a visit time.</p>
           </div>
         </li>
         <li class="step-item reveal">
           <div class="step-number" aria-hidden="true">02</div>
           <div class="step-content">
-            <h3>Schedule Assessment</h3>
-            <p>We'll schedule an on-site visit to evaluate your property.</p>
+            <h3>We Evaluate the Problem</h3>
+            <p>InfiniteAg assesses the lawn, soil, plants, sunlight, drainage, and growing conditions on-site. We look at what's actually happening — not what the calendar says should be done.</p>
           </div>
         </li>
         <li class="step-item reveal">
           <div class="step-number" aria-hidden="true">03</div>
           <div class="step-content">
-            <h3>Get a Science-Based Plan</h3>
-            <p>Receive a personalized lawn-to-harvest care plan.</p>
+            <h3>You Get a Practical Plan</h3>
+            <p>We recommend clear, specific next steps for healthier grass, better soil, an edible garden, or sustainable landscape improvements — based on what we actually found.</p>
           </div>
         </li>
         <li class="step-item reveal">
           <div class="step-number" aria-hidden="true">04</div>
           <div class="step-content">
-            <h3>Begin Lawn-to-Harvest Care</h3>
-            <p>We implement your plan and adjust with the season.</p>
+            <h3>We Help You Move Forward</h3>
+            <p>Depending on your needs and goals, InfiniteAg can provide ongoing guidance, care planning, hands-on maintenance, or targeted service.</p>
           </div>
         </li>
       </ol>
-
       <div class="hiw-cta reveal">
-        <a href="#quote-form" class="btn btn-primary btn-lg">Schedule Assessment</a>
+        <a href="#quote-form" class="btn btn-primary btn-lg">Schedule a Free Assessment</a>
+        <a href="tel:+18039037059" class="btn btn-outline btn-lg">Call (803) 903-7059</a>
       </div>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════
-       QUOTE FORM SECTION
-  ═══════════════════════════════════════ -->
+  <!-- ═══════════ SERVICE AREAS ═══════════ -->
+  <section class="service-areas-section section-pad" id="service-areas" aria-labelledby="areas-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Service Areas</span>
+        <h2 id="areas-heading">Serving Charleston, Mount Pleasant, Summerville &amp; the SC Lowcountry</h2>
+        <p>InfiniteAg provides lawn care, soil health assessments, yard diagnosis, and edible landscape design throughout the South Carolina Lowcountry. Every service starts with an in-person visit to your property.</p>
+      </div>
+
+      <!-- Primary cities: 3-column, visually dominant -->
+      <div class="area-cards">
+        <a href="/lawn-care-charleston-sc/" class="area-card reveal">
+          <span class="area-card__name">Charleston, SC</span>
+          <p class="area-card__desc">Historic homes, coastal conditions, compacted urban lots, sandy soils, and high-visibility landscapes need thoughtful care. InfiniteAg helps Charleston homeowners improve lawn health, diagnose yard problems, and add useful edible landscape features.</p>
+          <span class="area-card__link">Lawn Care in Charleston →</span>
+        </a>
+        <a href="/lawn-care-mount-pleasant-sc/" class="area-card reveal">
+          <span class="area-card__name">Mount Pleasant, SC</span>
+          <p class="area-card__desc">Mount Pleasant yards often deal with heat, humidity, coastal exposure, irrigation challenges, and fast-growing warm-season turf. InfiniteAg supports healthier lawns, better soil decisions, and practical edible garden planning for Lowcountry homes.</p>
+          <span class="area-card__link">Lawn Care in Mount Pleasant →</span>
+        </a>
+        <a href="/lawn-care-summerville-sc/" class="area-card reveal">
+          <span class="area-card__name">Summerville, SC</span>
+          <p class="area-card__desc">Summerville properties often have larger residential yards, heavy summer growth, drainage concerns, and strong potential for edible gardens and raised beds. InfiniteAg helps build healthier lawns and more productive, usable outdoor spaces.</p>
+          <span class="area-card__link">Lawn Care in Summerville →</span>
+        </a>
+      </div>
+
+      <!-- Secondary areas: compact strip -->
+      <div class="secondary-areas reveal">
+        <p class="secondary-areas__label">Also serving nearby Lowcountry areas:</p>
+        <div class="secondary-area-links">
+          <a href="/lawn-care-bluffton-sc/">Bluffton</a>
+          <a href="/lawn-care-hilton-head-sc/">Hilton Head Island</a>
+          <a href="/lawn-care-beaufort-sc/">Beaufort</a>
+          <a href="/lawn-care-okatie-sc/">Okatie</a>
+          <a href="/lawn-care-sun-city-hilton-head-sc/">Sun City Hilton Head</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════ PACKAGES ═══════════ -->
+  <section class="packages section-pad" id="packages" aria-labelledby="pkg-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Service Packages</span>
+        <h2 id="pkg-heading">Flexible Lawn &amp; Landscape Care Packages</h2>
+        <p>From routine lawn maintenance to a complete edible landscape plan — InfiniteAg offers packages built around your Charleston, Mount Pleasant, or Summerville property, goals, and schedule.</p>
+      </div>
+      <div class="pkg-accordion">
+        <details class="pkg-item reveal">
+          <summary class="pkg-summary"><span class="pkg-summary__label">Essential</span><span class="pkg-summary__name">Essential Lawn Care</span><svg class="pkg-summary__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="pkg-detail">
+            <p class="pkg-best-for"><strong>Best for:</strong> Homeowners who want consistent, well-maintained turf without the guesswork.</p>
+            <ul class="pkg-includes"><li>Regular mowing &amp; edging</li><li>Seasonal lawn inspections</li><li>Basic weed monitoring &amp; management</li><li>Lawn health recommendations</li><li>Seasonal care guidance for warm-season grasses</li></ul>
+            <a href="#quote-form" class="btn btn-outline pkg-cta">Get Started</a>
+          </div>
+        </details>
+        <details class="pkg-item reveal">
+          <summary class="pkg-summary"><span class="pkg-summary__label">Complete</span><span class="pkg-summary__name">Complete Turf Management</span><svg class="pkg-summary__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="pkg-detail">
+            <p class="pkg-best-for"><strong>Best for:</strong> Year-round lawn health — including soil assessment, fertilization, and pest monitoring.</p>
+            <ul class="pkg-includes"><li>All Essential Package services</li><li>Integrated weed management programs</li><li>Seasonal fertilization &amp; nutrient replenishment</li><li>Soil health assessments</li><li>Irrigation &amp; water management recommendations</li><li>Pest &amp; disease monitoring</li></ul>
+            <a href="#quote-form" class="btn btn-outline pkg-cta">Choose Complete Care</a>
+          </div>
+        </details>
+        <details class="pkg-item reveal">
+          <summary class="pkg-summary"><span class="pkg-summary__label">Premium</span><span class="pkg-summary__name">Premium Landscape Enhancement</span><svg class="pkg-summary__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="pkg-detail">
+            <p class="pkg-best-for"><strong>Best for:</strong> A healthier, better-looking landscape with sustainability and functional planting.</p>
+            <ul class="pkg-includes"><li>All Complete Turf Management services</li><li>Customized landscape improvement plans</li><li>Pollinator-friendly plant recommendations</li><li>Ornamental &amp; native plant integration</li><li>Soil improvement strategies</li><li>Seasonal planting guidance</li></ul>
+            <a href="#quote-form" class="btn btn-outline pkg-cta">Explore Premium</a>
+          </div>
+        </details>
+        <details class="pkg-item pkg-item--featured reveal">
+          <summary class="pkg-summary"><span class="pkg-summary__label pkg-summary__label--featured">Edible</span><span class="pkg-summary__name">Edible Landscape &amp; Food Production</span><svg class="pkg-summary__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="pkg-detail">
+            <p class="pkg-best-for"><strong>Best for:</strong> Homeowners who want their property to produce fruit, herbs, and vegetables alongside healthy turf.</p>
+            <ul class="pkg-includes"><li>All Premium Package services</li><li>Edible landscape design &amp; planning</li><li>Fruit, vegetable, herb &amp; berry integration</li><li>Seasonal crop selection &amp; planting schedules</li><li>Raised bed &amp; kitchen garden consultation</li><li>Indoor &amp; small-scale growing recommendations</li><li>Harvest planning &amp; crop management support</li></ul>
+            <a href="#quote-form" class="btn btn-primary pkg-cta">Build My Edible Landscape</a>
+          </div>
+        </details>
+        <details class="pkg-item reveal">
+          <summary class="pkg-summary"><span class="pkg-summary__label pkg-summary__label--custom">Custom</span><span class="pkg-summary__name">Custom Solutions</span><svg class="pkg-summary__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="pkg-detail">
+            <p class="pkg-best-for"><strong>Best for:</strong> Properties, budgets, or goals that don't fit a standard package.</p>
+            <ul class="pkg-includes"><li>Any combination of lawn care, edible garden, and landscape services</li><li>Tailored to your specific property, schedule, and budget</li><li>One-time assessments or ongoing service — your choice</li></ul>
+            <a href="#quote-form" class="btn btn-outline pkg-cta">Discuss Your Needs</a>
+          </div>
+        </details>
+      </div>
+      <div class="section-cta reveal">
+        <a href="#quote-form" class="btn btn-primary btn-lg">Get a Free Quote</a>
+        <a href="tel:+18039037059" class="btn btn-outline btn-lg">Call (803) 903-7059</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ EDIBLE LANDSCAPES ═══════════ -->
+  <section class="edible-landscapes section-pad" id="edible-landscapes" aria-labelledby="el-heading">
+    <div class="container">
+      <div class="el-split">
+        <div class="el-content reveal">
+          <span class="eyebrow">Edible Landscape Services</span>
+          <h2 id="el-heading">A Yard That Looks Good and Produces Food</h2>
+          <p class="el-lead">InfiniteAg helps Charleston, Mount Pleasant, and Summerville homeowners transform lawns, patios, landscape beds, and backyards into productive edible spaces. Whether you're starting small with kitchen herbs or planning a full edible landscape, our plant scientist guides you from concept through planting and into the first harvest.</p>
+          <div class="el-ctas">
+            <a href="/edible-landscape-design-bluffton-sc/" class="btn btn-primary btn-lg">Edible Landscape Design</a>
+            <a href="/raised-garden-beds-bluffton-sc/" class="btn btn-outline btn-lg">Raised Garden Beds</a>
+          </div>
+          <p class="el-note">Start with an on-site assessment. No commitment required.</p>
+        </div>
+        <div class="el-cards-grid reveal reveal-right">
+          <div class="el-card"><div class="el-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/></svg></div><h3>Fruit, Vegetable, Herb &amp; Berry Integration</h3><p>Food-producing plants integrated into your existing landscape for visual appeal and year-round harvests suited to SC's growing seasons.</p></div>
+          <div class="el-card"><div class="el-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div><h3>Raised Bed &amp; Kitchen Garden Consultation</h3><p>Sizing, placement, soil mix, and seasonal planting advice — designed to produce reliably in Charleston's climate from the first season.</p></div>
+          <div class="el-card"><div class="el-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22c1.25-4 3.5-7 8-8.5"/><path d="M12 2c0 4.5-2 8-6 10.5"/><path d="M12 2c0 4.5 2 8 6 10.5"/><path d="M22 22c-1.25-4-3.5-7-8-8.5"/></svg></div><h3>Indoor, Patio &amp; Container Growing</h3><p>Herb gardens, container setups, and patio edible spaces — practical guidance for growing food in any size space in South Carolina.</p></div>
+          <div class="el-card"><div class="el-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div><h3>Pollinator-Friendly Plantings</h3><p>Flowering plants that attract beneficial pollinators and support the long-term health of your edible garden ecosystem.</p></div>
+          <div class="el-card"><div class="el-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><h3>Seasonal Harvest Planning</h3><p>Personalized planting calendars and crop management guidance for productive spring, summer, and fall harvests in South Carolina.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ GALLERY PLACEHOLDER ═══════════ -->
+  <section class="gallery-section section-pad" id="gallery" aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Project Gallery</span>
+        <h2 id="gallery-heading">Before &amp; After Project Gallery</h2>
+        <p>This gallery will document real Lowcountry lawn recoveries, soil improvements, edible garden builds, raised bed installations, and sustainable yard transformations completed by InfiniteAg in Charleston, Mount Pleasant, Summerville, and nearby areas.</p>
+      </div>
+      <div class="gallery-ph-grid">
+        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><h3>Lawn Health Recovery</h3><p>Brown patches, thinning turf, and weed pressure diagnosed, treated, and documented before and after the assessment and care plan.</p></div>
+        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg></div><h3>Soil Improvement</h3><p>Compaction relief, organic matter additions, and drainage fixes — what was found, what was done, and the improvement over time.</p></div>
+        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/></svg></div><h3>Edible Garden Setup</h3><p>Edible landscape designs from initial consultation through planting, establishment, and first-season production.</p></div>
+        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div><h3>Raised Bed Projects</h3><p>Raised bed sizing, soil mix selection, and crop planning — from empty space to productive garden.</p></div>
+        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h3>Yard Diagnosis Results</h3><p>What InfiniteAg found on-site, what was causing the visible problem, and the practical steps that followed.</p></div>
+        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div><h3>Sustainable Landscape Transformations</h3><p>Native plantings, pollinator integration, and low-maintenance yard improvements for SC properties.</p></div>
+      </div>
+      <div class="gallery-ph-note reveal">
+        <p>Have a completed project with InfiniteAg? <a href="tel:+18039037059">Call (803) 903-7059</a> or <a href="#quote-form">submit a project note</a> — we'd love to document it.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ TESTIMONIALS ═══════════ -->
+  <section class="testimonials-section section-pad" id="reviews" aria-labelledby="reviews-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Customer Reviews</span>
+        <h2 id="reviews-heading">Real Customer Stories Coming Soon</h2>
+        <p>InfiniteAg is collecting verified feedback from local homeowners in Charleston, Mount Pleasant, Summerville, and the broader Lowcountry. As projects are completed, this section will feature real reviews, project notes, and results.</p>
+      </div>
+      <div class="testimonials-box reveal">
+        <div class="testimonials-box__icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Verified Reviews from Charleston-Area Homeowners</h3>
+        <p>No fabricated ratings or placeholder quotes here. Reviews appear as they are collected from real InfiniteAg customers across the Lowcountry.</p>
+        <a href="tel:+18039037059" class="testimonials-box__cta">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Worked with InfiniteAg? Call us to share your feedback — (803) 903-7059
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ FAQ ═══════════ -->
+  <section class="faq section-pad" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Questions &amp; Answers</span>
+        <h2 id="faq-heading">Frequently Asked Questions</h2>
+        <p>Common questions about InfiniteAg's services, service areas, and what to expect during an assessment.</p>
+      </div>
+      <div class="faq-list" role="list">
+        <details class="faq-item reveal" role="listitem"><summary>What areas does InfiniteAg serve?</summary><div class="faq-body"><p>InfiniteAg primarily serves homeowners in Charleston, Mount Pleasant, and Summerville, SC, along with nearby Lowcountry areas including Bluffton, Hilton Head Island, Beaufort, Okatie, and Sun City Hilton Head. Call or text (803) 903-7059 to confirm availability in your neighborhood.</p></div></details>
+        <details class="faq-item reveal" role="listitem"><summary>What makes InfiniteAg different from a regular lawn care company?</summary><div class="faq-body"><p>InfiniteAg is led by a plant scientist. Most lawn companies apply standard treatments on a schedule without diagnosing what's actually happening in your soil or with your grass. We assess soil health, identify root-cause problems, and tailor every recommendation to your specific property. We also offer edible landscape design, raised bed consultation, and indoor growing guidance that most lawn companies don't.</p></div></details>
+        <details class="faq-item reveal" role="listitem"><summary>Do you offer lawn care in Charleston, SC?</summary><div class="faq-body"><p>Yes. Charleston is one of our primary service areas. We help Charleston homeowners with lawn health assessments, soil testing, weed management, brown patch diagnosis, drainage issues, seasonal turf care, and edible landscape planning. We understand Charleston's warm-season grasses, coastal soils, and the specific challenges of the Lowcountry climate.</p></div></details>
+        <details class="faq-item reveal" role="listitem"><summary>Can you help diagnose brown patches or weeds?</summary><div class="faq-body"><p>Yes — yard diagnosis is one of our core services. Brown patches, bare spots, persistent weeds, poor drainage, and thinning turf all have specific underlying causes. A plant scientist can assess your lawn, soil, and growing conditions and identify what's actually wrong before recommending a treatment.</p></div></details>
+        <details class="faq-item reveal" role="listitem"><summary>Do you design edible gardens?</summary><div class="faq-body"><p>Yes. InfiniteAg designs edible landscapes for Charleston and Lowcountry homeowners. We help plan fruit, herb, vegetable, and berry integration into your existing landscape. Every design accounts for your local climate, soil, sunlight, available space, and how much time you want to spend maintaining it.</p></div></details>
+        <details class="faq-item reveal" role="listitem"><summary>Do you help with raised garden beds?</summary><div class="faq-body"><p>Yes. Our raised bed consultation covers location selection, sizing and layout, soil mix recommendations, crop selection for SC's growing seasons, sunlight and irrigation planning, and seasonal planting schedules — whether you're building your first raised bed or expanding an existing garden.</p></div></details>
+        <details class="faq-item reveal" role="listitem"><summary>Can you help improve poor or sandy soil?</summary><div class="faq-body"><p>Yes. Soil health is the foundation of everything we do. We assess compaction, drainage, nutrient availability, and biology to understand what your lawn or garden actually needs. Charleston's coastal soils, sandy substrates, and depleted builder-fill all require specific amendments — not a generic fertilizer program.</p></div></details>
+        <details class="faq-item reveal" role="listitem"><summary>How do I request a quote or yard assessment?</summary><div class="faq-body"><p>Fill out the form below, or call or text (803) 903-7059. We'll review your request and schedule an in-person visit to your Charleston, Mount Pleasant, Summerville, or nearby Lowcountry home. Every plan starts with seeing your actual yard — not a phone estimate based on square footage alone.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ QUOTE FORM ═══════════ -->
   <section class="quote-section section-pad" id="quote-form" aria-labelledby="quote-heading">
     <div class="container">
       <div class="quote-inner">
-
         <div class="quote-text reveal">
-          <span class="eyebrow">Get a Quote &mdash; No Obligation</span>
-          <h2 id="quote-heading">Let's Plan Your Lawn-to-Harvest Transformation</h2>
-          <p>Tell us what you want to improve — your lawn, soil, landscape beds, edible plantings, or growing space. InfiniteAg will review your request and help you take the next practical step.</p>
-          <p>Every plan starts with an <strong>in-person property assessment</strong>. We'll visit your yard, evaluate your lawn, soil, drainage, edible potential, and goals, then build a science-based plan around what we find.</p>
+          <span class="eyebrow">Get Started — No Obligation</span>
+          <h2 id="quote-heading">Not Sure What Your Yard Needs?</h2>
+          <p>Send a few details about your lawn, garden, soil, or growing goals. InfiniteAg will identify the best next step — whether that's a lawn health check, soil assessment, edible garden plan, or yard diagnosis in Charleston, Mount Pleasant, Summerville, or nearby areas.</p>
+          <p>Every service starts with <strong>an in-person property visit</strong>. We assess your lawn, soil, drainage, plants, and sunlight before making any recommendation. No guessing, no generic programs.</p>
           <p class="quote-phone">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Prefer to speak directly? <a href="tel:+18039037059" aria-label="Call InfiniteAg at 803 903 7059">(803) 903-7059</a>
+            Prefer to call or text? <a href="tel:+18039037059">(803) 903-7059</a>
           </p>
         </div>
-
         <div class="quote-form-wrap reveal">
-          <form id="main-quote-form" novalidate aria-label="Free lawn quote request form">
-
-            <div class="form-group">
-              <label for="q-name">Your Name <span aria-hidden="true">*</span></label>
-              <input type="text" id="q-name" name="name" placeholder="Your name" required autocomplete="name" aria-required="true" />
+          <form id="main-quote-form" novalidate aria-label="Free yard assessment request form">
+            <div class="form-group"><label for="q-name">Your Name <span aria-hidden="true">*</span></label><input type="text" id="q-name" name="name" placeholder="Your full name" required autocomplete="name" aria-required="true" /></div>
+            <div class="form-row-2">
+              <div class="form-group"><label for="q-phone">Phone Number <span aria-hidden="true">*</span></label><input type="tel" id="q-phone" name="phone" placeholder="(803) 000-0000" required autocomplete="tel" aria-required="true" /></div>
+              <div class="form-group"><label for="q-email">Email Address <span aria-hidden="true">*</span></label><input type="email" id="q-email" name="email" placeholder="you@example.com" required autocomplete="email" aria-required="true" /></div>
             </div>
-
-            <!-- Phone number will be added later -->
-            <div class="form-group">
-              <label for="q-email">Email Address <span aria-hidden="true">*</span></label>
-              <input type="email" id="q-email" name="email" placeholder="you@example.com" required autocomplete="email" aria-required="true" />
+            <div class="form-row-2">
+              <div class="form-group"><label for="q-city">Your City <span class="optional-label">(Optional)</span></label><input type="text" id="q-city" name="city" placeholder="Charleston, Mt. Pleasant, Summerville…" autocomplete="address-level2" /></div>
+              <div class="form-group"><label for="q-service">Service Needed <span class="optional-label">(Optional)</span></label>
+                <select id="q-service" name="service">
+                  <option value="">Not sure yet</option>
+                  <option value="lawn-care">Lawn Care</option>
+                  <option value="soil-health">Soil Health Assessment</option>
+                  <option value="yard-diagnosis">Yard Diagnosis</option>
+                  <option value="edible-landscape">Edible Landscape Design</option>
+                  <option value="raised-bed">Raised Garden Bed Consultation</option>
+                  <option value="indoor-growing">Indoor / Small-Space Growing</option>
+                  <option value="full-assessment">Full Property Assessment</option>
+                  <option value="custom">Custom / Not Sure Yet</option>
+                </select>
+              </div>
             </div>
-
-            <div class="form-group">
-              <label for="q-address">Address or ZIP Code <span aria-hidden="true">*</span></label>
-              <input type="text" id="q-address" name="address" placeholder="Address or ZIP code" required autocomplete="street-address" aria-required="true" />
-            </div>
-
-            <div class="form-group">
-              <label for="q-service">Service You're Interested In <span class="optional-label">(Optional)</span></label>
-              <select id="q-service" name="service">
-                <option value="">Not sure yet — just exploring</option>
-                <option value="on-site-assessment">On-Site Assessment</option>
-                <option value="essential-pkg">Essential Lawn Care Package</option>
-                <option value="complete-pkg">Complete Turf Management Package</option>
-                <option value="premium-pkg">Premium Lawn &amp; Landscape Enhancement Package</option>
-                <option value="edible-pkg">Edible Landscape &amp; Food Production Package</option>
-                <option value="custom-solution">Customized Solution</option>
-                <option value="soil-health">Soil Health Evaluation</option>
-                <option value="lawn-diagnosis">Lawn &amp; Landscape Problem Diagnosis</option>
-                <option value="edible-design">Edible Garden Design</option>
-                <option value="raised-bed">Raised Bed &amp; Kitchen Garden Consultation</option>
-                <option value="indoor-growing">Indoor / Small-Scale Growing Guidance</option>
-                <option value="dr-zia">Consult Dr. Bazgha Zia</option>
-                <option value="not-sure">Not Sure Yet</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="q-message">Anything else we should know? <span class="optional-label">(Optional)</span></label>
-              <textarea id="q-message" name="message" rows="4" placeholder="Tell us what you'd like help with — or just say hello."></textarea>
-            </div>
-
-            <button type="submit" id="quote-submit-btn" class="btn btn-primary btn-full btn-lg">Request a Quote</button>
-
-            <p class="form-privacy">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#68766C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-              Your information is never sold or shared. We'll only use it to respond to your quote request.
-            </p>
-
+            <div class="form-group"><label for="q-message">Tell Us About Your Yard or Goals <span class="optional-label">(Optional)</span></label><textarea id="q-message" name="message" rows="4" placeholder="Brown patches, weeds, drainage issues, edible garden plans, raised beds, poor soil — whatever you'd like help with."></textarea></div>
+            <button type="submit" id="quote-submit-btn" class="btn btn-primary btn-full btn-lg">Request a Free Yard Assessment</button>
+            <p class="form-privacy"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#68766C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Your information is never sold or shared. We'll only use it to respond to your request.</p>
           </form>
         </div>
-
       </div>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════
-       FINAL CTA
-  ═══════════════════════════════════════ -->
+  <!-- ═══════════ FINAL CTA ═══════════ -->
   <section class="final-cta" aria-labelledby="final-cta-heading">
     <div class="final-cta-bg" aria-hidden="true"></div>
     <div class="container final-cta-inner reveal">
-      <div class="final-cta-botanical" aria-hidden="true">
-        <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0.12">
-          <path d="M60 110 Q55 80 60 50" stroke="#A7D46F" stroke-width="2.5" stroke-linecap="round"/>
-          <path d="M60 80 Q40 65 30 70" stroke="#A7D46F" stroke-width="2" stroke-linecap="round"/>
-          <path d="M60 70 Q80 55 90 58" stroke="#A7D46F" stroke-width="2" stroke-linecap="round"/>
-          <path d="M60 60 Q44 46 36 50" stroke="#A7D46F" stroke-width="1.8" stroke-linecap="round"/>
-          <path d="M60 55 Q74 42 82 46" stroke="#A7D46F" stroke-width="1.8" stroke-linecap="round"/>
-          <circle cx="60" cy="50" r="3" fill="#A7D46F"/>
-        </svg>
-      </div>
       <h2 id="final-cta-heading">Start With an In-Person Assessment.</h2>
-      <p>We'll evaluate your lawn, soil, drainage, and edible potential — then build a practical, science-based plan around what we actually find. No pressure, no guesswork.</p>
+      <p>We evaluate your lawn, soil, drainage, plants, and edible potential — then give you a clear, practical plan. No guesswork, no pressure, no one-size-fits-all program for Charleston, Mount Pleasant, or Summerville.</p>
       <div class="final-cta-actions">
-        <a href="#quote-form" class="btn btn-primary btn-lg">Schedule Assessment</a>
-        <a href="#quote-form" class="btn btn-white btn-lg">Get Free Quote</a>
+        <a href="#quote-form" class="btn btn-primary btn-lg">Schedule a Free Assessment</a>
+        <a href="tel:+18039037059" class="btn btn-white btn-lg">Call or Text (803) 903-7059</a>
       </div>
-      <a href="tel:+18039037059" class="final-cta-phone" aria-label="Call InfiniteAg at 803 903 7059">
+      <a href="tel:+18039037059" class="final-cta-phone" aria-label="Call InfiniteAg">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        Or call us: (803) 903-7059
+        Charleston · Mount Pleasant · Summerville · Bluffton · Hilton Head · SC Lowcountry
       </a>
     </div>
   </section>
 
 
-  <!-- ═══════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════ -->
+  <!-- ═══════════ FOOTER ═══════════ -->
   <footer class="site-footer" aria-label="Site footer">
     <div class="container footer-inner">
-
       <div class="footer-brand">
-        <a href="#" class="logo" aria-label="InfiniteAg">
-          <img src="assets/logo/InfiniteAg_Logo_transparent.png" alt="InfiniteAg" class="site-logo-img site-logo-img--footer">
-        </a>
-        <p class="footer-tagline">Agriculture Sciences • Sustainability • Landscape<br/>Edible Enhancement • Lawncare Management</p>
-        <p class="footer-phone">
-          <a href="tel:+18039037059" aria-label="Call InfiniteAg at 803 903 7059">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            (803) 903-7059
-          </a>
-        </p>
+        <a href="/" class="logo" aria-label="InfiniteAg"><img src="assets/logo/InfiniteAg_Logo_transparent.png" alt="InfiniteAg" class="site-logo-img site-logo-img--footer" /></a>
+        <p class="footer-tagline">Plant Scientist-Led Lawn Care &amp; Edible Landscape Design<br />Serving Charleston, Mount Pleasant, Summerville &amp; the SC Lowcountry</p>
+        <p class="footer-phone"><a href="tel:+18039037059" aria-label="Call InfiniteAg"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(803) 903-7059</a></p>
       </div>
-
       <div class="footer-col">
         <h4>Services</h4>
         <ul>
-          <li><a href="#services">Lawn Care</a></li>
-          <li><a href="#services">Soil Health</a></li>
-          <li><a href="#services">Edible Garden Design</a></li>
-          <li><a href="#edible-landscapes">Raised Bed Consultation</a></li>
-          <li><a href="#plant-scientist">Plant Scientist Consultation</a></li>
-          <li><a href="#services">Indoor Growing Guidance</a></li>
-          <li><a href="#packages">Customized Solutions</a></li>
+          <li><a href="/lawn-care-charleston-sc/">Lawn Care — Charleston</a></li>
+          <li><a href="/lawn-care-mount-pleasant-sc/">Lawn Care — Mt. Pleasant</a></li>
+          <li><a href="/lawn-care-summerville-sc/">Lawn Care — Summerville</a></li>
+          <li><a href="/soil-health-assessment-bluffton-sc/">Soil Health Assessment</a></li>
+          <li><a href="/yard-diagnosis-bluffton-sc/">Yard Diagnosis</a></li>
+          <li><a href="/edible-landscape-design-bluffton-sc/">Edible Landscape Design</a></li>
+          <li><a href="/raised-garden-beds-bluffton-sc/">Raised Garden Beds</a></li>
         </ul>
       </div>
-
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="/lawn-care-charleston-sc/">Charleston, SC</a></li>
+          <li><a href="/lawn-care-mount-pleasant-sc/">Mount Pleasant, SC</a></li>
+          <li><a href="/lawn-care-summerville-sc/">Summerville, SC</a></li>
+          <li><a href="/lawn-care-bluffton-sc/">Bluffton, SC</a></li>
+          <li><a href="/lawn-care-hilton-head-sc/">Hilton Head Island, SC</a></li>
+          <li><a href="/lawn-care-beaufort-sc/">Beaufort, SC</a></li>
+        </ul>
+      </div>
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
+          <li><a href="#plant-scientist">About Dr. Zia</a></li>
           <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#plant-scientist">Plant Scientist</a></li>
-          <li><a href="#quote-form">Schedule Assessment</a></li>
+          <li><a href="#packages">Service Packages</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#quote-form">Get a Free Quote</a></li>
         </ul>
       </div>
-
-      <div class="footer-col">
-        <h4>Service Area</h4>
-        <ul>
-          <li>Bluffton, SC</li>
-          <li>Beaufort, SC</li>
-          <li>Hilton Head Island, SC</li>
-          <li>Sun City Hilton Head, SC</li>
-          <li>Okatie, SC</li>
-          <li>Lowcountry Region, SC</li>
-        </ul>
-      </div>
-
     </div>
-
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
-        <p>&copy; 2026 InfiniteAg. All rights reserved. Serving the Lowcountry, SC.</p>
-        <div class="footer-legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-        </div>
+        <p>&copy; <span data-year></span> InfiniteAg. All rights reserved. Serving Charleston, Mount Pleasant, Summerville &amp; the SC Lowcountry.</p>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
       </div>
     </div>
   </footer>
 
 
-  <!-- ═══════════════════════════════════
-       STICKY MOBILE CTA BAR
-  ═══════════════════════════════════════ -->
+  <!-- ═══════════ STICKY MOBILE CTA ═══════════ -->
   <div class="mobile-cta-bar" id="mobile-cta-bar" role="complementary" aria-label="Quick contact options">
-    <a href="tel:+18039037059" class="btn btn-outline mobile-cta-btn" aria-label="Call InfiniteAg at 803 903 7059">Call Now</a>
-    <a href="#quote-form" class="btn btn-primary mobile-cta-btn">Get Free Quote</a>
+    <a href="tel:+18039037059" class="btn btn-outline mobile-cta-btn" aria-label="Call InfiniteAg">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call Now
+    </a>
+    <a href="#quote-form" class="btn btn-primary mobile-cta-btn">Free Assessment</a>
   </div>
 
   <script src="script.js"></script>
