@@ -29,20 +29,57 @@
 <body>
 
   <header class="site-header" id="site-header">
-    <div class="container header-inner">
-      <a href="/" class="site-logo" aria-label="InfiniteAg home"><img src="../assets/logo/InfiniteAg_Logo_transparent.png" alt="InfiniteAg" class="site-logo-img site-logo-img--header" /></a>
-      <nav class="main-nav" aria-label="Main navigation"><ul><li><a href="/#services">Services</a></li><li><a href="/#packages">Packages</a></li><li><a href="/#edible-landscapes">Edible Landscapes</a></li><li><a href="/#plant-scientist">Plant Scientist</a></li><li><a href="/#how-it-works">How It Works</a></li></ul></nav>
-      <div class="header-actions">
-        <a href="tel:+18039037059" class="header-phone-link">(803) 903-7059</a>
-        <a href="#quote-form" class="btn btn-primary btn-sm">Free Quote</a>
-        <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+    <div class="site-header__inner">
+
+      <!-- Brand -->
+      <a href="/" class="brand" aria-label="InfiniteAg — Lawn Care and Edible Landscapes">
+        <img src="../assets/logo/infiniteag-icon.webp" alt="InfiniteAg logo" class="brand__logo" width="52" height="52" />
+        <div class="brand__text">
+          <span class="brand__name">InfiniteAg</span>
+          <span class="brand__sub">Lawn Care &amp; Edible Landscapes</span>
+        </div>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/#services" class="nav__link">Services</a>
+        <a href="/lawn-care-charleston-sc/" class="nav__link">Lawn Care</a>
+        <a href="/soil-health-assessment-bluffton-sc/" class="nav__link">Soil Health</a>
+        <a href="/#edible-landscapes" class="nav__link">Edible Landscapes</a>
+        <a href="/#plant-scientist" class="nav__link">Plant Scientist</a>
+        <a href="/#service-areas" class="nav__link">Service Areas</a>
+      </nav>
+
+      <!-- Right actions -->
+      <div class="header-right">
+        <a href="tel:+18039037059" class="header-phone" aria-label="Call InfiniteAg at 803 903 7059">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (803) 903-7059
+        </a>
+        <a href="#quote-form" class="header-quote">Free Quote</a>
+        <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
       </div>
+
     </div>
   </header>
 
+  <!-- Mobile nav drawer -->
   <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
-    <ul><li><a href="/">Home</a></li><li><a href="/#services">Services</a></li><li><a href="/#service-areas">Service Areas</a></li><li><a href="/#how-it-works">How It Works</a></li></ul>
-    <div class="mobile-nav-ctas"><a href="tel:+18039037059" class="btn btn-outline btn-full">Call (803) 903-7059</a><a href="#quote-form" class="btn btn-primary btn-full">Free Assessment</a></div>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/lawn-care-charleston-sc/">Lawn Care</a></li>
+      <li><a href="/soil-health-assessment-bluffton-sc/">Soil Health</a></li>
+      <li><a href="/#edible-landscapes">Edible Landscapes</a></li>
+      <li><a href="/#plant-scientist">Plant Scientist</a></li>
+      <li><a href="/#service-areas">Service Areas</a></li>
+    </ul>
+    <div class="mobile-nav-ctas">
+      <a href="tel:+18039037059" class="btn btn-outline btn-full">Call (803) 903-7059</a>
+      <a href="#quote-form" class="btn btn-primary btn-full">Free Quote</a>
+    </div>
   </nav>
 
 

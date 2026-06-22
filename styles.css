@@ -2185,12 +2185,12 @@ p{color:var(--color-muted);max-width:65ch}
 }
 .home-hero__title {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(2.6rem, 3.5vw, 3.3rem);
+  font-size: clamp(2.3rem, 3.0vw, 2.9rem);
   color: #0E3B20;
-  line-height: 1.07;
+  line-height: 1.1;
   font-weight: 700;
-  letter-spacing: -.025em;
-  margin: 0 0 18px;
+  letter-spacing: -.022em;
+  margin: 0 0 16px;
 }
 .home-hero__ornament {
   display: flex;
