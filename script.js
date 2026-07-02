@@ -208,7 +208,7 @@ if (quoteSection) {
         .finally(() => {
           if (submitBtn) {
             submitBtn.disabled = false;
-            submitBtn.textContent = 'Request a Quote';
+            submitBtn.textContent = 'Request a Property Scan';
           }
         });
     });
