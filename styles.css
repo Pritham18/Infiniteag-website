@@ -874,6 +874,7 @@ p{color:var(--color-muted);max-width:65ch}
 .svc-card p{font-size:.875rem;color:#4a5e4d;line-height:1.72;margin-bottom:0;flex:1}
 .svc-card__link{display:inline-flex;align-items:center;gap:.3rem;margin-top:1.2rem;font-size:.8rem;font-weight:700;color:#3F8F46;letter-spacing:.01em;transition:color 150ms,gap 150ms}
 .svc-card__link:hover{color:#174A2A;gap:.5rem}
+@media(min-width:901px){.svc-grid .svc-card:nth-child(7):last-child{grid-column:2}}
 @media(max-width:900px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:580px){.svc-grid{grid-template-columns:1fr}}
 
@@ -1470,6 +1471,9 @@ p{color:var(--color-muted);max-width:65ch}
 .area-card__name { color: var(--color-white); font-size: .95rem; font-weight: 700; display: block; line-height: 1.25; }
 .area-card__desc { color: rgba(255,255,255,.62); font-size: .82rem; line-height: 1.65; max-width: none; flex: 1; }
 .area-card__link { display: inline-block; margin-top: auto; padding-top: .6rem; font-size: .78rem; font-weight: 600; color: var(--color-accent); }
+
+/* ── 6b. DIGITAL TOOLS ───────────────────────────────────── */
+.digital-tools-section { background: var(--color-white); border-top: 1px solid var(--color-border); }
 
 /* ── 7. GALLERY PLACEHOLDER ──────────────────────────────── */
 .gallery-section { background: var(--color-bg-warm); border-top: 1px solid var(--color-border); }
