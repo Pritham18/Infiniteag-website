@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>InfiniteAg | Ag-Tech Soil &amp; Lawn Intelligence for Homes &amp; Small Farms — Charleston, SC</title>
-  <meta name="description" content="Data-driven soil diagnostics, precision lawn care, and small-farm growing systems powered by real plant science and modern ag-tech. Serving Charleston, Mount Pleasant, Summerville, and the SC Lowcountry. Call or text (803) 903-7059." />
+  <title>InfiniteAg | Smart Growing Solutions for Indoor Farms &amp; Sustainable Food Systems</title>
+  <meta name="description" content="InfiniteAg helps homes, businesses, and communities turn indoor and outdoor spaces into productive, sustainable growing systems — software, apps, plants, biological controls, and plant scientist-led services. Serving Charleston, Mount Pleasant, Summerville, and the SC Lowcountry. Call or text (803) 903-7059." />
   <link rel="canonical" href="https://www.infiniteagworld.com/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="InfiniteAg | Ag-Tech Soil &amp; Lawn Intelligence for Homes &amp; Small Farms — Charleston, SC" />
-  <meta property="og:description" content="Precision soil analysis, sensor-informed lawn care, and edible landscape systems for homeowners and small farmers in the SC Lowcountry — built on plant science, not guesswork." />
+  <meta property="og:title" content="InfiniteAg | Smart Growing Solutions for Indoor Farms &amp; Sustainable Food Systems" />
+  <meta property="og:description" content="Software, apps, plants, biological controls, and plant scientist-led growing services for homes, businesses, and communities in the SC Lowcountry." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.infiniteagworld.com/" />
   <meta property="og:image" content="https://www.infiniteagworld.com/assets/logo/og-image.png" />
@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="assets/logo/InfiniteAg_Favicon_512px.png" />
-  <link rel="stylesheet" href="styles.css?v=29" />
+  <link rel="stylesheet" href="styles.css?v=30" />
 
   <!-- LocalBusiness Schema -->
   <script type="application/ld+json">
@@ -53,12 +53,14 @@
       "@type": "OfferCatalog",
       "name": "InfiniteAg Services",
       "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Indoor Farming" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Yard to Table" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Soil Diagnostics" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Best-Suited Variety Selection" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consultation" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lawn Care", "areaServed": "Charleston, SC" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Soil Health Assessment" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Yard Diagnosis" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Edible Landscape Design" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Raised Garden Bed Consultation" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Indoor Growing Guidance" } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Raised Garden Bed Consultation" } }
       ]
     }
   }
@@ -71,22 +73,51 @@
     <div class="site-header__inner">
 
       <!-- Brand -->
-      <a href="/" class="brand" aria-label="InfiniteAg — Lawn Care and Edible Landscapes">
+      <a href="/" class="brand" aria-label="InfiniteAg — Home">
         <img src="assets/logo/infiniteag-icon.webp" alt="InfiniteAg logo" class="brand__logo" width="52" height="52" />
         <div class="brand__text">
           <span class="brand__name">InfiniteAg</span>
-          <span class="brand__sub">Ag-Tech Lawn &amp; Soil Intelligence</span>
+          <span class="brand__sub">Smart Growing Systems</span>
         </div>
       </a>
 
       <!-- Desktop nav -->
       <nav class="nav" aria-label="Main navigation">
-        <a href="#services" class="nav__link">Services</a>
-        <a href="/lawn-care-charleston-sc/" class="nav__link">Lawn Care</a>
-        <a href="/soil-health-assessment-bluffton-sc/" class="nav__link">Soil Health</a>
-        <a href="#edible-landscapes" class="nav__link">Edible Landscapes</a>
-        <a href="#plant-scientist" class="nav__link">Plant Scientist</a>
-        <a href="#service-areas" class="nav__link">Service Areas</a>
+        <div class="nav__item">
+          <button class="nav__link nav__link--dropdown" type="button" aria-expanded="false" aria-haspopup="true">
+            Products
+            <svg class="nav__chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown">
+            <a href="/products/#software" class="nav__dropdown-link">Software</a>
+            <a href="/products/#apps" class="nav__dropdown-link">Apps</a>
+            <div class="nav__dropdown-group">
+              <span class="nav__dropdown-label">Seasonal &amp; Year-Round Plants</span>
+              <a href="/products/#herbs" class="nav__dropdown-sublink">Herbs</a>
+              <a href="/products/#shrubs" class="nav__dropdown-sublink">Shrubs</a>
+              <a href="/products/#vegetables" class="nav__dropdown-sublink">Vegetables</a>
+              <a href="/products/#fruits" class="nav__dropdown-sublink">Fruits</a>
+            </div>
+            <div class="nav__dropdown-divider"></div>
+            <a href="/products/#biological-controls" class="nav__dropdown-link">Biological Controls</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <button class="nav__link nav__link--dropdown" type="button" aria-expanded="false" aria-haspopup="true">
+            Services
+            <svg class="nav__chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown">
+            <a href="/services/#indoor-farming" class="nav__dropdown-link">Indoor Farming<small>Turn your indoor space into an indoor farm.</small></a>
+            <a href="/services/#yard-to-table" class="nav__dropdown-link">Yard to Table<small>Sustainable food production from your own space.</small></a>
+            <a href="/services/#soil-diagnostics" class="nav__dropdown-link">Soil Diagnostics</a>
+            <a href="/services/#best-suited-variety-selection" class="nav__dropdown-link">Best-Suited Variety Selection</a>
+            <a href="/services/#consultation" class="nav__dropdown-link">Consultation</a>
+          </div>
+        </div>
+        <a href="/our-work/" class="nav__link">Our Work</a>
+        <a href="/about/" class="nav__link">About</a>
+        <a href="/contact/" class="nav__link">Contact</a>
       </nav>
 
       <!-- Right actions -->
@@ -95,7 +126,7 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           (803) 903-7059
         </a>
-        <a href="#quote-form" class="header-quote">Free Property Scan</a>
+        <a href="/contact/" class="header-quote">Book Consultation</a>
         <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
           <span></span><span></span><span></span>
         </button>
@@ -104,26 +135,46 @@
     </div>
   </header>
 
-  <!-- Mobile nav drawer (kept for mobile) -->
+  <!-- Mobile nav drawer -->
   <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
     <ul>
-      <li><a href="#services">Services</a></li>
-      <li><a href="/lawn-care-charleston-sc/">Lawn Care</a></li>
-      <li><a href="/soil-health-assessment-bluffton-sc/">Soil Health</a></li>
-      <li><a href="#edible-landscapes">Edible Landscapes</a></li>
-      <li><a href="#plant-scientist">Plant Scientist</a></li>
-      <li><a href="#service-areas">Service Areas</a></li>
-      <li><a href="#faq">FAQ</a></li>
+      <li><a href="/">Home</a></li>
+      <li class="mobile-nav__dropdown">
+        <details>
+          <summary>Products</summary>
+          <ul class="mobile-nav__sublist">
+            <li><a href="/products/#software">Software</a></li>
+            <li><a href="/products/#apps">Apps</a></li>
+            <li><a href="/products/#herbs">Seasonal &amp; Year-Round Plants</a></li>
+            <li><a href="/products/#biological-controls">Biological Controls</a></li>
+          </ul>
+        </details>
+      </li>
+      <li class="mobile-nav__dropdown">
+        <details>
+          <summary>Services</summary>
+          <ul class="mobile-nav__sublist">
+            <li><a href="/services/#indoor-farming">Indoor Farming</a></li>
+            <li><a href="/services/#yard-to-table">Yard to Table</a></li>
+            <li><a href="/services/#soil-diagnostics">Soil Diagnostics</a></li>
+            <li><a href="/services/#best-suited-variety-selection">Best-Suited Variety Selection</a></li>
+            <li><a href="/services/#consultation">Consultation</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a href="/our-work/">Our Work</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
     </ul>
     <div class="mobile-nav-ctas">
       <a href="tel:+18039037059" class="btn btn-outline btn-full">Call (803) 903-7059</a>
-      <a href="#quote-form" class="btn btn-primary btn-full">Free Property Scan</a>
+      <a href="/contact/" class="btn btn-primary btn-full">Book Consultation</a>
     </div>
   </nav>
 
 
   <!-- ═══════════ HOME HERO ═══════════ -->
-  <section class="home-hero" id="hero" aria-label="InfiniteAg — Plant scientist-led lawn care and edible landscape design in Charleston, Mount Pleasant, Summerville, and the SC Lowcountry">
+  <section class="home-hero" id="hero" aria-label="InfiniteAg — Smart growing solutions for indoor farms, gardens, and sustainable food systems">
 
     <div class="home-hero__inner">
 
@@ -134,7 +185,7 @@
         </span>
 
         <h1 class="home-hero__title hp-anim hp-anim-d2">
-          Precision Growing Intelligence for Every Property Size
+          Smart Growing Solutions for Indoor Farms, Gardens, and Sustainable Food Systems
         </h1>
 
         <!-- Botanical ornament under headline -->
@@ -147,19 +198,19 @@
         </div>
 
         <p class="home-hero__text hp-anim hp-anim-d3">
-          From half-acre yards to small working farms, InfiniteAg brings commercial-grade soil diagnostics and plant science to homeowners and small growers — so every input, treatment, and planting decision is based on real data, not a calendar.
+          InfiniteAg helps homes, businesses, and communities turn indoor and outdoor spaces into productive, sustainable growing systems.
         </p>
 
         <div class="home-hero__actions hp-anim hp-anim-d4">
-          <a href="tel:+18039037059" class="btn-hp-primary" aria-label="Call or text InfiniteAg at 803 903 7059">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Call or Text (803) 903-7059
+          <a href="/products/" class="btn-hp-primary" aria-label="Explore InfiniteAg products">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/></svg>
+            Explore Products
           </a>
-          <a href="#quote-form" class="btn-hp-secondary">Get a Free Property Scan</a>
+          <a href="/contact/" class="btn-hp-secondary">Book Consultation</a>
         </div>
 
         <span class="home-hero__trust hp-anim hp-anim-d5">
-          Soil diagnostics &bull; Precision lawn programs &bull; Small farm consulting &bull; Edible systems design &bull; Data-backed growing plans
+          Indoor farming &bull; Soil diagnostics &bull; Growing products &bull; Sustainable food systems &bull; Data-backed growing plans
         </span>
       </div>
 
@@ -177,7 +228,7 @@
           <div class="home-hero__callout-icon" aria-hidden="true">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
           </div>
-          <p class="home-hero__callout-text">Engineered for South Carolina's heat, humidity, coastal soils, and drainage challenges — using the same diagnostic thinking that drives modern precision agriculture, scaled to your property.</p>
+          <p class="home-hero__callout-text">Engineered for South Carolina's heat, humidity, coastal soils, and drainage challenges — using the same diagnostic thinking that drives modern precision agriculture, scaled to your space.</p>
         </div>
       </div>
 
@@ -186,228 +237,8 @@
   </section>
 
 
-  <!-- ═══════════ HERO SERVICE CARDS ═══════════ -->
-  <section class="hero-service-grid" aria-label="InfiniteAg core services">
-    <div class="hero-service-grid__inner">
-
-      <a href="/lawn-care-charleston-sc/" class="hero-service-card hp-anim hp-anim-d1">
-        <div class="svc-card-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        </div>
-        <h3>Precision Lawn Care</h3>
-        <p>Treatment plans built on data, not a one-size-fits-all schedule.</p>
-      </a>
-
-      <a href="/soil-health-assessment-bluffton-sc/" class="hero-service-card hp-anim hp-anim-d2">
-        <div class="svc-card-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-        </div>
-        <h3>Soil Diagnostics</h3>
-        <p>Lab-informed soil analysis that tells you exactly what's limiting growth.</p>
-      </a>
-
-      <a href="/yard-diagnosis-bluffton-sc/" class="hero-service-card hp-anim hp-anim-d3">
-        <div class="svc-card-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        </div>
-        <h3>Yard Diagnosis</h3>
-        <p>Find the cause of brown patches, weeds, drainage issues, and weak growth.</p>
-      </a>
-
-      <a href="/edible-landscape-design-bluffton-sc/" class="hero-service-card hp-anim hp-anim-d4">
-        <div class="svc-card-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/><path d="M5 7c0 2.8 1.6 5 7 5s7-2.2 7-5"/></svg>
-        </div>
-        <h3>Edible Landscape Design</h3>
-        <p>Food-producing systems engineered into your existing land.</p>
-      </a>
-
-      <a href="/raised-garden-beds-bluffton-sc/" class="hero-service-card hp-anim hp-anim-d5">
-        <div class="svc-card-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="17"/><line x1="9.5" y1="14.5" x2="14.5" y2="14.5"/></svg>
-        </div>
-        <h3>Raised Bed &amp; Growing Systems</h3>
-        <p>Soil, irrigation, and layout planning built for measurable output.</p>
-      </a>
-
-    </div>
-  </section>
-
-
-  <!-- ═══════════ TRUST STRIP ═══════════ -->
-  <!-- trust-strip removed; replaced by .hero-service-grid above -->
-
-
-  <!-- ═══════════ SERVICES ═══════════ -->
-  <section class="services services--dark section-pad" id="services" aria-labelledby="services-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">Services</span>
-        <h2 id="services-heading">Diagnostics-First Growing Services for Homes &amp; Small Farms</h2>
-        <p class="section-subhead">Every InfiniteAg service starts with data collection on your actual property — soil composition, drainage behavior, nutrient levels, and growing conditions — before any recommendation is made.</p>
-      </div>
-      <div class="svc-grid">
-
-        <article class="svc-card reveal">
-          <div class="svc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a7a32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-          <h3>Precision Lawn Programs</h3>
-          <p class="svc-card__problem">Standard lawn services apply the same products to every yard on a route — is yours being treated for its actual limiting factor?</p>
-          <p>InfiniteAg builds your lawn plan from your soil and turf data — so treatments target the real issue, whether that's compaction, drainage, or a specific nutrient gap.</p>
-          <a href="/lawn-care-charleston-sc/" class="svc-card__link">Explore Precision Lawn Care →</a>
-        </article>
-
-        <article class="svc-card reveal">
-          <div class="svc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a7a32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
-          <h3>Soil Diagnostics &amp; Analysis</h3>
-          <p class="svc-card__problem">Guessing why plants struggle wastes a season — what's actually limiting growth in your soil?</p>
-          <p>InfiniteAg runs structured soil assessments — compaction, drainage, pH, nutrient load, and biological activity — and turns the results into a clear, prioritized action plan. This is the same diagnostic approach used in commercial agriculture, applied to residential lawns and small farm plots.</p>
-          <a href="/soil-health-assessment-bluffton-sc/" class="svc-card__link">See Soil Diagnostics →</a>
-        </article>
-
-        <article class="svc-card reveal">
-          <div class="svc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a7a32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-          <h3>Yard &amp; Field Diagnosis</h3>
-          <p class="svc-card__problem">Brown patches, bare spots, and struggling plants all have measurable causes.</p>
-          <p>A plant scientist evaluates soil, drainage, irrigation coverage, and root health on-site to identify the real driver — the same troubleshooting logic used to diagnose crop stress in the field.</p>
-          <a href="/yard-diagnosis-bluffton-sc/" class="svc-card__link">Get a Diagnosis →</a>
-        </article>
-
-        <article class="svc-card reveal">
-          <div class="svc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a7a32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/></svg></div>
-          <h3>Edible Landscape &amp; Food Systems Design</h3>
-          <p class="svc-card__problem">A yard or plot that produces food is a system, not a garden bed dropped in a corner.</p>
-          <p>InfiniteAg designs integrated food-production layouts — fruiting trees, herbs, berries, vegetables — engineered around your soil data, sunlight mapping, and water access.</p>
-          <a href="/edible-landscape-design-bluffton-sc/" class="svc-card__link">Explore Edible Landscape Design →</a>
-        </article>
-
-        <article class="svc-card reveal">
-          <div class="svc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a7a32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="17"/><line x1="9.5" y1="14.5" x2="14.5" y2="14.5"/></svg></div>
-          <h3>Raised Bed &amp; Small-Plot Growing Systems</h3>
-          <p class="svc-card__problem">South Carolina's sandy and builder-grade soils make in-ground growing unpredictable.</p>
-          <p>InfiniteAg engineers raised bed and small-plot systems — soil mix, layout, irrigation, and crop sequencing — designed to produce measurable, repeatable results from the first season.</p>
-          <a href="/raised-garden-beds-bluffton-sc/" class="svc-card__link">Plan Your Growing System →</a>
-        </article>
-
-        <article class="svc-card reveal">
-          <div class="svc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a7a32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22c1.25-4 3.5-7 8-8.5"/><path d="M12 2c0 4.5-2 8-6 10.5"/><path d="M12 2c0 4.5 2 8 6 10.5"/><path d="M22 22c-1.25-4-3.5-7-8-8.5"/></svg></div>
-          <h3>Indoor, Container &amp; Small-Space Growing</h3>
-          <p class="svc-card__problem">No yard, limited space, or want year-round production?</p>
-          <p>InfiniteAg advises on container systems, indoor growing setups, and patio-scale food production suited to South Carolina's climate.</p>
-          <a href="#quote-form" class="svc-card__link">Request Growing Guidance →</a>
-        </article>
-
-        <article class="svc-card reveal">
-          <div class="svc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a7a32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/></svg></div>
-          <h3>Small Farm &amp; Homestead Consulting</h3>
-          <p>InfiniteAg provides soil mapping, crop planning, and growing-system design scaled for small acreage, so you can make input and planting decisions with real data behind them.</p>
-          <a href="#quote-form" class="svc-card__link">Talk to Us About Your Farm →</a>
-        </article>
-
-      </div>
-      <div class="services-cta reveal">
-        <a href="tel:+18039037059" class="btn btn-accent btn-lg">Call or Text (803) 903-7059</a>
-        <a href="#quote-form" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,.4);color:#fff;">Get a Free Property Scan</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════ WHY CHOOSE INFINITEAG ═══════════ -->
-  <section class="why-choose section-pad" id="why-infiniteag" aria-labelledby="why-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">Why InfiniteAg</span>
-        <h2 id="why-heading">Growing Decisions Backed by Data, Not Guesswork</h2>
-        <p>Most lawn and landscape companies run on a fixed schedule — mow, spray, repeat. InfiniteAg treats every property, from a quarter-acre yard to a small working farm, as a system worth measuring first.</p>
-      </div>
-      <div class="why-grid">
-        <div class="why-card reveal">
-          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div>
-          <h3>Plant Science, Applied Like Ag-Tech</h3>
-          <p>Every recommendation is grounded in soil science and plant biology — the same diagnostic thinking used in precision agriculture — scaled down to fit residential and small-farm properties.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg></div>
-          <h3>Soil Data Before Any Treatment</h3>
-          <p>Compacted, depleted, or poorly draining soil is the root cause of most lawn and crop problems. InfiniteAg measures what's actually happening below the surface before recommending any product or treatment — preventing spend on fixes that don't address the real issue.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-          <h3>Built for SC's Growing Conditions</h3>
-          <p>Charleston's heat, humidity, sandy coastal soils, and warm-season growing patterns don't behave like national averages. Every plan is calibrated to Lowcountry conditions specifically — not a generic program.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/></svg></div>
-          <h3>Systems for Small Farms, Not Just Lawns</h3>
-          <p>Small farms and homesteads rarely have access to the soil mapping and crop planning tools used on large operations. InfiniteAg brings that same diagnostic rigor to smaller acreage, so growers can make input decisions with actual data.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-          <h3>Clear, Actionable Output</h3>
-          <p>Every assessment produces a specific plan — what's limiting growth, why, and what will realistically fix it — before any money is spent.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-          <h3>No Inflated Diagnoses</h3>
-          <p>If the fix is simple, we say so. InfiniteAg's goal is a healthier lawn, garden, or plot — not a longer service contract.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════ COMMON PROBLEMS ═══════════ -->
-  <section class="problems-section section-pad" id="problems" aria-labelledby="problems-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">Common Problems, Measured — Not Guessed</span>
-        <h2 id="problems-heading">Diagnosable Problems Across Lawns, Gardens &amp; Small Farms</h2>
-        <p>If any of these sound familiar, a plant scientist-led assessment is the right first step. We diagnose before we recommend — serving homeowners and small farms across Charleston, Mount Pleasant, Summerville, and the SC Lowcountry.</p>
-      </div>
-      <div class="problems-list">
-        <div class="problem-card reveal">
-          <h3>Brown Patches &amp; Weak Turf</h3>
-          <p>Compaction, drainage, disease, heat stress, and nutrient imbalance all look similar at the surface. Soil-level data isolates the actual cause.</p>
-        </div>
-        <div class="problem-card reveal">
-          <h3>Persistent Weeds</h3>
-          <p>Weeds exploit stressed, thin turf. Treating weeds without correcting the underlying soil condition creates a recurring cycle — we identify why weeds are winning first.</p>
-        </div>
-        <div class="problem-card reveal">
-          <h3>Drainage &amp; Compaction Issues</h3>
-          <p>Pooling water and compacted soil point to a structural problem below ground. We measure where the breakdown is actually occurring.</p>
-        </div>
-        <div class="problem-card reveal">
-          <h3>Compacted or Depleted Soil</h3>
-          <p>Soil that won't absorb water, won't hold nutrients, or produces shallow roots needs structural improvement — not just more fertilizer. InfiniteAg identifies what's limiting soil health and recommends amendments specific to your property's actual conditions.</p>
-        </div>
-        <div class="problem-card reveal">
-          <h3>Underperforming Vegetable Gardens or Small Plots</h3>
-          <p>Poor fruiting, slow growth, and seedling failure almost always trace back to soil quality, drainage, or light — diagnosable with the right data, not trial and error.</p>
-        </div>
-        <div class="problem-card reveal">
-          <h3>Uncertain Crop or Plant Selection</h3>
-          <p>Not every crop or turf variety performs in Charleston's heat and humidity. Site-specific data narrows down what will actually succeed on your property.</p>
-        </div>
-        <div class="problem-card reveal">
-          <h3>Small Farms Without an Agronomist</h3>
-          <p>Many small farms and homesteads operate without access to soil mapping or crop-planning support. InfiniteAg fills that gap with scaled-down precision-ag consulting.</p>
-        </div>
-        <div class="problem-card reveal">
-          <h3>Want a Yard or Plot That Produces</h3>
-          <p>Homeowners and small growers increasingly want land that produces something measurable — herbs, fruit, vegetables — engineered into the existing landscape.</p>
-        </div>
-      </div>
-      <div class="problems-cta reveal">
-        <a href="#quote-form" class="btn btn-primary btn-lg">Get a Data-Backed Assessment</a>
-        <a href="tel:+18039037059" class="btn btn-outline btn-lg">Call or Text (803) 903-7059</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════ DR. ZIA — PLANT SCIENTIST ═══════════ -->
-  <section class="dr-zia-section section-pad" id="plant-scientist" aria-labelledby="zia-heading">
+  <!-- ═══════════ ABOUT PREVIEW ═══════════ -->
+  <section class="content-section section-pad" id="about-preview" aria-labelledby="about-preview-heading">
     <div class="container">
       <div class="zia-inner">
         <div class="zia-portrait-col">
@@ -424,21 +255,133 @@
           </div>
         </div>
         <div class="zia-col reveal">
-          <span class="eyebrow">The Science Behind InfiniteAg</span>
-          <h2 id="zia-heading">Dr. Bazgha Zia</h2>
-          <span class="zia-subtitle">Plant Scientist</span>
-          <p class="zia-bio">Dr. Bazgha Zia brings applied plant science and soil diagnostics to homeowners and small growers across the SC Lowcountry — the kind of data-driven decision-making typically reserved for commercial agriculture, scaled to fit a residential lawn, a raised bed, or a small working farm.</p>
-          <p class="zia-bio--support">What sets InfiniteAg apart is simple: every recommendation is grounded in measured soil and plant data, not a generic service schedule. That means treatments, crop choices, and growing systems are calibrated to what's actually happening on your property.</p>
-          <ul class="zia-values">
-            <li><div class="zia-value-dot" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#A7D46F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Soil, turf, and growing-condition diagnostics</li>
-            <li><div class="zia-value-dot" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#A7D46F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Small farm &amp; homestead growing-system consulting</li>
-            <li><div class="zia-value-dot" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#A7D46F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Edible landscape and food-production design</li>
-            <li><div class="zia-value-dot" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#A7D46F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Sustainable, data-informed land management</li>
-          </ul>
+          <span class="eyebrow">About InfiniteAg</span>
+          <h2 id="about-preview-heading">Helping People Grow Smarter, Healthier, and More Sustainable Food Systems</h2>
+          <p class="zia-bio">InfiniteAg is led by plant scientist Dr. Bazgha Zia, bringing real plant science and soil diagnostics to homes, businesses, and communities — not guesswork.</p>
           <div class="zia-ctas">
-            <a href="#quote-form" class="btn btn-primary">Request an Assessment</a>
-            <a href="tel:+18039037059" class="btn btn-outline">Call (803) 903-7059</a>
+            <a href="/about/" class="btn btn-primary">About InfiniteAg</a>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ PRODUCTS PREVIEW ═══════════ -->
+  <section class="content-section content-section--warm section-pad" id="products-preview" aria-labelledby="products-preview-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Products</span>
+        <h2 id="products-preview-heading">Software, Apps, Plants &amp; Biological Controls</h2>
+      </div>
+      <div class="product-grid">
+        <a href="/products/#software" class="product-card reveal">
+          <div class="product-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3>Software</h3>
+          <p>Growing management tools for soil data, crop planning, and tracking.</p>
+          <span class="product-card__link">Learn more →</span>
+        </a>
+        <a href="/products/#apps" class="product-card reveal">
+          <div class="product-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+          <h3>Apps</h3>
+          <p>Mobile tools for monitoring, irrigation, and plant identification.</p>
+          <span class="product-card__link">Learn more →</span>
+        </a>
+        <a href="/products/#plants" class="product-card reveal">
+          <div class="product-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div>
+          <h3>Seasonal &amp; Year-Round Plants</h3>
+          <p>Herbs, shrubs, vegetables, and fruits suited to Lowcountry conditions.</p>
+          <span class="product-card__link">Browse plants →</span>
+        </a>
+        <a href="/products/#biological-controls" class="product-card reveal">
+          <div class="product-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <h3>Biological Controls</h3>
+          <p>Beneficial insects and biological pest management options.</p>
+          <span class="product-card__link">Learn more →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ SERVICES PREVIEW ═══════════ -->
+  <section class="content-section section-pad" id="services-preview" aria-labelledby="services-preview-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Services</span>
+        <h2 id="services-preview-heading">Five Ways InfiniteAg Helps You Grow</h2>
+      </div>
+      <div class="product-grid product-grid--compact">
+        <a href="/services/#indoor-farming" class="product-card reveal">
+          <div class="product-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22c1.25-4 3.5-7 8-8.5"/><path d="M12 2c0 4.5-2 8-6 10.5"/><path d="M12 2c0 4.5 2 8 6 10.5"/><path d="M22 22c-1.25-4-3.5-7-8-8.5"/></svg></div>
+          <h3>Indoor Farming</h3>
+          <p>Turn your indoor space into an indoor farm.</p>
+          <span class="product-card__link">Learn more →</span>
+        </a>
+        <a href="/services/#yard-to-table" class="product-card reveal">
+          <div class="product-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/></svg></div>
+          <h3>Yard to Table</h3>
+          <p>Sustainable food production from your own space.</p>
+          <span class="product-card__link">Learn more →</span>
+        </a>
+        <a href="/services/#soil-diagnostics" class="product-card reveal">
+          <div class="product-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg></div>
+          <h3>Soil Diagnostics</h3>
+          <p>Structured soil assessments and clear action plans.</p>
+          <span class="product-card__link">Learn more →</span>
+        </a>
+        <a href="/services/#best-suited-variety-selection" class="product-card reveal">
+          <div class="product-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+          <h3>Best-Suited Variety Selection</h3>
+          <p>Plant and crop varieties matched to your site.</p>
+          <span class="product-card__link">Learn more →</span>
+        </a>
+        <a href="/services/#consultation" class="product-card reveal">
+          <div class="product-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#12451F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>Consultation</h3>
+          <p>A plant scientist-led conversation about your goals.</p>
+          <span class="product-card__link">Learn more →</span>
+        </a>
+      </div>
+      <div class="services-cta reveal" style="margin-top:var(--space-10)">
+        <a href="/services/" class="btn btn-primary btn-lg">See All Services</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ WHY CHOOSE INFINITEAG ═══════════ -->
+  <section class="why-choose section-pad content-section--warm" id="why-infiniteag" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Why InfiniteAg</span>
+        <h2 id="why-heading">Growing Decisions Backed by Data, Not Guesswork</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h3>Practical Growing Solutions</h3>
+          <p>Systems and recommendations built around what your space can actually support — not a generic program.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22c1.25-4 3.5-7 8-8.5"/><path d="M12 2c0 4.5-2 8-6 10.5"/><path d="M12 2c0 4.5 2 8 6 10.5"/><path d="M22 22c-1.25-4-3.5-7-8-8.5"/></svg></div>
+          <h3>Indoor Farming Expertise</h3>
+          <p>Guidance for turning indoor space into a productive, year-round growing system.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/></svg></div>
+          <h3>Sustainable Food Production</h3>
+          <p>Growing systems designed to produce food responsibly, season after season.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg></div>
+          <h3>Soil-Based Recommendations</h3>
+          <p>Every recommendation starts with measured soil and site data, not a calendar.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+          <h3>Best-Suited Variety Selection</h3>
+          <p>Plant and crop varieties matched to your soil, sunlight, and climate.</p>
         </div>
       </div>
     </div>
@@ -451,311 +394,48 @@
       <div class="section-header reveal">
         <span class="eyebrow">Simple, Data-Driven Process</span>
         <h2 id="hiw-heading">How It Works</h2>
-        <p>Getting started is clear and straightforward. No sales pressure, no complicated contracts — just a data-backed look at your lawn, garden, or small farm and a clear plan for what comes next.</p>
+        <p>No sales pressure, no complicated contracts — just a clear, data-backed path from first visit to harvest.</p>
       </div>
       <ol class="steps-list">
         <li class="step-item reveal">
           <div class="step-number" aria-hidden="true">01</div>
           <div class="step-content">
-            <h3>Request a Property Scan</h3>
-            <p>Tell us about your lawn, garden, plot, or small farm — and your growing goals. We schedule an on-site visit.</p>
+            <h3>Discover Your Space</h3>
+            <p>Tell us about your indoor space, yard, garden, or plot — and your growing goals.</p>
           </div>
         </li>
         <li class="step-item reveal">
           <div class="step-number" aria-hidden="true">02</div>
           <div class="step-content">
-            <h3>We Collect the Data</h3>
-            <p>Soil, drainage, sunlight, and plant condition are measured directly on your property — not estimated from satellite imagery or a phone call.</p>
+            <h3>Diagnose Soil / Growing Conditions</h3>
+            <p>Soil, drainage, sunlight, and growing conditions are measured directly, not estimated.</p>
           </div>
         </li>
         <li class="step-item reveal">
           <div class="step-number" aria-hidden="true">03</div>
           <div class="step-content">
-            <h3>You Get a Data-Backed Plan</h3>
-            <p>Clear, specific recommendations for your lawn, soil, edible system, or small farm plot — based on what was actually measured.</p>
+            <h3>Select the Best Varieties</h3>
+            <p>Plants and crop varieties are matched to what your space and soil can actually support.</p>
           </div>
         </li>
         <li class="step-item reveal">
           <div class="step-number" aria-hidden="true">04</div>
           <div class="step-content">
-            <h3>Ongoing Support or One-Time Fix</h3>
-            <p>Depending on your goals, InfiniteAg can provide ongoing monitoring and care, or a one-time diagnostic and plan.</p>
+            <h3>Build Your Growing System</h3>
+            <p>Layout, soil, irrigation, and planting come together into a working growing system.</p>
+          </div>
+        </li>
+        <li class="step-item reveal">
+          <div class="step-number" aria-hidden="true">05</div>
+          <div class="step-content">
+            <h3>Monitor, Improve, and Harvest</h3>
+            <p>Ongoing support or a one-time plan — either way, you have a system built to produce.</p>
           </div>
         </li>
       </ol>
       <div class="hiw-cta reveal">
-        <a href="#quote-form" class="btn btn-primary btn-lg">Schedule a Free Property Scan</a>
+        <a href="/contact/" class="btn btn-primary btn-lg">Book Consultation</a>
         <a href="tel:+18039037059" class="btn btn-outline btn-lg">Call (803) 903-7059</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════ SERVICE AREAS ═══════════ -->
-  <section class="service-areas-section section-pad" id="service-areas" aria-labelledby="areas-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">Service Areas</span>
-        <h2 id="areas-heading">Serving Homeowners &amp; Small Farms Across the SC Lowcountry</h2>
-        <p>InfiniteAg brings soil diagnostics, precision lawn care, small farm consulting, and edible landscape design to Charleston, Mount Pleasant, Summerville, and nearby Lowcountry areas — every engagement starts with an in-person data-collection visit.</p>
-      </div>
-
-      <!-- Primary cities: 3-column, visually dominant -->
-      <div class="area-cards">
-        <a href="/lawn-care-charleston-sc/" class="area-card reveal">
-          <span class="area-card__name">Charleston, SC</span>
-          <p class="area-card__desc">Historic lots, coastal soils, and compacted urban ground — InfiniteAg brings soil diagnostics and precision lawn care to Charleston homeowners and small growers.</p>
-          <span class="area-card__link">Lawn Care in Charleston →</span>
-        </a>
-        <a href="/lawn-care-mount-pleasant-sc/" class="area-card reveal">
-          <span class="area-card__name">Mount Pleasant, SC</span>
-          <p class="area-card__desc">Heat, humidity, and fast-growing warm-season turf — InfiniteAg calibrates lawn and soil programs to Mount Pleasant's specific growing conditions.</p>
-          <span class="area-card__link">Lawn Care in Mount Pleasant →</span>
-        </a>
-        <a href="/lawn-care-summerville-sc/" class="area-card reveal">
-          <span class="area-card__name">Summerville, SC</span>
-          <p class="area-card__desc">Larger residential lots, drainage concerns, and strong small-farm and edible-garden potential — InfiniteAg helps Summerville properties grow with data, not guesswork.</p>
-          <span class="area-card__link">Lawn Care in Summerville →</span>
-        </a>
-      </div>
-
-      <!-- Secondary areas: compact strip -->
-      <div class="secondary-areas reveal">
-        <p class="secondary-areas__label">Also serving nearby Lowcountry areas:</p>
-        <div class="secondary-area-links">
-          <a href="/lawn-care-bluffton-sc/">Bluffton</a>
-          <a href="/lawn-care-hilton-head-sc/">Hilton Head Island</a>
-          <a href="/lawn-care-beaufort-sc/">Beaufort</a>
-          <a href="/lawn-care-okatie-sc/">Okatie</a>
-          <a href="/lawn-care-sun-city-hilton-head-sc/">Sun City Hilton Head</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ═══════════ PACKAGES ═══════════ -->
-  <section class="packages section-pad" id="packages" aria-labelledby="pkg-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">Service Packages</span>
-        <h2 id="pkg-heading">Data-Driven Care Packages — Homes &amp; Small Farms</h2>
-        <p>From routine lawn maintenance to a complete small-farm growing system — InfiniteAg offers packages built around your property's data, goals, and schedule.</p>
-      </div>
-      <div class="pkg-accordion">
-        <details class="pkg-item reveal">
-          <summary class="pkg-summary"><span class="pkg-summary__label">Baseline</span><span class="pkg-summary__name">Essential Lawn Intelligence</span><svg class="pkg-summary__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
-          <div class="pkg-detail">
-            <p class="pkg-best-for"><strong>Best for:</strong> Homeowners who want consistent turf health without guesswork.</p>
-            <ul class="pkg-includes"><li>Scheduled mowing &amp; edging</li><li>Seasonal soil and turf inspections</li><li>Weed pressure monitoring</li><li>Data-informed care recommendations</li><li>Seasonal calibration for warm-season grasses</li></ul>
-            <a href="#quote-form" class="btn btn-outline pkg-cta">Get Started</a>
-          </div>
-        </details>
-        <details class="pkg-item reveal">
-          <summary class="pkg-summary"><span class="pkg-summary__label">Full System</span><span class="pkg-summary__name">Complete Turf &amp; Soil Management</span><svg class="pkg-summary__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
-          <div class="pkg-detail">
-            <p class="pkg-best-for"><strong>Best for:</strong> Year-round, measured lawn health.</p>
-            <ul class="pkg-includes"><li>All Baseline services</li><li>Integrated weed management, data-driven</li><li>Seasonal fertilization tuned to soil results</li><li>Full soil health assessments</li><li>Irrigation &amp; water-use analysis</li><li>Pest &amp; disease monitoring</li></ul>
-            <a href="#quote-form" class="btn btn-outline pkg-cta">Choose Complete Care</a>
-          </div>
-        </details>
-        <details class="pkg-item reveal">
-          <summary class="pkg-summary"><span class="pkg-summary__label">Enhanced</span><span class="pkg-summary__name">Precision Landscape Program</span><svg class="pkg-summary__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
-          <div class="pkg-detail">
-            <p class="pkg-best-for"><strong>Best for:</strong> A healthier, functional landscape with sustainability built in.</p>
-            <ul class="pkg-includes"><li>All Full System services</li><li>Custom landscape improvement plans</li><li>Pollinator-support planning</li><li>Native &amp; low-input plant integration</li><li>Soil improvement strategy</li><li>Seasonal planting calibration</li></ul>
-            <a href="#quote-form" class="btn btn-outline pkg-cta">Explore Enhanced</a>
-          </div>
-        </details>
-        <details class="pkg-item pkg-item--featured reveal">
-          <summary class="pkg-summary"><span class="pkg-summary__label pkg-summary__label--featured">Production</span><span class="pkg-summary__name">Edible &amp; Small Farm System</span><svg class="pkg-summary__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
-          <div class="pkg-detail">
-            <p class="pkg-best-for"><strong>Best for:</strong> Homeowners or small growers who want measurable food output.</p>
-            <ul class="pkg-includes"><li>All Enhanced services</li><li>Edible landscape design &amp; engineering</li><li>Fruit, vegetable, herb &amp; berry integration</li><li>Seasonal crop planning, data-informed</li><li>Raised bed / small-plot system design</li><li>Container &amp; indoor growing guidance</li><li>Harvest tracking &amp; yield planning support</li><li>Digital tool &amp; app setup guidance (moisture sensors, planting trackers)</li></ul>
-            <a href="#quote-form" class="btn btn-primary pkg-cta">Build My Production System</a>
-          </div>
-        </details>
-        <details class="pkg-item reveal">
-          <summary class="pkg-summary"><span class="pkg-summary__label pkg-summary__label--custom">Custom</span><span class="pkg-summary__name">Small Farm &amp; Property-Specific Solutions</span><svg class="pkg-summary__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
-          <div class="pkg-detail">
-            <p class="pkg-best-for"><strong>Best for:</strong> Properties, acreage, or goals outside a standard package.</p>
-            <ul class="pkg-includes"><li>Any combination of the above, scaled to your acreage</li><li>One-time diagnostic or ongoing monitoring</li><li>Built around your budget and growing goals</li></ul>
-            <a href="#quote-form" class="btn btn-outline pkg-cta">Discuss Your Needs</a>
-          </div>
-        </details>
-      </div>
-      <div class="section-cta reveal">
-        <a href="#quote-form" class="btn btn-primary btn-lg">Get a Free Quote</a>
-        <a href="tel:+18039037059" class="btn btn-outline btn-lg">Call (803) 903-7059</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════ EDIBLE LANDSCAPES ═══════════ -->
-  <section class="edible-landscapes section-pad" id="edible-landscapes" aria-labelledby="el-heading">
-    <div class="container">
-      <div class="el-split">
-        <div class="el-content reveal">
-          <span class="eyebrow">Edible Landscape Services</span>
-          <h2 id="el-heading">Land That Produces — Backed by Data</h2>
-          <p class="el-lead">InfiniteAg helps homeowners and small growers turn lawns, patios, and open plots into measurable food-production systems. From a few kitchen herbs to a small farm's planting plan, every design starts with soil and site data and carries through to harvest.</p>
-          <div class="el-ctas">
-            <a href="/edible-landscape-design-bluffton-sc/" class="btn btn-primary btn-lg">Edible Landscape Design</a>
-            <a href="/raised-garden-beds-bluffton-sc/" class="btn btn-outline btn-lg">Raised Garden Beds</a>
-          </div>
-          <p class="el-note">Start with an on-site assessment. No commitment required.</p>
-        </div>
-        <div class="el-cards-grid reveal reveal-right">
-          <div class="el-card"><div class="el-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/></svg></div><h3>Fruit, Vegetable, Herb &amp; Berry Integration</h3><p>Food-producing plants engineered into your existing land for year-round output.</p></div>
-          <div class="el-card"><div class="el-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div><h3>Raised Bed &amp; Small-Plot Systems</h3><p>Soil mix, sizing, and layout designed to produce from season one.</p></div>
-          <div class="el-card"><div class="el-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/></svg></div><h3>Small Farm Growing Plans</h3><p>Soil mapping and crop planning scaled to small acreage.</p></div>
-          <div class="el-card"><div class="el-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22c1.25-4 3.5-7 8-8.5"/><path d="M12 2c0 4.5-2 8-6 10.5"/><path d="M12 2c0 4.5 2 8 6 10.5"/><path d="M22 22c-1.25-4-3.5-7-8-8.5"/></svg></div><h3>Indoor, Patio &amp; Container Growing</h3><p>Practical systems for any space.</p></div>
-          <div class="el-card"><div class="el-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div><h3>Pollinator Support Planning</h3><p>Beneficial plantings that sustain your growing system long-term.</p></div>
-          <div class="el-card"><div class="el-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><h3>Seasonal &amp; Yield Planning</h3><p>Data-informed planting calendars and harvest tracking.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════ DIGITAL TOOLS ═══════════ -->
-  <section class="digital-tools-section section-pad" id="digital-tools" aria-labelledby="dt-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">Tools That Keep Working After We Leave</span>
-        <h2 id="dt-heading">Apps &amp; Digital Tools to Extend Your Growing Plan</h2>
-        <p>A property scan and a plan are the starting point. InfiniteAg also connects homeowners and small growers with the digital tools that keep soil, irrigation, and planting decisions on track between visits — so your yard, garden, or plot stays productive year-round, not just after a service call.</p>
-      </div>
-      <div class="gallery-ph-grid">
-        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div><h3>Soil &amp; Moisture Monitoring Apps</h3><p>Paired with in-ground sensors, these apps track real-time soil moisture and temperature and alert you before a lawn, bed, or crop area gets too dry or stays too wet — replacing guesswork watering with actual data.</p></div>
-        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3>Smart Irrigation Scheduling</h3><p>Weather-linked irrigation controllers adjust watering automatically based on rainfall, temperature, and evapotranspiration — cutting water waste and keeping soil conditions consistent across the season.</p></div>
-        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><h3>Planting &amp; Harvest Tracking Tools</h3><p>Digital planting calendars and crop-tracking apps log what's in the ground, expected harvest windows, and rotation history — useful for edible landscapes and essential for small farm and homestead planning.</p></div>
-        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h3>Plant &amp; Pest Identification Apps</h3><p>Camera-based identification tools help flag disease, pest pressure, or nutrient deficiency early, so issues get addressed before they spread — a helpful second set of eyes between InfiniteAg visits.</p></div>
-        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg></div><h3>Property &amp; Garden Mapping</h3><p>Simple digital mapping of beds, irrigation zones, and planting areas keeps a running record of your property — useful for tracking what's been amended, planted, or changed season over season.</p></div>
-        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><h3>Client Reporting &amp; Recommendations</h3><p>Soil test results, assessment findings, and care recommendations are shared digitally, so you always have a record of what was measured, what was recommended, and why — not just a verbal summary after a visit.</p></div>
-      </div>
-      <div class="gallery-ph-note reveal">
-        <p>InfiniteAg helps select and set up the right combination of tools for your property size and goals — from a simple moisture sensor for a raised bed to a full irrigation and monitoring setup for a small farm plot. We recommend tools based on what your property actually needs, not a one-size-fits-all app bundle.</p>
-      </div>
-      <div class="section-cta reveal">
-        <a href="#quote-form" class="btn btn-primary btn-lg">Ask About Tech Setup for Your Property</a>
-        <a href="tel:+18039037059" class="btn btn-outline btn-lg">Call or Text (803) 903-7059</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════ GALLERY PLACEHOLDER ═══════════ -->
-  <section class="gallery-section section-pad" id="gallery" aria-labelledby="gallery-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">Project Gallery</span>
-        <h2 id="gallery-heading">Before &amp; After Project Gallery</h2>
-        <p>This gallery will document real Lowcountry lawn recoveries, soil improvements, edible garden builds, raised bed installations, and sustainable yard transformations completed by InfiniteAg in Charleston, Mount Pleasant, Summerville, and nearby areas.</p>
-      </div>
-      <div class="gallery-ph-grid">
-        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><h3>Lawn Health Recovery</h3><p>Brown patches, thinning turf, and weed pressure diagnosed, treated, and documented before and after the assessment and care plan.</p></div>
-        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg></div><h3>Soil Improvement</h3><p>Compaction relief, organic matter additions, and drainage fixes — what was found, what was done, and the improvement over time.</p></div>
-        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M5 12s1-3 7-3 7 3 7 3"/><path d="M5 7s1-4 7-4 7 4 7 4"/></svg></div><h3>Edible Garden Setup</h3><p>Edible landscape designs from initial consultation through planting, establishment, and first-season production.</p></div>
-        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div><h3>Raised Bed Projects</h3><p>Raised bed sizing, soil mix selection, and crop planning — from empty space to productive garden.</p></div>
-        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h3>Yard Diagnosis Results</h3><p>What InfiniteAg found on-site, what was causing the visible problem, and the practical steps that followed.</p></div>
-        <div class="gallery-ph-card reveal"><div class="gallery-ph-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div><h3>Sustainable Landscape Transformations</h3><p>Native plantings, pollinator integration, and low-maintenance yard improvements for SC properties.</p></div>
-      </div>
-      <div class="gallery-ph-note reveal">
-        <p>Have a completed project with InfiniteAg? <a href="tel:+18039037059">Call (803) 903-7059</a> or <a href="#quote-form">submit a project note</a> — we'd love to document it.</p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════ TESTIMONIALS ═══════════ -->
-  <section class="testimonials-section section-pad" id="reviews" aria-labelledby="reviews-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">Customer Reviews</span>
-        <h2 id="reviews-heading">Real Customer Stories Coming Soon</h2>
-        <p>InfiniteAg is collecting verified feedback from local homeowners in Charleston, Mount Pleasant, Summerville, and the broader Lowcountry. As projects are completed, this section will feature real reviews, project notes, and results.</p>
-      </div>
-      <div class="testimonials-box reveal">
-        <div class="testimonials-box__icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3F8F46" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-        <h3>Verified Reviews from Charleston-Area Homeowners</h3>
-        <p>No fabricated ratings or placeholder quotes here. Reviews appear as they are collected from real InfiniteAg customers across the Lowcountry.</p>
-        <a href="tel:+18039037059" class="testimonials-box__cta">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          Worked with InfiniteAg? Call us to share your feedback — (803) 903-7059
-        </a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════ FAQ ═══════════ -->
-  <section class="faq section-pad" id="faq" aria-labelledby="faq-heading">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">Questions &amp; Answers</span>
-        <h2 id="faq-heading">Frequently Asked Questions</h2>
-        <p>Common questions about InfiniteAg's services, service areas, and what to expect during an assessment.</p>
-      </div>
-      <div class="faq-list" role="list">
-        <details class="faq-item reveal" role="listitem"><summary>What areas does InfiniteAg serve?</summary><div class="faq-body"><p>Charleston, Mount Pleasant, and Summerville, SC, plus nearby Lowcountry areas including Bluffton, Hilton Head Island, Beaufort, Okatie, and Sun City Hilton Head. Call or text (803) 903-7059 to confirm your area.</p></div></details>
-        <details class="faq-item reveal" role="listitem"><summary>What makes InfiniteAg different from a standard lawn or farm service?</summary><div class="faq-body"><p>InfiniteAg is led by a plant scientist and built around soil and plant data rather than fixed schedules. We measure soil health, isolate root-cause problems, and calibrate every recommendation to your property — whether that's a residential yard or a small working farm. We also offer small farm consulting, edible system design, and indoor/container growing guidance most lawn companies don't touch.</p></div></details>
-        <details class="faq-item reveal" role="listitem"><summary>Do you work with small farms, not just residential lawns?</summary><div class="faq-body"><p>Yes. InfiniteAg provides soil mapping, crop planning, and growing-system consulting scaled for small acreage and homestead operations — bringing the diagnostic approach of larger agricultural operations down to a size that fits small growers.</p></div></details>
-        <details class="faq-item reveal" role="listitem"><summary>Can you diagnose brown patches, weeds, or crop underperformance?</summary><div class="faq-body"><p>Yes. Diagnosis is core to what we do. These issues all have measurable underlying causes — soil condition, drainage, nutrient gaps — and we identify the actual driver before recommending treatment.</p></div></details>
-        <details class="faq-item reveal" role="listitem"><summary>Do you design food-producing systems?</summary><div class="faq-body"><p>Yes. We design edible landscapes and small-farm growing systems around your soil data, sunlight, water access, and maintenance capacity.</p></div></details>
-        <details class="faq-item reveal" role="listitem"><summary>Can you help with raised beds or small-plot growing?</summary><div class="faq-body"><p>Yes. Our system design covers placement, soil mix, crop sequencing, irrigation, and seasonal planting — built for repeatable, measurable output.</p></div></details>
-        <details class="faq-item reveal" role="listitem"><summary>Can you improve poor, sandy, or depleted soil?</summary><div class="faq-body"><p>Yes. Soil diagnostics are the foundation of every InfiniteAg service. We assess compaction, drainage, nutrients, and biology, then recommend targeted amendments — not a generic fertilizer program.</p></div></details>
-        <details class="faq-item reveal" role="listitem"><summary>Do you use or recommend apps and technology for my yard or farm?</summary><div class="faq-body"><p>Yes. Alongside our on-site diagnostics, InfiniteAg helps set up digital tools — soil moisture sensors, smart irrigation scheduling, planting and harvest tracking apps, and plant/pest identification tools — matched to your property size and goals, so you can stay on top of watering, planting, and problem spotting between visits.</p></div></details>
-        <details class="faq-item reveal" role="listitem"><summary>How do I request a property scan or quote?</summary><div class="faq-body"><p>Call, text, or submit the form. We schedule an in-person data-collection visit — every plan starts with real measurements from your property, not a phone estimate.</p></div></details>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════ QUOTE FORM ═══════════ -->
-  <section class="quote-section section-pad" id="quote-form" aria-labelledby="quote-heading">
-    <div class="container">
-      <div class="quote-inner">
-        <div class="quote-text reveal">
-          <span class="eyebrow">Get Started — No Obligation</span>
-          <h2 id="quote-heading">Ready for a Data-Backed Property Scan?</h2>
-          <p>Send a few details about your lawn, garden, soil, or growing goals. InfiniteAg will identify the best next step — whether that's a lawn health check, soil assessment, edible garden plan, or yard diagnosis in Charleston, Mount Pleasant, Summerville, or nearby areas.</p>
-          <p>Every service starts with <strong>an in-person property visit</strong>. We assess your lawn, soil, drainage, plants, and sunlight before making any recommendation. No guessing, no generic programs.</p>
-          <p class="quote-phone">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Prefer to call or text? <a href="tel:+18039037059">(803) 903-7059</a>
-          </p>
-        </div>
-        <div class="quote-form-wrap reveal">
-          <form id="main-quote-form" novalidate aria-label="Free yard assessment request form">
-            <div class="form-group"><label for="q-name">Your Name <span aria-hidden="true">*</span></label><input type="text" id="q-name" name="name" placeholder="Your full name" required autocomplete="name" aria-required="true" /></div>
-            <div class="form-row-2">
-              <div class="form-group"><label for="q-phone">Phone Number <span aria-hidden="true">*</span></label><input type="tel" id="q-phone" name="phone" placeholder="(803) 000-0000" required autocomplete="tel" aria-required="true" /></div>
-              <div class="form-group"><label for="q-email">Email Address <span aria-hidden="true">*</span></label><input type="email" id="q-email" name="email" placeholder="you@example.com" required autocomplete="email" aria-required="true" /></div>
-            </div>
-            <div class="form-row-2">
-              <div class="form-group"><label for="q-city">Your City <span class="optional-label">(Optional)</span></label><input type="text" id="q-city" name="city" placeholder="Charleston, Mt. Pleasant, Summerville…" autocomplete="address-level2" /></div>
-              <div class="form-group"><label for="q-service">Service Needed <span class="optional-label">(Optional)</span></label>
-                <select id="q-service" name="service">
-                  <option value="">Not sure yet</option>
-                  <option value="lawn-care">Lawn Care</option>
-                  <option value="soil-health">Soil Health Assessment</option>
-                  <option value="yard-diagnosis">Yard Diagnosis</option>
-                  <option value="edible-landscape">Edible Landscape Design</option>
-                  <option value="raised-bed">Raised Garden Bed Consultation</option>
-                  <option value="indoor-growing">Indoor / Small-Space Growing</option>
-                  <option value="full-assessment">Full Property Assessment</option>
-                  <option value="custom">Custom / Not Sure Yet</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group"><label for="q-message">Tell Us About Your Yard or Goals <span class="optional-label">(Optional)</span></label><textarea id="q-message" name="message" rows="4" placeholder="Brown patches, weeds, drainage issues, edible garden plans, raised beds, poor soil — whatever you'd like help with."></textarea></div>
-            <button type="submit" id="quote-submit-btn" class="btn btn-primary btn-full btn-lg">Request a Property Scan</button>
-            <p class="form-privacy"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#68766C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Your information is never sold or shared. We'll only use it to respond to your request.</p>
-          </form>
-        </div>
       </div>
     </div>
   </section>
@@ -765,10 +445,10 @@
   <section class="final-cta" aria-labelledby="final-cta-heading">
     <div class="final-cta-bg" aria-hidden="true"></div>
     <div class="container final-cta-inner reveal">
-      <h2 id="final-cta-heading">Start With a Data-Backed Property Scan</h2>
-      <p>We measure your soil, drainage, plants, and growing potential — then deliver a clear, prioritized plan. No guesswork, no generic programs, built for homeowners and small farms across Charleston, Mount Pleasant, and Summerville.</p>
+      <h2 id="final-cta-heading">Ready to Grow Smarter with InfiniteAg?</h2>
+      <p>Tell us about your space and goals — we'll help you find the right next step.</p>
       <div class="final-cta-actions">
-        <a href="#quote-form" class="btn btn-primary btn-lg">Schedule a Free Property Scan</a>
+        <a href="/contact/" class="btn btn-primary btn-lg">Book Consultation</a>
         <a href="tel:+18039037059" class="btn btn-white btn-lg">Call or Text (803) 903-7059</a>
       </div>
       <a href="tel:+18039037059" class="final-cta-phone" aria-label="Call InfiniteAg">
@@ -784,41 +464,34 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="/" class="logo" aria-label="InfiniteAg"><img src="assets/logo/InfiniteAg_Logo_transparent.png" alt="InfiniteAg" class="site-logo-img site-logo-img--footer" /></a>
-        <p class="footer-tagline">Plant Science &amp; Ag-Tech Diagnostics for Homes &amp; Small Farms<br />Serving Charleston, Mount Pleasant, Summerville &amp; the SC Lowcountry</p>
+        <p class="footer-tagline">Smart Growing Solutions for Homes, Businesses &amp; Communities<br />Serving Charleston, Mount Pleasant, Summerville &amp; the SC Lowcountry</p>
         <p class="footer-phone"><a href="tel:+18039037059" aria-label="Call InfiniteAg"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(803) 903-7059</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/products/#software">Software</a></li>
+          <li><a href="/products/#apps">Apps</a></li>
+          <li><a href="/products/#plants">Plants</a></li>
+          <li><a href="/products/#biological-controls">Biological Controls</a></li>
+        </ul>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
         <ul>
-          <li><a href="/lawn-care-charleston-sc/">Lawn Care — Charleston</a></li>
-          <li><a href="/lawn-care-mount-pleasant-sc/">Lawn Care — Mt. Pleasant</a></li>
-          <li><a href="/lawn-care-summerville-sc/">Lawn Care — Summerville</a></li>
-          <li><a href="/soil-health-assessment-bluffton-sc/">Soil Diagnostics</a></li>
-          <li><a href="/yard-diagnosis-bluffton-sc/">Yard &amp; Field Diagnosis</a></li>
-          <li><a href="#services">Small Farm Consulting</a></li>
-          <li><a href="/edible-landscape-design-bluffton-sc/">Edible Landscape Design</a></li>
-          <li><a href="/raised-garden-beds-bluffton-sc/">Raised Bed &amp; Growing Systems</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Service Areas</h4>
-        <ul>
-          <li><a href="/lawn-care-charleston-sc/">Charleston, SC</a></li>
-          <li><a href="/lawn-care-mount-pleasant-sc/">Mount Pleasant, SC</a></li>
-          <li><a href="/lawn-care-summerville-sc/">Summerville, SC</a></li>
-          <li><a href="/lawn-care-bluffton-sc/">Bluffton, SC</a></li>
-          <li><a href="/lawn-care-hilton-head-sc/">Hilton Head Island, SC</a></li>
-          <li><a href="/lawn-care-beaufort-sc/">Beaufort, SC</a></li>
+          <li><a href="/services/#indoor-farming">Indoor Farming</a></li>
+          <li><a href="/services/#yard-to-table">Yard to Table</a></li>
+          <li><a href="/services/#soil-diagnostics">Soil Diagnostics</a></li>
+          <li><a href="/services/#best-suited-variety-selection">Variety Selection</a></li>
+          <li><a href="/services/#consultation">Consultation</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="#plant-scientist">About Dr. Zia</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#packages">Packages</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#quote-form">Free Property Scan</a></li>
+          <li><a href="/our-work/">Our Work</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -837,9 +510,9 @@
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       Call Now
     </a>
-    <a href="#quote-form" class="btn btn-primary mobile-cta-btn">Property Scan</a>
+    <a href="/contact/" class="btn btn-primary mobile-cta-btn">Book Consultation</a>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>

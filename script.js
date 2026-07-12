@@ -294,6 +294,109 @@ if (mobileCTABar) {
   }
 }
 
+/* ── Nav dropdown (Products / Services) ─────────────────── */
+document.querySelectorAll('.nav__item').forEach(item => {
+  const trigger = item.querySelector('.nav__link--dropdown');
+  if (!trigger) return;
+
+  trigger.addEventListener('click', e => {
+    e.preventDefault();
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.nav__item.open').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.nav__link--dropdown')?.setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      trigger.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  /* Close the dropdown once a link inside it is chosen (same-page hash links
+     don't reload the page, so nothing else would close it). Blur the link too —
+     otherwise CSS :focus-within keeps the dropdown visible even with .open removed. */
+  item.querySelectorAll('.nav__dropdown a').forEach(link => {
+    link.addEventListener('click', () => {
+      item.classList.remove('open');
+      trigger.setAttribute('aria-expanded', 'false');
+      link.blur();
+    });
+  });
+});
+
+document.addEventListener('click', e => {
+  document.querySelectorAll('.nav__item.open').forEach(item => {
+    if (!item.contains(e.target)) {
+      item.classList.remove('open');
+      item.querySelector('.nav__link--dropdown')?.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  document.querySelectorAll('.nav__item.open').forEach(item => {
+    item.classList.remove('open');
+    item.querySelector('.nav__link--dropdown')?.setAttribute('aria-expanded', 'false');
+  });
+});
+
+/* ── Plant category tabs (Products page) ────────────────────
+   Clean, standalone implementation. Tabs and panels are matched
+   purely by data-plant-tab / data-plant-panel — no id-matching,
+   no shared state with any other script on the page.
+─────────────────────────────────────────────────────────────── */
+(function initPlantTabs() {
+  const tabs = Array.from(document.querySelectorAll('.plant-tab[data-plant-tab]'));
+  const panels = Array.from(document.querySelectorAll('.plant-panel[data-plant-panel]'));
+  if (!tabs.length || !panels.length) return;
+
+  const validNames = tabs.map(t => t.dataset.plantTab);
+
+  function showPlantTab(name, options) {
+    options = options || {};
+    if (validNames.indexOf(name) === -1) return;
+
+    tabs.forEach(tab => {
+      const active = tab.dataset.plantTab === name;
+      tab.setAttribute('aria-selected', active ? 'true' : 'false');
+      tab.tabIndex = active ? 0 : -1;
+    });
+
+    panels.forEach(panel => {
+      panel.hidden = panel.dataset.plantPanel !== name;
+    });
+
+    if (options.updateHash && window.location.hash.slice(1) !== name) {
+      history.replaceState(null, '', `#${name}`);
+    }
+
+    if (options.scrollIntoView) {
+      const showcase = document.getElementById('plant-showcase');
+      if (showcase) showcase.scrollIntoView({ behavior: 'instant', block: 'start' });
+    }
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      showPlantTab(tab.dataset.plantTab, { updateHash: true });
+    });
+  });
+
+  function syncFromHash(scrollIntoView) {
+    const name = window.location.hash.slice(1);
+    if (validNames.indexOf(name) !== -1) {
+      showPlantTab(name, { updateHash: false, scrollIntoView: scrollIntoView });
+    }
+  }
+
+  /* Direct-load deep link: /products/#shrubs opens Shrubs immediately. */
+  syncFromHash(true);
+  /* Same-page hash changes (e.g. a nav-dropdown plant link clicked while
+     already on this page) re-sync without a full reload. */
+  window.addEventListener('hashchange', () => syncFromHash(true));
+})();
+
 /* ── Active nav link highlight on scroll ─────────────────── */
 const sections = document.querySelectorAll('section[id]');
 const navLinks  = document.querySelectorAll('.main-nav a[href^="#"]');

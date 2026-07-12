@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="../assets/logo/InfiniteAg_Favicon_512px.png" />
-  <link rel="stylesheet" href="../styles.css?v=22" />
+  <link rel="stylesheet" href="../styles.css?v=30" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -32,22 +32,51 @@
     <div class="site-header__inner">
 
       <!-- Brand -->
-      <a href="/" class="brand" aria-label="InfiniteAg — Lawn Care and Edible Landscapes">
+      <a href="/" class="brand" aria-label="InfiniteAg — Home">
         <img src="../assets/logo/infiniteag-icon.webp" alt="InfiniteAg logo" class="brand__logo" width="52" height="52" />
         <div class="brand__text">
           <span class="brand__name">InfiniteAg</span>
-          <span class="brand__sub">Lawn Care &amp; Edible Landscapes</span>
+          <span class="brand__sub">Smart Growing Systems</span>
         </div>
       </a>
 
       <!-- Desktop nav -->
       <nav class="nav" aria-label="Main navigation">
-        <a href="/#services" class="nav__link">Services</a>
-        <a href="/lawn-care-charleston-sc/" class="nav__link">Lawn Care</a>
-        <a href="/soil-health-assessment-bluffton-sc/" class="nav__link">Soil Health</a>
-        <a href="/#edible-landscapes" class="nav__link">Edible Landscapes</a>
-        <a href="/#plant-scientist" class="nav__link">Plant Scientist</a>
-        <a href="/#service-areas" class="nav__link">Service Areas</a>
+        <div class="nav__item">
+          <button class="nav__link nav__link--dropdown" type="button" aria-expanded="false" aria-haspopup="true">
+            Products
+            <svg class="nav__chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown">
+            <a href="/products/#software" class="nav__dropdown-link">Software</a>
+            <a href="/products/#apps" class="nav__dropdown-link">Apps</a>
+            <div class="nav__dropdown-group">
+              <span class="nav__dropdown-label">Seasonal &amp; Year-Round Plants</span>
+              <a href="/products/#herbs" class="nav__dropdown-sublink">Herbs</a>
+              <a href="/products/#shrubs" class="nav__dropdown-sublink">Shrubs</a>
+              <a href="/products/#vegetables" class="nav__dropdown-sublink">Vegetables</a>
+              <a href="/products/#fruits" class="nav__dropdown-sublink">Fruits</a>
+            </div>
+            <div class="nav__dropdown-divider"></div>
+            <a href="/products/#biological-controls" class="nav__dropdown-link">Biological Controls</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <button class="nav__link nav__link--dropdown" type="button" aria-expanded="false" aria-haspopup="true">
+            Services
+            <svg class="nav__chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown">
+            <a href="/services/#indoor-farming" class="nav__dropdown-link">Indoor Farming<small>Turn your indoor space into an indoor farm.</small></a>
+            <a href="/services/#yard-to-table" class="nav__dropdown-link">Yard to Table<small>Sustainable food production from your own space.</small></a>
+            <a href="/services/#soil-diagnostics" class="nav__dropdown-link">Soil Diagnostics</a>
+            <a href="/services/#best-suited-variety-selection" class="nav__dropdown-link">Best-Suited Variety Selection</a>
+            <a href="/services/#consultation" class="nav__dropdown-link">Consultation</a>
+          </div>
+        </div>
+        <a href="/our-work/" class="nav__link">Our Work</a>
+        <a href="/about/" class="nav__link">About</a>
+        <a href="/contact/" class="nav__link">Contact</a>
       </nav>
 
       <!-- Right actions -->
@@ -56,7 +85,7 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           (803) 903-7059
         </a>
-        <a href="#quote-form" class="header-quote">Free Quote</a>
+        <a href="/contact/" class="header-quote">Book Consultation</a>
         <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
           <span></span><span></span><span></span>
         </button>
@@ -69,23 +98,43 @@
   <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/#services">Services</a></li>
-      <li><a href="/lawn-care-charleston-sc/">Lawn Care</a></li>
-      <li><a href="/soil-health-assessment-bluffton-sc/">Soil Health</a></li>
-      <li><a href="/#edible-landscapes">Edible Landscapes</a></li>
-      <li><a href="/#plant-scientist">Plant Scientist</a></li>
-      <li><a href="/#service-areas">Service Areas</a></li>
+      <li class="mobile-nav__dropdown">
+        <details>
+          <summary>Products</summary>
+          <ul class="mobile-nav__sublist">
+            <li><a href="/products/#software">Software</a></li>
+            <li><a href="/products/#apps">Apps</a></li>
+            <li><a href="/products/#herbs">Seasonal &amp; Year-Round Plants</a></li>
+            <li><a href="/products/#biological-controls">Biological Controls</a></li>
+          </ul>
+        </details>
+      </li>
+      <li class="mobile-nav__dropdown">
+        <details>
+          <summary>Services</summary>
+          <ul class="mobile-nav__sublist">
+            <li><a href="/services/#indoor-farming">Indoor Farming</a></li>
+            <li><a href="/services/#yard-to-table">Yard to Table</a></li>
+            <li><a href="/services/#soil-diagnostics">Soil Diagnostics</a></li>
+            <li><a href="/services/#best-suited-variety-selection">Best-Suited Variety Selection</a></li>
+            <li><a href="/services/#consultation">Consultation</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a href="/our-work/">Our Work</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
     </ul>
     <div class="mobile-nav-ctas">
       <a href="tel:+18039037059" class="btn btn-outline btn-full">Call (803) 903-7059</a>
-      <a href="#quote-form" class="btn btn-primary btn-full">Free Quote</a>
+      <a href="/contact/" class="btn btn-primary btn-full">Book Consultation</a>
     </div>
   </nav>
 
 
   <section class="page-hero" aria-labelledby="page-h1">
     <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="breadcrumb__sep">›</span><a href="/#service-areas">Service Areas</a><span class="breadcrumb__sep">›</span><span>Charleston, SC</span></nav>
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="breadcrumb__sep">›</span><a href="/contact/#service-areas">Service Areas</a><span class="breadcrumb__sep">›</span><span>Charleston, SC</span></nav>
       <p class="hero-area-label">Charleston, SC · South Carolina Lowcountry</p>
       <h1 id="page-h1">Lawn Care in Charleston, SC</h1>
       <p class="page-hero-desc">InfiniteAg provides plant scientist-led lawn care for Charleston homeowners. Historic properties, coastal exposure, compacted urban lots, sandy soils, and drainage challenges all require a thoughtful approach — one that starts with assessing what's actually happening in your yard before recommending anything.</p>
@@ -284,11 +333,11 @@
       <div class="footer-brand"><a href="/" class="logo" aria-label="InfiniteAg"><img src="../assets/logo/InfiniteAg_Logo_transparent.png" alt="InfiniteAg" class="site-logo-img site-logo-img--footer" /></a><p class="footer-tagline">Plant Scientist-Led Lawn Care &amp; Edible Landscape Design<br />Serving Charleston &amp; the SC Lowcountry</p><p class="footer-phone"><a href="tel:+18039037059">(803) 903-7059</a></p></div>
       <div class="footer-col"><h4>Services</h4><ul><li><a href="/lawn-care-charleston-sc/">Lawn Care — Charleston</a></li><li><a href="/lawn-care-mount-pleasant-sc/">Lawn Care — Mt. Pleasant</a></li><li><a href="/lawn-care-summerville-sc/">Lawn Care — Summerville</a></li><li><a href="/soil-health-assessment-bluffton-sc/">Soil Health Assessment</a></li><li><a href="/yard-diagnosis-bluffton-sc/">Yard Diagnosis</a></li><li><a href="/edible-landscape-design-bluffton-sc/">Edible Landscape Design</a></li></ul></div>
       <div class="footer-col"><h4>Service Areas</h4><ul><li><a href="/lawn-care-charleston-sc/">Charleston, SC</a></li><li><a href="/lawn-care-mount-pleasant-sc/">Mount Pleasant, SC</a></li><li><a href="/lawn-care-summerville-sc/">Summerville, SC</a></li><li><a href="/lawn-care-bluffton-sc/">Bluffton, SC</a></li><li><a href="/lawn-care-hilton-head-sc/">Hilton Head Island</a></li><li><a href="/lawn-care-beaufort-sc/">Beaufort, SC</a></li></ul></div>
-      <div class="footer-col"><h4>Company</h4><ul><li><a href="/">Home</a></li><li><a href="/#plant-scientist">About Dr. Zia</a></li><li><a href="/#how-it-works">How It Works</a></li><li><a href="#quote-form">Get a Free Quote</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="/">Home</a></li><li><a href="/about/#plant-scientist">About Dr. Zia</a></li><li><a href="/#how-it-works">How It Works</a></li><li><a href="#quote-form">Get a Free Quote</a></li></ul></div>
     </div>
     <div class="footer-bottom"><div class="container footer-bottom-inner"><p>&copy; <span data-year></span> InfiniteAg. All rights reserved. Serving Charleston &amp; the SC Lowcountry.</p></div></div>
   </footer>
   <div class="mobile-cta-bar" id="mobile-cta-bar" role="complementary" aria-label="Quick contact"><a href="tel:+18039037059" class="btn btn-outline mobile-cta-btn">Call Now</a><a href="#quote-form" class="btn btn-primary mobile-cta-btn">Free Assessment</a></div>
-  <script src="../script.js"></script>
+  <script src="../script.js?v=2"></script>
 </body>
 </html>

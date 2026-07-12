@@ -22,7 +22,7 @@
   --color-bg-warm:   #F7F3E8;
   --color-white:     #FFFFFF;
   --color-text:      #1D2A22;
-  --color-muted:     #68766C;
+  --color-muted:     #5E6B62;
   --color-earth:     #D8C7A3;
   --color-gold:      #C69B45;
   --color-mist:      #DDE8D6;
@@ -71,7 +71,11 @@
   --dur-md:      280ms;
   --dur-lg:      420ms;
   --header-h: 80px;
+  --anchor-offset: 110px;
 }
+
+/* Keep anchor-linked headings/sections clear of the floating sticky navbar */
+[id] { scroll-margin-top: var(--anchor-offset); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -139,11 +143,13 @@ p{color:var(--color-muted);max-width:65ch}
 .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .nav-toggle.open span:nth-child(2){opacity:0}
 .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.mobile-nav{position:fixed;inset:var(--header-h) 0 0 0;background:var(--color-white);z-index:99;padding:var(--space-8) var(--container-pad);transform:translateY(-100%);opacity:0;pointer-events:none;transition:transform var(--dur-md) var(--ease),opacity var(--dur-md);overflow-y:auto}
+.mobile-nav{position:fixed;inset:var(--header-h) 0 0 0;background:var(--color-white);z-index:99;padding:var(--space-8) var(--container-pad) calc(var(--space-8) + env(safe-area-inset-bottom));transform:translateY(-100%);opacity:0;pointer-events:none;transition:transform var(--dur-md) var(--ease),opacity var(--dur-md);overflow-y:auto;-webkit-overflow-scrolling:touch}
 .mobile-nav.open{transform:translateY(0);opacity:1;pointer-events:all}
 .mobile-nav ul{display:flex;flex-direction:column;gap:var(--space-2);margin-bottom:var(--space-8)}
 .mobile-nav a{display:block;font-size:var(--text-lg);font-weight:500;color:var(--color-text);padding:var(--space-3) 0;border-bottom:1px solid var(--color-border)}
 .mobile-nav-ctas{display:flex;flex-direction:column;gap:var(--space-3)}
+.mobile-nav-ctas .btn-primary{color:var(--color-white)}
+.mobile-nav-ctas .btn-outline{color:var(--color-primary)}
 
 /* HERO */
 .hero{position:relative;background:linear-gradient(160deg,var(--color-primary) 0%,#1f6035 55%,#2a7a42 100%);overflow:hidden;padding-block:clamp(var(--space-16),10vw,var(--space-24));padding-bottom:0}
@@ -864,8 +870,8 @@ p{color:var(--color-muted);max-width:65ch}
 /* ═══════════════════════════════════════════════════════════
    SERVICE CARDS — v4  (white cards, green accent, clean type)
 ═══════════════════════════════════════════════════════════ */
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem;margin-bottom:var(--space-12)}
-.svc-card{background:#fff;border:none;border-top:3px solid #3F8F46;border-radius:14px;padding:2rem 1.75rem 1.75rem;display:flex;flex-direction:column;box-shadow:0 4px 20px rgba(0,0,0,.13),0 1px 4px rgba(0,0,0,.07);transition:transform 200ms ease,box-shadow 200ms ease}
+.svc-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:1.75rem;margin-bottom:var(--space-12)}
+.svc-card{flex:1 1 320px;max-width:340px;background:#fff;border:none;border-top:3px solid #3F8F46;border-radius:14px;padding:2rem 1.75rem 1.75rem;display:flex;flex-direction:column;box-shadow:0 4px 20px rgba(0,0,0,.13),0 1px 4px rgba(0,0,0,.07);transition:transform 200ms ease,box-shadow 200ms ease}
 .svc-card:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(0,0,0,.18),0 2px 8px rgba(0,0,0,.07)}
 .svc-card__icon{width:46px;height:46px;background:#eaf4ea;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem;flex-shrink:0}
 .svc-card__icon svg{stroke:#2a7a32;width:22px;height:22px}
@@ -1513,16 +1519,17 @@ p{color:var(--color-muted);max-width:65ch}
 /* ── 8. TESTIMONIALS PLACEHOLDER ──────────────────────────── */
 .testimonials-section { background: var(--color-white); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
 .testimonials-box {
-  background: var(--color-bg-warm);
-  border: 1.5px dashed #c8d8c0;
+  background: var(--color-white);
+  border: 1.5px solid var(--color-border);
   border-radius: var(--crd-radius-lg);
-  padding: clamp(2rem,5vw,3rem);
+  box-shadow: var(--shadow-lg);
+  padding: clamp(2.5rem,5vw,3.5rem);
   text-align: center;
   max-width: 620px;
   margin: clamp(var(--space-10),4vw,var(--space-14)) auto 0;
 }
 .testimonials-box__icon {
-  width: 60px; height: 60px;
+  width: 64px; height: 64px;
   background: var(--color-mist);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
@@ -1530,6 +1537,7 @@ p{color:var(--color-muted);max-width:65ch}
 }
 .testimonials-box h3 { color: var(--color-primary); font-size: var(--text-lg); margin-bottom: var(--space-4); }
 .testimonials-box p { font-size: var(--text-sm); color: var(--color-muted); max-width: 44ch; margin-inline: auto; margin-bottom: var(--space-6); }
+.testimonials-box__actions { display: flex; align-items: center; justify-content: center; gap: var(--space-4); flex-wrap: wrap; }
 .testimonials-box__cta {
   display: inline-flex; align-items: center; gap: .5rem;
   background: var(--color-white);
@@ -2443,4 +2451,177 @@ p{color:var(--color-muted);max-width:65ch}
   .brand__logo { height: 30px; width: 30px; }
   .brand__name { font-size: .92rem; }
   .header-quote { font-size: .64rem; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SITE REDESIGN — floating pill navbar, Products/Services
+   dropdowns, product cards + plant tabs, used across all pages
+═══════════════════════════════════════════════════════════ */
+
+/* ── Floating pill navbar ── */
+.site-header {
+  background: transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  padding: 14px 16px 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+.site-header__inner {
+  max-width: 1180px !important;
+  height: 68px !important;
+  padding: 0 12px 0 22px !important;
+  background: rgba(255,255,255,.94);
+  border: 1px solid rgba(23,74,42,.10);
+  border-radius: var(--radius-full);
+  box-shadow: 0 10px 34px rgba(23,74,42,.10), 0 2px 8px rgba(23,74,42,.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: box-shadow 200ms ease, border-color 200ms ease;
+}
+.site-header.scrolled .site-header__inner {
+  box-shadow: 0 14px 40px rgba(23,74,42,.16), 0 4px 12px rgba(23,74,42,.08);
+  border-color: rgba(23,74,42,.18);
+}
+
+/* ── Nav dropdown items (Products / Services) ── */
+.nav__item { position: relative; display: flex; align-items: center; }
+.nav__link--dropdown {
+  display: inline-flex; align-items: center; gap: 4px;
+  font: inherit; background: none; border: none; cursor: pointer;
+  color: #2a3828; font-size: .875rem; font-weight: 500;
+  padding: 7px 12px; border-radius: 7px;
+  transition: background 130ms, color 130ms;
+}
+.nav__link--dropdown:hover,
+.nav__item.open .nav__link--dropdown { background: rgba(14,59,32,.07); color: #0E3B20; }
+.nav__chevron { transition: transform 160ms ease; flex-shrink: 0; }
+.nav__item.open .nav__chevron,
+.nav__item:hover .nav__chevron,
+.nav__item:focus-within .nav__chevron { transform: rotate(180deg); }
+
+.nav__dropdown {
+  position: absolute; top: calc(100% + 14px); left: 50%;
+  transform: translate(-50%, 6px);
+  background: #fff; border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);
+  padding: var(--space-3); min-width: 250px;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 160ms ease, transform 160ms ease, visibility 160ms;
+  z-index: 210;
+}
+.nav__item:hover .nav__dropdown,
+.nav__item:focus-within .nav__dropdown,
+.nav__item.open .nav__dropdown {
+  opacity: 1; visibility: visible; pointer-events: auto; transform: translate(-50%, 0);
+}
+.nav__dropdown-link {
+  display: block; padding: 9px 12px; border-radius: var(--radius-md);
+  color: var(--color-text); font-size: .85rem; font-weight: 500;
+  text-decoration: none; transition: background 130ms, color 130ms;
+}
+.nav__dropdown-link:hover { background: var(--color-mist); color: var(--color-primary); }
+.nav__dropdown-link small { display: block; font-size: .74rem; font-weight: 400; color: var(--color-muted); margin-top: 2px; }
+.nav__dropdown-group { padding: 6px 12px 4px; }
+.nav__dropdown-label {
+  display: block; font-size: .68rem; font-weight: 700; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--color-muted); margin: 6px 0 4px;
+}
+.nav__dropdown-sublink {
+  display: block; padding: 6px 10px; margin-left: 4px; border-radius: var(--radius-sm);
+  color: var(--color-text); font-size: .82rem; text-decoration: none;
+  transition: background 130ms, color 130ms;
+}
+.nav__dropdown-sublink:hover { background: var(--color-mist); color: var(--color-primary); }
+.nav__dropdown-divider { height: 1px; background: var(--color-border); margin: 6px 4px; }
+
+/* ── Mobile nav dropdown accordion (native <details>) ── */
+.mobile-nav__dropdown { border-bottom: 1px solid var(--color-border); }
+.mobile-nav__dropdown summary {
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: var(--text-lg); font-weight: 500; color: var(--color-text);
+  padding: var(--space-3) 0; cursor: pointer; list-style: none;
+}
+.mobile-nav__dropdown summary::-webkit-details-marker { display: none; }
+.mobile-nav__dropdown summary::after {
+  content: ''; width: 9px; height: 9px; border-right: 2px solid var(--color-muted);
+  border-bottom: 2px solid var(--color-muted); transform: rotate(45deg); transition: transform 160ms;
+}
+.mobile-nav__dropdown[open] summary::after { transform: rotate(-135deg); }
+.mobile-nav__sublist { padding: 0 0 var(--space-3) var(--space-4); display: flex; flex-direction: column; gap: 2px; }
+.mobile-nav__sublist a { padding: var(--space-2) 0 !important; border-bottom: none !important; font-size: var(--text-base) !important; color: var(--color-muted) !important; }
+
+/* ── Product / preview card grid (Homepage previews, Products page) ── */
+.product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-6); justify-content: center; }
+/* Used where the card count doesn't divide evenly into 4 columns (2-card
+   or 5-card sections) — wraps and centers a partial row instead of leaving
+   empty grid tracks or a lonely stretched card. */
+.product-grid--compact { display: flex; flex-wrap: wrap; justify-content: center; }
+.product-grid--compact .product-card { flex: 1 1 260px; max-width: 280px; }
+.product-card {
+  background: var(--color-white); border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-lg); padding: var(--space-8) var(--space-6);
+  min-height: 240px;
+  box-shadow: var(--shadow-card); transition: transform 200ms, box-shadow 200ms, border-color 200ms;
+  text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-4);
+}
+.product-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: var(--color-secondary); }
+.product-card__icon {
+  width: 52px; height: 52px; border-radius: var(--radius-md);
+  background: var(--color-mist); display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.product-card h3 { font-size: var(--text-md); margin: 0; }
+.product-card p { font-size: var(--text-sm); line-height: 1.6; margin: 0; flex: 1; }
+.product-card__link { margin-top: auto; font-size: .84rem; font-weight: 700; color: var(--color-secondary); }
+
+@media (max-width: 900px) {
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .product-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Plant category showcase (Products page) ── */
+.plant-showcase {
+  background: var(--color-white); border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl); box-shadow: var(--shadow-card);
+  padding: clamp(var(--space-6), 4vw, var(--space-10));
+}
+.plant-tabs {
+  display: flex; flex-wrap: wrap; gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+.plant-tabs-divider { height: 1px; background: var(--color-border); margin-bottom: var(--space-8); }
+.plant-tab {
+  background: var(--color-bg-warm); border: 1.5px solid var(--color-border); color: var(--color-primary);
+  font-weight: 700; font-size: .92rem; padding: 12px 24px; border-radius: var(--radius-full);
+  cursor: pointer; transition: background 150ms, color 150ms, border-color 150ms, transform 150ms, box-shadow 150ms;
+}
+.plant-tab:hover { border-color: var(--color-secondary); transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+.plant-tab[aria-selected="true"] { background: var(--color-primary); color: #fff; border-color: var(--color-primary); }
+/* Panel visibility is handled by the native [hidden] attribute (set in JS) —
+   no display rules needed here, so there's nothing for CSS and JS to disagree about. */
+.plant-list {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4); list-style: none;
+}
+.plant-list li {
+  background: var(--color-bg-warm); border: 1px solid var(--color-border);
+  border-radius: var(--radius-md); padding: var(--space-5) var(--space-4);
+  min-height: 68px; display: flex; align-items: center; justify-content: center; text-align: center;
+  font-size: .95rem; font-weight: 600; color: var(--color-primary);
+  transition: transform 160ms, box-shadow 160ms, border-color 160ms, background 160ms;
+}
+.plant-list li:hover { transform: translateY(-2px); box-shadow: var(--shadow-sm); border-color: var(--color-secondary); background: var(--color-white); }
+.plant-list li small { display: block; font-weight: 400; color: var(--color-muted); font-size: .76rem; margin-top: 2px; }
+
+@media (max-width: 900px) {
+  .plant-list { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 640px) {
+  .plant-tab { padding: 10px 18px; font-size: .86rem; }
+  .plant-list { grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
+}
+@media (max-width: 420px) {
+  .plant-list { grid-template-columns: 1fr; }
 }
