@@ -128,8 +128,7 @@ p{color:var(--color-muted);max-width:65ch}
 .site-logo,.logo{display:inline-flex;align-items:center;flex-shrink:0;text-decoration:none}
 .site-logo-icon{width:62px;height:62px;object-fit:contain;display:block;flex-shrink:0}
 .site-logo-text{font-family:"Playfair Display",serif;color:#174A2A;font-weight:700;font-size:1.85rem;letter-spacing:-0.02em;white-space:nowrap;line-height:1}
-.site-logo-img{display:block;height:48px;width:auto;max-width:220px;object-fit:contain}
-.site-logo-img--footer{display:block;width:200px;height:auto;background:#fff;border-radius:10px;padding:10px 14px;box-shadow:0 2px 12px rgba(0,0,0,.18)}
+.site-logo-img{display:block;height:48px;width:auto;object-fit:contain}
 .logo--light .logo-text{color:var(--color-white)}
 .main-nav{flex:1;display:flex;justify-content:center}
 .main-nav ul{display:flex;gap:var(--space-6)}
@@ -423,8 +422,24 @@ p{color:var(--color-muted);max-width:65ch}
 
 /* FOOTER */
 .site-footer{background:var(--color-text);color:rgba(255,255,255,.75)}
-.footer-inner{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:var(--space-10);padding-block:clamp(var(--space-12),6vw,var(--space-16))}
+.footer-inner{display:grid;grid-template-columns:400px repeat(3,minmax(150px,1fr));column-gap:64px;row-gap:var(--space-10);align-items:start;padding-block:clamp(var(--space-12),6vw,var(--space-16))}
+.footer-brand{width:400px;max-width:100%;min-width:0}
 .footer-brand .logo{margin-bottom:var(--space-4)}
+.footer-logo-card{box-sizing:border-box;display:block;width:380px;max-width:100%;padding:8px;overflow:hidden;background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.18)}
+.footer-logo-image{position:static;display:block;width:100%;max-width:none;height:auto;object-fit:contain;object-position:center;filter:none;opacity:1;transform:none}
+@media (max-width:1100px){
+  .footer-inner{grid-template-columns:340px repeat(3,minmax(130px,1fr));column-gap:32px}
+  .footer-brand,.footer-logo-card{width:340px}
+}
+@media (max-width:850px){
+  .footer-inner{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:40px}
+  .footer-brand{width:100%}
+  .footer-logo-card{width:360px;max-width:100%}
+}
+@media (max-width:560px){
+  .footer-inner{grid-template-columns:1fr}
+  .footer-logo-card{width:100%;max-width:360px}
+}
 .footer-tagline{font-size:var(--text-sm);color:rgba(255,255,255,.6);line-height:1.7;margin-bottom:var(--space-4);max-width:none}
 .footer-phone{display:inline-flex;align-items:center;font-size:var(--text-sm);font-weight:700;color:var(--color-accent);transition:color var(--dur-sm)}
 .footer-phone:hover{color:var(--color-white)}
@@ -516,14 +531,12 @@ p{color:var(--color-muted);max-width:65ch}
   .gallery-grid{grid-template-columns:1fr;max-width:540px;margin-inline:auto}
   .sg-reviews-grid{grid-template-columns:repeat(2,1fr)}
   .quote-inner{grid-template-columns:1fr;gap:var(--space-8)}
-  .footer-inner{grid-template-columns:1fr 1fr;gap:var(--space-8)}
-  .footer-brand{grid-column:span 2}
 }
 
 @media (max-width:768px){
   .site-logo-icon{width:52px;height:52px}
   .site-logo-text{font-size:1.6rem}
-  .site-logo-img{height:44px;max-width:180px}
+  .site-logo-img{height:44px}
 }
 
 /* MOBILE */
@@ -537,8 +550,7 @@ p{color:var(--color-muted);max-width:65ch}
   .form-row .btn{width:100%;border-radius:var(--radius-md);justify-content:center}
   .trust-list{grid-template-columns:1fr;gap:var(--space-5)}
   .services-grid{grid-template-columns:1fr}
-  .site-logo-img{height:40px;max-width:160px}
-  .site-logo-img--footer{height:200px;max-width:260px;padding:10px;border-radius:10px;filter:contrast(1.12)}
+  .site-logo-img{height:40px}
   .site-logo-icon{width:42px;height:42px}
   .site-logo-text{font-size:1.35rem}
 
@@ -552,8 +564,6 @@ p{color:var(--color-muted);max-width:65ch}
   .gallery-grid{grid-template-columns:1fr}
   .sg-reviews-grid{grid-template-columns:1fr}
   .form-row-2{grid-template-columns:1fr}
-  .footer-inner{grid-template-columns:1fr}
-  .footer-brand{grid-column:auto}
   .footer-bottom-inner{flex-direction:column;align-items:flex-start;gap:var(--space-2)}
   .final-cta-actions{flex-direction:column;align-items:center}
   .final-cta-actions .btn{width:100%;max-width:320px}
