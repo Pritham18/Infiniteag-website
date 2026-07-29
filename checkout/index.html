@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | InfiniteAg Plant Shop</title>
+  <meta name="description" content="Preview your plant order and delivery details. Online payment is coming soon." />
+  <link rel="canonical" href="https://www.infiniteagworld.com/checkout/" />
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../assets/logo/InfiniteAg_Favicon_512px.png" />
+  <link rel="stylesheet" href="../styles.css?v=32" />
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="site-header__inner">
+
+      <a href="/" class="brand" aria-label="InfiniteAg — Home">
+        <img src="../assets/logo/infiniteag-icon.webp" alt="InfiniteAg logo" class="brand__logo" width="52" height="52" />
+        <div class="brand__text">
+          <span class="brand__name">InfiniteAg</span>
+          <span class="brand__sub">Smart Growing Systems</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav__item">
+          <button class="nav__link nav__link--dropdown" type="button" aria-expanded="false" aria-haspopup="true">
+            Products
+            <svg class="nav__chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown">
+            <a href="/products/#software" class="nav__dropdown-link">Software</a>
+            <a href="/products/#apps" class="nav__dropdown-link">Apps</a>
+            <div class="nav__dropdown-group">
+              <span class="nav__dropdown-label">Seasonal &amp; Year-Round Plants</span>
+              <a href="/products/#herbs" class="nav__dropdown-sublink">Herbs</a>
+              <a href="/products/#shrubs" class="nav__dropdown-sublink">Shrubs</a>
+              <a href="/products/#vegetables" class="nav__dropdown-sublink">Vegetables</a>
+              <a href="/products/#fruits" class="nav__dropdown-sublink">Fruits</a>
+            </div>
+            <div class="nav__dropdown-divider"></div>
+            <a href="/products/#biological-controls" class="nav__dropdown-link">Biological Controls</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <button class="nav__link nav__link--dropdown" type="button" aria-expanded="false" aria-haspopup="true">
+            Services
+            <svg class="nav__chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown">
+            <a href="/services/#indoor-farming" class="nav__dropdown-link">Indoor Farming<small>Turn your indoor space into an indoor farm.</small></a>
+            <a href="/services/#yard-to-table" class="nav__dropdown-link">Yard to Table<small>Sustainable food production from your own space.</small></a>
+            <a href="/services/#soil-diagnostics" class="nav__dropdown-link">Soil Diagnostics</a>
+            <a href="/services/#best-suited-variety-selection" class="nav__dropdown-link">Best-Suited Variety Selection</a>
+            <a href="/services/#consultation" class="nav__dropdown-link">Consultation</a>
+          </div>
+        </div>
+        <a href="/our-work/" class="nav__link">Our Work</a>
+        <a href="/about/" class="nav__link">About</a>
+        <a href="/contact/" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="header-right">
+        <a href="tel:+18039037059" class="header-phone" aria-label="Call InfiniteAg at 803 903 7059">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (803) 903-7059
+        </a>
+        <a href="/cart/" class="header-cart-link" aria-label="View cart, empty">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-badge" id="cart-badge" hidden>0</span>
+        </a>
+        <a href="/contact/" class="header-quote">Book Consultation</a>
+        <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li class="mobile-nav__dropdown">
+        <details>
+          <summary>Products</summary>
+          <ul class="mobile-nav__sublist">
+            <li><a href="/products/#software">Software</a></li>
+            <li><a href="/products/#apps">Apps</a></li>
+            <li><a href="/products/#herbs">Seasonal &amp; Year-Round Plants</a></li>
+            <li><a href="/products/#biological-controls">Biological Controls</a></li>
+          </ul>
+        </details>
+      </li>
+      <li class="mobile-nav__dropdown">
+        <details>
+          <summary>Services</summary>
+          <ul class="mobile-nav__sublist">
+            <li><a href="/services/#indoor-farming">Indoor Farming</a></li>
+            <li><a href="/services/#yard-to-table">Yard to Table</a></li>
+            <li><a href="/services/#soil-diagnostics">Soil Diagnostics</a></li>
+            <li><a href="/services/#best-suited-variety-selection">Best-Suited Variety Selection</a></li>
+            <li><a href="/services/#consultation">Consultation</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a href="/our-work/">Our Work</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+      <li class="mobile-nav-cart"><a href="/cart/">View Cart</a><span class="cart-badge" id="cart-badge-mobile" hidden>0</span></li>
+    </ul>
+    <div class="mobile-nav-ctas">
+      <a href="tel:+18039037059" class="btn btn-outline btn-full">Call (803) 903-7059</a>
+      <a href="/contact/" class="btn btn-primary btn-full">Book Consultation</a>
+    </div>
+  </nav>
+
+
+  <section class="page-hero" aria-labelledby="page-h1">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="breadcrumb__sep">›</span><a href="/cart/">Cart</a><span class="breadcrumb__sep">›</span><span>Checkout</span></nav>
+      <p class="hero-area-label">Plant Shop</p>
+      <h1 id="page-h1">Checkout</h1>
+      <p class="page-hero-desc">Local delivery only.</p>
+    </div>
+  </section>
+
+
+  <section class="content-section section-pad" aria-labelledby="checkout-heading">
+    <div class="container">
+      <h2 id="checkout-heading" class="sr-only">Checkout</h2>
+
+      <div id="checkout-empty" class="shop-empty-state" hidden>
+        <h2>Your cart is empty</h2>
+        <p>Add plants to your cart before checking out.</p>
+        <a href="/plant-shop/" class="btn btn-primary btn-lg">Shop Plants</a>
+      </div>
+
+      <div id="checkout-content" class="checkout-grid" hidden>
+
+        <form class="checkout-form" novalidate aria-label="Delivery details preview — not submitted">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <div class="form-row-2">
+              <div class="form-group"><label for="co-first-name">First Name</label><input type="text" id="co-first-name" name="firstName" required autocomplete="given-name" /></div>
+              <div class="form-group"><label for="co-last-name">Last Name</label><input type="text" id="co-last-name" name="lastName" required autocomplete="family-name" /></div>
+            </div>
+            <div class="form-row-2">
+              <div class="form-group"><label for="co-email">Email Address</label><input type="email" id="co-email" name="email" required autocomplete="email" /></div>
+              <div class="form-group"><label for="co-phone">Phone Number</label><input type="tel" id="co-phone" name="phone" required autocomplete="tel" /></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Delivery Address</legend>
+            <div class="form-group"><label for="co-street">Street Address</label><input type="text" id="co-street" name="street" required autocomplete="address-line1" /></div>
+            <div class="form-group"><label for="co-apt">Apartment, Suite, or Unit <span class="optional-label">(Optional)</span></label><input type="text" id="co-apt" name="apt" autocomplete="address-line2" /></div>
+            <div class="form-row-2">
+              <div class="form-group"><label for="co-city">City</label><input type="text" id="co-city" name="city" required autocomplete="address-level2" /></div>
+              <div class="form-group"><label for="co-state">State</label><input type="text" id="co-state" name="state" required autocomplete="address-level1" maxlength="2" placeholder="SC" /></div>
+            </div>
+            <div class="form-group"><label for="co-zip">ZIP Code</label><input type="text" id="co-zip" name="zip" required autocomplete="postal-code" inputmode="numeric" pattern="\d{5}" placeholder="29401" /></div>
+            <div class="form-group"><label for="co-instructions">Delivery Instructions <span class="optional-label">(Optional)</span></label><textarea id="co-instructions" name="deliveryInstructions" rows="3" autocomplete="off"></textarea></div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Order Notes</legend>
+            <div class="form-group"><label for="co-notes">Order Notes <span class="optional-label">(Optional)</span></label><textarea id="co-notes" name="orderNotes" rows="3" autocomplete="off"></textarea></div>
+          </fieldset>
+        </form>
+
+        <aside class="order-summary" aria-label="Order summary">
+          <h2>Order Summary</h2>
+
+          <div id="order-summary-items"></div>
+
+          <div class="order-summary__divider"></div>
+
+          <div class="order-summary__row">
+            <span>Subtotal</span>
+            <span id="order-summary-subtotal">$0.00</span>
+          </div>
+          <div class="order-summary__row">
+            <span>Delivery fee</span>
+            <span class="order-summary__pending">To be confirmed</span>
+          </div>
+          <div class="order-summary__row">
+            <span>Sales tax</span>
+            <span class="order-summary__pending">Calculated when secure payment is added</span>
+          </div>
+
+          <div class="order-summary__divider"></div>
+
+          <div class="order-summary__row order-summary__row--total">
+            <span>Total</span>
+          </div>
+          <p class="order-summary__pending">Final total available after delivery and tax configuration.</p>
+
+          <button type="button" class="btn-disabled-explained" disabled aria-disabled="true" aria-describedby="payment-note">Online Payment Coming Soon</button>
+          <p class="checkout-payment-note" id="payment-note">Your order has not been submitted or charged. Secure online payment will be available after delivery and tax settings are confirmed.</p>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+
+  <template id="order-summary-item-template">
+    <div class="order-summary__item">
+      <span class="order-summary__item-name"></span>
+      <span class="order-summary__item-qty"></span>
+      <span class="order-summary__item-total"></span>
+    </div>
+  </template>
+
+
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="logo footer-logo-card" aria-label="InfiniteAg"><img src="../assets/newlogo-footer.png" alt="InfiniteAg — Agriculture Sciences, Sustainability, Edible Enhancement and Smart Growing Solutions" class="footer-logo-image" /></a>
+        <p class="footer-tagline">Smart Growing Solutions for Homes, Businesses &amp; Communities<br />Serving Charleston, Mount Pleasant, Summerville &amp; the SC Lowcountry</p>
+        <p class="footer-phone"><a href="tel:+18039037059" aria-label="Call InfiniteAg"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.37 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.04 6.04l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(803) 903-7059</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/products/#software">Software</a></li>
+          <li><a href="/products/#apps">Apps</a></li>
+          <li><a href="/products/#plants">Plants</a></li>
+          <li><a href="/products/#biological-controls">Biological Controls</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services/#indoor-farming">Indoor Farming</a></li>
+          <li><a href="/services/#yard-to-table">Yard to Table</a></li>
+          <li><a href="/services/#soil-diagnostics">Soil Diagnostics</a></li>
+          <li><a href="/services/#best-suited-variety-selection">Variety Selection</a></li>
+          <li><a href="/services/#consultation">Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/our-work/">Our Work</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span data-year></span> InfiniteAg. All rights reserved. Serving Charleston, Mount Pleasant, Summerville &amp; the SC Lowcountry.</p>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js?v=2"></script>
+  <script src="../assets/js/shop-config.js"></script>
+  <script src="../assets/js/plant-data.js"></script>
+  <script src="../assets/js/cart-store.js"></script>
+  <script src="../assets/js/checkout-page.js"></script>
+</body>
+</html>

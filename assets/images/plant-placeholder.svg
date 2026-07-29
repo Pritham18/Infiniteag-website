@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Representative potted plant placeholder image">
+<rect width="400" height="400" fill="#F7F3E8"/>
+<circle cx="200" cy="210" r="150" fill="#DDE8D6"/>
+<!-- Pot -->
+<path d="M150,320 L165,390 L235,390 L250,320 Z" fill="#C69B45"/>
+<rect x="146" y="304" width="108" height="20" rx="6" fill="#B98A38"/>
+<!-- Stem -->
+<line x1="200" y1="304" x2="200" y2="220" stroke="#3F8F46" stroke-width="6" stroke-linecap="round"/>
+<!-- Leaves -->
+<g fill="#174A2A">
+  <path d="M200,240 C160,220 150,170 175,135 C205,165 210,215 200,240 Z"/>
+  <path d="M200,235 C240,215 250,165 225,130 C195,160 190,210 200,235 Z"/>
+</g>
+<g fill="#3F8F46">
+  <path d="M200,270 C170,255 162,220 182,195 C205,218 210,250 200,270 Z"/>
+  <path d="M200,266 C230,251 238,216 218,191 C195,214 190,246 200,266 Z"/>
+</g>
+<g fill="#A7D46F">
+  <path d="M200,296 C178,285 172,258 188,240 C206,258 210,282 200,296 Z"/>
+  <path d="M200,293 C222,282 228,255 212,237 C194,255 190,279 200,293 Z"/>
+</g>
+</svg>
