@@ -10,7 +10,7 @@
 (function (root) {
   var ShopConfig = Object.freeze({
     currency: 'USD',
-    plantPriceInCents: 1500,
+    plantPriceInCents: 500,
     fulfillmentMethod: 'local delivery',
 
     /* Temporary configurable UI limit only — not an inventory or

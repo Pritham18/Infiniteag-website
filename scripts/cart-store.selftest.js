@@ -25,8 +25,8 @@ check('has all four categories with the exact existing spelling', () => {
   const labels = catalog.categories.map(c => c.label);
   assert.deepEqual(labels, ['Herbs', 'Shrubs', 'Vegetables', 'Fruits']);
 });
-check('every plant is $15.00 (1500 cents)', () => {
-  assert.ok(catalog.plants.every(p => p.priceInCents === 1500));
+check('every plant is $5.00 (500 cents)', () => {
+  assert.ok(catalog.plants.every(p => p.priceInCents === 500));
 });
 check('no duplicate ids/slugs', () => {
   const ids = catalog.plants.map(p => p.id);
@@ -88,12 +88,12 @@ check('adding multiple different plants keeps separate rows', () => {
 });
 check('line totals and subtotal use integer cents', () => {
   cart.clear();
-  cart.addItem(catalog.plants[0].id, 3); // 3 x 1500 = 4500
-  cart.addItem(catalog.plants[1].id, 2); // 2 x 1500 = 3000
+  cart.addItem(catalog.plants[0].id, 3); // 3 x 500 = 1500
+  cart.addItem(catalog.plants[1].id, 2); // 2 x 500 = 1000
   const enriched = cart.getEnrichedItems();
   const lineTotals = enriched.map(i => i.lineTotalInCents).sort((a, b) => a - b);
-  assert.deepEqual(lineTotals, [3000, 4500]);
-  assert.equal(cart.getSubtotalInCents(), 7500);
+  assert.deepEqual(lineTotals, [1000, 1500]);
+  assert.equal(cart.getSubtotalInCents(), 2500);
   enriched.forEach(i => assert.equal(Number.isInteger(i.lineTotalInCents), true));
 });
 check('setItemQuantity updates an existing line, rejects invalid input', () => {

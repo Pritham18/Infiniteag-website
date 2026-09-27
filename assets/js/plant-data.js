@@ -83,7 +83,7 @@
       name: p.name,
       category: categoryLabel(p.category),
       categorySlug: p.category,
-      priceInCents: config ? config.plantPriceInCents : 1500,
+      priceInCents: config ? config.plantPriceInCents : 500,
       image: PLACEHOLDER_IMAGE,
       imageAlt: p.name + ' — representative plant image, actual appearance may vary',
       /* Default availability. Flip individual entries to false as needed;
